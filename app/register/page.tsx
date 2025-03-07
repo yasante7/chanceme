@@ -5,9 +5,9 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { ArrowLeft, GraduationCap } from "lucide-react"
 import { NavBar } from "@/components/nav-bar"
-import { supabase } from "@/lib/supabase"
+// import { supabase } from "@/lib/supabase"  // Comment out this line
 import { Input } from "@/components/ui/input"
-import { useAuth } from "@/hooks/useAuth"
+// import { useAuth } from "@/hooks/useAuth"  // Comment out this line
 import { UserCircle } from "lucide-react"
 
 type Gender = 'male' | 'female'
@@ -28,7 +28,7 @@ export default function RegisterPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [emailError, setEmailError] = useState("")
-  const { signUp } = useAuth()
+// const { signUp } = useAuth()  // Comment out this line
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -44,19 +44,16 @@ export default function RegisterPage() {
         return
       }
 
-      // Proceed with signup
-      await signUp(formData.email, formData.password)
-      alert("Please check your email for verification link")
-      router.push("/")
+      // Comment out the actual signup
+      // await signUp(formData.email, formData.password)
+      
+      // For testing, just log the form data and redirect to success page
+      console.log('Form submitted with data:', formData)
+      router.push("/register/success")
+      
     } catch (error: any) {
       console.error("Error signing up:", error)
-      if (error?.message?.includes('already registered')) {
-        setEmailError("This email is already registered")
-      } else if (error?.message?.includes('rate limit')) {
-        setEmailError("Too many attempts. Please try again later")
-      } else {
-        setError("Error signing up. Please try again.")
-      }
+      setError("Error signing up. Please try again.")
     } finally {
       setIsSubmitting(false)
     }

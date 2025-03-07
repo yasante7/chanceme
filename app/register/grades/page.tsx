@@ -2,8 +2,8 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
-import { supabase } from '@/lib/supabase'
+import { ArrowLeft, GraduationCap } from "lucide-react"
+// import { supabase } from '@/lib/supabase'  // Comment out this line
 import { useRouter } from 'next/navigation'
 import { NavBar } from "@/components/nav-bar"
 
@@ -32,7 +32,8 @@ const PROGRAM_SUBJECTS = {
     'Physics',
     'Chemistry',
     'Biology',
-    'ICT'
+    'ICT',
+    'Geography'
   ],
   'General Arts': [
     'Literature in English',
@@ -112,7 +113,8 @@ export default function GradesPage() {
     }
 
     try {
-      // First, let's check if we're connected to Supabase
+      // Comment out Supabase connection test and insert
+      /* 
       const { data: connectionTest, error: connectionError } = await supabase
         .from('student_grades')
         .select('*')
@@ -122,7 +124,6 @@ export default function GradesPage() {
         throw new Error('Database connection failed: ' + connectionError.message)
       }
 
-      // Now try to insert the data
       const { error: insertError } = await supabase
         .from('student_grades')
         .insert([gradeData])
@@ -130,8 +131,13 @@ export default function GradesPage() {
       if (insertError) {
         throw new Error('Failed to insert data: ' + insertError.message)
       }
+      */
 
-      router.push('/dashboard')
+      // For testing, just log the data and redirect
+      // console.log('Grade data submitted:', gradeData)
+      // alert('Grades submitted successfully! (test mode)')
+      router.push("grades/success")
+      
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to save grades'
       setError(errorMessage)
@@ -165,20 +171,24 @@ export default function GradesPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-muted/50">
       <NavBar />
-      <main className="flex-1 p-6">
-        <div className="max-w-md mx-auto mt-8">
-          <h1 className="text-3xl font-bold mb-6">Enter Your Grades</h1>
+      <main className="flex-1 p-6 flex items-center justify-center">
+        <div className="max-w-2xl w-full bg-background rounded-xl shadow-lg p-8 border">
+          <div className="flex items-center justify-center mb-6">
+            <GraduationCap className="h-10 w-10" />
+          </div>
+          <h1 className="text-2xl font-semibold text-center mb-8">Enter Your Grades</h1>
+          
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Program Selection */}
             <div>
-              <label htmlFor="program" className="block text-sm font-medium mb-1">
+              <label htmlFor="program" className="block text-sm font-medium mb-2 text-muted-foreground">
                 Select Your Program
               </label>
               <select
                 id="program"
-                className="w-full p-2 border rounded-md"
+                className="w-full p-2 rounded-md border bg-background"
                 value={selectedProgram}
                 onChange={(e) => {
                   setSelectedProgram(e.target.value)
@@ -198,13 +208,13 @@ export default function GradesPage() {
 
             {/* Core Subjects */}
             <div>
-              <h2 className="text-lg font-semibold mb-4">Core Subjects</h2>
+              <h2 className="text-lg font-semibold mb-4 text-muted-foreground">Core Subjects</h2>
               <div className="space-y-4">
                 {CORE_SUBJECTS.map((subject) => (
                   <div key={subject} className="flex items-center gap-4">
-                    <label className="flex-1">{subject}</label>
+                    <label className="flex-1 text-sm font-medium text-muted-foreground">{subject}</label>
                     <select
-                      className="w-24 p-2 border rounded-md"
+                      className="w-24 p-2 rounded-md border bg-background"
                       value={grades[subject] || ''}
                       onChange={(e) => handleGradeChange(subject, e.target.value as Grade)}
                       required
@@ -224,12 +234,12 @@ export default function GradesPage() {
             {/* Elective Subjects */}
             {selectedProgram && (
               <div>
-                <h2 className="text-lg font-semibold mb-4">Select 4 Elective Subjects</h2>
+                <h2 className="text-lg font-semibold mb-4 text-muted-foreground">Select 4 Elective Subjects</h2>
                 <div className="space-y-4">
                   {selectedElectives.map((selectedElective, index) => (
                     <div key={index} className="flex items-center gap-4">
                       <select
-                        className="flex-1 p-2 border rounded-md"
+                        className="flex-1 p-2 rounded-md border bg-background"
                         value={selectedElective}
                         onChange={(e) => handleElectiveChange(index, e.target.value)}
                         required
@@ -243,7 +253,7 @@ export default function GradesPage() {
                       </select>
                       {selectedElective && (
                         <select
-                          className="w-24 p-2 border rounded-md"
+                          className="w-24 p-2 rounded-md border bg-background"
                           value={grades[selectedElective] || ''}
                           onChange={(e) => handleGradeChange(selectedElective, e.target.value as Grade)}
                           required
@@ -262,10 +272,11 @@ export default function GradesPage() {
               </div>
             )}
 
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-6">
               <Link href="/register" className="flex-1">
                 <Button variant="outline" className="w-full">
-                  Previous
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Back
                 </Button>
               </Link>
               <Button 
@@ -277,7 +288,10 @@ export default function GradesPage() {
               </Button>
             </div>
           </form>
-          {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
+          
+          {error && (
+            <p className="text-red-500 text-sm mt-4 text-center">{error}</p>
+          )}
         </div>
       </main>
     </div>
