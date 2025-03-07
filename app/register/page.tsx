@@ -1,0 +1,230 @@
+"use client"
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { useRouter } from "next/navigation"
+import { ArrowLeft, GraduationCap } from "lucide-react"
+import { NavBar } from "@/components/nav-bar"
+import { supabase } from "@/lib/supabase"
+import { Input } from "@/components/ui/input"
+import { useAuth } from "@/hooks/useAuth"
+import { UserCircle } from "lucide-react"
+
+type Gender = 'male' | 'female'
+type Region = 'Greater Accra' | 'Ashanti' | 'Western' | 'Eastern' | 'Central' | 'Northern' | 'Upper East' | 'Upper West' | 'Volta' | 'Bono' | 'Bono East' | 'Ahafo' | 'Savannah' | 'North East' | 'Oti' | 'Western North'
+
+export default function RegisterPage() {
+  const router = useRouter()
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    dateOfBirth: "",
+    gender: "" as Gender,
+    phone: "",
+    region: "" as Region,
+    // Removing school and graduationYear
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [emailError, setEmailError] = useState("")
+  const { signUp } = useAuth()
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setError(null)
+    setEmailError("")
+
+    try {
+      // Validate email format
+      const formatError = validateEmail(formData.email)
+      if (formatError) {
+        setEmailError(formatError)
+        return
+      }
+
+      // Proceed with signup
+      await signUp(formData.email, formData.password)
+      alert("Please check your email for verification link")
+      router.push("/")
+    } catch (error: any) {
+      console.error("Error signing up:", error)
+      if (error?.message?.includes('already registered')) {
+        setEmailError("This email is already registered")
+      } else if (error?.message?.includes('rate limit')) {
+        setEmailError("Too many attempts. Please try again later")
+      } else {
+        setError("Error signing up. Please try again.")
+      }
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const validateEmail = (email: string) => {
+    // Basic email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      return "Please enter a valid email address"
+    }
+    return ""
+  }
+
+  const REGIONS: Region[] = [
+    'Greater Accra', 'Ashanti', 'Western', 'Eastern', 'Central',
+    'Northern', 'Upper East', 'Upper West', 'Volta', 'Bono',
+    'Bono East', 'Ahafo', 'Savannah', 'North East', 'Oti', 'Western North'
+  ]
+
+  return (
+    <div className="flex flex-col min-h-screen bg-muted/50">
+      <NavBar />
+      <main className="flex-1 p-6 flex items-center justify-center">
+        <div className="max-w-md w-full bg-background rounded-xl shadow-lg p-8 border">
+          <div className="flex items-center justify-center mb-6">
+            <GraduationCap className="h-10 w-10" />
+          </div>
+          <h1 className="text-2xl font-semibold text-center mb-8">Create Your Account</h1>
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium mb-2 text-muted-foreground">
+                Full Name
+              </label>
+              <Input
+                type="text"
+                id="name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className="w-full"
+                required
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="region" className="block text-sm font-medium mb-2 text-muted-foreground">
+                Region of Residence
+              </label>
+              <select
+                id="region"
+                className="w-full p-2 rounded-md border bg-background"
+                value={formData.region}
+                onChange={(e) => setFormData({ ...formData, region: e.target.value as Region })}
+                required
+              >
+                <option value="">Select Region</option>
+                {REGIONS.map((region) => (
+                  <option key={region} value={region}>{region}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="dateOfBirth" className="block text-sm font-medium mb-2 text-muted-foreground">
+                  Date of Birth
+                </label>
+                <Input
+                  type="date"
+                  id="dateOfBirth"
+                  value={formData.dateOfBirth}
+                  onChange={(e) => setFormData({ ...formData, dateOfBirth: e.target.value })}
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="gender" className="block text-sm font-medium mb-2 text-muted-foreground">
+                  Gender
+                </label>
+                <select
+                  id="gender"
+                  className="w-full p-2 rounded-md border bg-background"
+                  value={formData.gender}
+                  onChange={(e) => setFormData({ ...formData, gender: e.target.value as Gender })}
+                  required
+                >
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium mb-2 text-muted-foreground">
+                Phone Number
+              </label>
+              <Input
+                type="tel"
+                id="phone"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                placeholder="e.g., 024XXXXXXX"
+                required
+              />
+            </div>
+                        
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium mb-2 text-muted-foreground">
+                Email
+              </label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                value={formData.email}
+                onChange={(e) => {
+                  setFormData({ ...formData, email: e.target.value })
+                  setEmailError("")
+                }}
+                required
+                className={emailError ? "border-red-500" : ""}
+              />
+              {emailError && (
+                <p className="text-sm text-red-500 mt-1">{emailError}</p>
+              )}
+            </div>
+
+            <div>
+              <label htmlFor="password" className="block text-sm font-medium mb-2 text-muted-foreground">
+                Password
+              </label>
+              <Input
+                type="password"
+                id="password"
+                value={formData.password}
+                onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                required
+              />
+            </div>
+
+            <div className="flex gap-4 pt-6">
+              <Link href="/" className="flex-1">
+                <Button variant="outline" className="w-full">
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Back
+                </Button>
+              </Link>
+              <Button 
+                type="submit"
+                className="flex-1"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Creating Account...' : 'Create Account'}
+              </Button>
+            </div>
+          </form>
+          
+          {error && (
+            <p className="text-red-500 text-sm mt-4 text-center">{error}</p>
+          )}
+          
+          <p className="text-sm text-muted-foreground text-center mt-6">
+            Already have an account? <Link href="/login" className="text-primary hover:underline">Sign in</Link>
+          </p>
+        </div>
+      </main>
+    </div>
+  )
+}

@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* ... existing nav styles ... */
+}
+
+.something-else {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* ... existing nav styles ... */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  background: var(--background);
+}
+
+body {
+  padding-top: 56px;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 56px; /* 56px = h-14 (3.5rem) */
+  /* ... existing main styles ... */
+} 
