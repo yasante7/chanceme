@@ -37,8 +37,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 # Done
-
+1. Database Not receiving: Unlinked supabase, will add later when everything is working fine
 
 # Up on the list
-1. Database Not receiving
-2. 
+1. Add the programs data.
+2. Work on the dashboard
+
+# Working On
+1. Adding the data. Creating utils code to take care of the implementation.

@@ -6,6 +6,8 @@ import { ArrowLeft, GraduationCap } from "lucide-react"
 // import { supabase } from '@/lib/supabase'  // Comment out this line
 import { useRouter } from 'next/navigation'
 import { NavBar } from "@/components/nav-bar"
+import { GradeData, UserData } from "@/types/user"
+import { calculateQualifyingPrograms } from '@/utils/program-checker'
 
 type Grade = 'A1' | 'B2' | 'B3' | 'C4' | 'C5' | 'C6' | 'D7' | 'E8' | 'F9'
 
@@ -100,7 +102,7 @@ export default function GradesPage() {
     setIsSubmitting(true)
     setError(null)
     
-    const gradeData = {
+    const gradeData: GradeData = {
       program: selectedProgram,
       core_subjects: CORE_SUBJECTS.map(subject => ({
         subject,
@@ -113,30 +115,28 @@ export default function GradesPage() {
     }
 
     try {
-      // Comment out Supabase connection test and insert
-      /* 
-      const { data: connectionTest, error: connectionError } = await supabase
-        .from('student_grades')
-        .select('*')
-        .limit(1)
-
-      if (connectionError) {
-        throw new Error('Database connection failed: ' + connectionError.message)
+      // Get existing registration data
+      const existingData = localStorage.getItem('userData')
+      if (!existingData) {
+        throw new Error('Registration data not found')
       }
 
-      const { error: insertError } = await supabase
-        .from('student_grades')
-        .insert([gradeData])
-
-      if (insertError) {
-        throw new Error('Failed to insert data: ' + insertError.message)
+      // Combine registration and grade data
+      const userData: UserData = {
+        ...JSON.parse(existingData),
+        grades: gradeData
       }
-      */
 
-      // For testing, just log the data and redirect
-      // console.log('Grade data submitted:', gradeData)
-      // alert('Grades submitted successfully! (test mode)')
-      router.push("grades/success")
+      // Store complete user data
+      localStorage.setItem('userData', JSON.stringify(userData))
+      
+      // Calculate qualifying programs
+      const qualifyingPrograms = calculateQualifyingPrograms(gradeData)
+      
+      // Store qualifying programs for display on the next page
+      localStorage.setItem('qualifyingPrograms', JSON.stringify(qualifyingPrograms))
+
+      router.push("/register/grades/success")
       
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to save grades'

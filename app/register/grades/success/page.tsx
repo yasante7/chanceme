@@ -1,10 +1,20 @@
 "use client"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, ArrowRight } from "lucide-react"
 import { NavBar } from "@/components/nav-bar"
 
-export default function RegistrationSuccessPage() {
+export default function GradesSuccessPage() {
+  const [qualifyingPrograms, setQualifyingPrograms] = useState<any[]>([])
+
+  useEffect(() => {
+    const programs = localStorage.getItem('qualifyingPrograms')
+    if (programs) {
+      setQualifyingPrograms(JSON.parse(programs))
+    }
+  }, [])
+
   return (
     <div className="flex flex-col min-h-screen bg-muted/50">
       <NavBar />
@@ -13,13 +23,32 @@ export default function RegistrationSuccessPage() {
           <div className="flex justify-center mb-6">
             <CheckCircle className="h-16 w-16 text-green-500" />
           </div>
-          <h1 className="text-2xl font-semibold mb-4">Account Created Successfully!</h1>
-          <p className="text-muted-foreground mb-8">
-            Your Grades has been recorded successfully. Please view your results below.
-          </p>
+          <h1 className="text-2xl font-semibold mb-4">Grades Submitted Successfully!</h1>
+          
+          <div className="my-8">
+            <h2 className="text-xl font-semibold mb-4">Qualifying Programs</h2>
+            <div className="space-y-4">
+              {qualifyingPrograms.map((program, index) => (
+                <div key={index} className="p-4 border rounded-lg">
+                  <h3 className="font-semibold">{program.program}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Cutoff Point: {program.cutoffPoint}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Your Points: {program.userPoints}
+                  </p>
+                  <div className={`mt-2 ${program.qualified ? 'text-green-500' : 'text-red-500'}`}>
+                    {program.qualified ? 'Qualified' : 'Not Qualified'}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <Link href="/dashboard">
             <Button className="w-full">
-              Qualified Programs
+              Continue to Dashboard
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
         </div>

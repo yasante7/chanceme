@@ -9,6 +9,7 @@ import { NavBar } from "@/components/nav-bar"
 import { Input } from "@/components/ui/input"
 // import { useAuth } from "@/hooks/useAuth"  // Comment out this line
 import { UserCircle } from "lucide-react"
+import { UserRegistration } from "@/types/user"
 
 type Gender = 'male' | 'female'
 type Region = 'Greater Accra' | 'Ashanti' | 'Western' | 'Eastern' | 'Central' | 'Northern' | 'Upper East' | 'Upper West' | 'Volta' | 'Bono' | 'Bono East' | 'Ahafo' | 'Savannah' | 'North East' | 'Oti' | 'Western North'
@@ -37,18 +38,16 @@ export default function RegisterPage() {
     setEmailError("")
 
     try {
-      // Validate email format
       const formatError = validateEmail(formData.email)
       if (formatError) {
         setEmailError(formatError)
         return
       }
 
-      // Comment out the actual signup
-      // await signUp(formData.email, formData.password)
+      // Store registration data in localStorage
+      localStorage.setItem('userData', JSON.stringify(formData))
+      console.log('Registration data saved:', formData)
       
-      // For testing, just log the form data and redirect to success page
-      console.log('Form submitted with data:', formData)
       router.push("/register/success")
       
     } catch (error: any) {
