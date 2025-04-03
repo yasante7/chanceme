@@ -1,0 +1,3798 @@
+[
+    {
+        "School Name": "Adisadel College",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Okuapeman Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Thomas Aquinas Senior High, Cantoments",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "East Legon Applied Technology Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Kibi Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Tema Mission Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Kikam Tech. Inst.",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Ofori Panin Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Mfantsiman G Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "St. Rose’s Senior High, Akwatia",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Mfantsipim School",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Bolga G Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "St. Peter’s Senior High, Nkwatia",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Paul’s Tech. Inst.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Wa Tech. Inst.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Bolga Tech. Inst.",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Adako Jachie Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Pope John Snr. High & Min. Sem., Koforidua",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bolgatanga Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Tamale Senior High .",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Ada Tech. Inst.",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Assin Foso Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "OLA G Senior High, Ho",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Konongo Odumase Senior High .",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Pilot Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Suame Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Takoradi Tech. Inst.",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Our Lady of Providence Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "T. I. Ahmadiyya Senior High , Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Akwatia Tech. Inst.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Panfokrom Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Berekum Presby Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Fijai Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Ghana Senior High, Tamale",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Sunyani Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Mawuli School, Ho",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Sekondi College",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Kpando Tech. Inst.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ghana Senior High, Koforidua",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Kpasenpke STEM Senior High",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Krobo G Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Serwaa Kesse G Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Asuansi Tech. Inst.",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Biriwa Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Opoku Ware School",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Bawku Tech. Inst.",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Bishop Herman College",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "OLA G Senior High, Kenyasi",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Prempeh College",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Wesley G Senior High, Cape Coast",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Koforidua Tech. Inst.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Yaa Asantewaa G Senior High .",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Presby B Senior High, Legon",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Kumasi High School",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Dormaa Technical Institute Institute",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Yamfo Technical Institute",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Nkoranza Tech Inst.",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "St. Charles Senior High, Tamale",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "St. John’s Senior High, Sekondi",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Abomosu STEM Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Archbishop Porter G Snr.High.",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Koforidua Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Cape Coast Tech. Inst.",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Tema Tech. Inst.",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Nandom Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Navrongo Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "St. James Sem & Senior High, Abesim",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Abetifi Kyemase Technical  Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Tema Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "St. Francis G Senior High, Jirapa",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "New Century Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Holy Child School, Cape Coast",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Aburi G Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Louis Senior High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Ghana Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Bosomtwe STEM Academy",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Achimota Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "St. Mary’s Technical Institute, Asamankese",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Mary’s Senior High, Korle Gonno",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Dabokpa Voc/Tech. Inst.",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Awaso STEM Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Lawra Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "St. Augustine’s College, Cape Coast",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Accra Tech. Trg. Centre",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Madina Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Winneba Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Bosomtwe G STEM Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Accra G Senior High .",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Anlo Tech. Inst.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Accra Academy",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Notre Dame G Senior High, Sunyani",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Kumasi Tech. Inst.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Notre Dame Sem/ Senior High, Navrongo",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "S.D.A Senior High, Sunyani",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Labone Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Sacred Heart Senior High, Nsoatre",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Lassie-Tuolu Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "S.D.A Senior High, Koforidua",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "S.D.A. Senior High, Agona",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Sacred Heart Tech. Inst.",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Samuel Otu Presby Senior High.",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "S.D.A. Senior High, Bekwai",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Sakafia Islamic Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Salvation Army Senior High, Aboabo Dormaa",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Awudome Senior High .",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Dwamena Akenten Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kwabre Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Attafuah Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Asare Bediako Senior High.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Ann’s G Senior High, Sampa",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Asanteman Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Ejisu Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kumasi Wesley G High Sch",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Asankare Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St Anne’s Vocational Training Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "St. Basilides Voc./Tech. Inst.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Kumasi G Senior High,",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Chiraa Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Kumasi Academy",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Daniel Comboni Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "St. Dominic’s Senior High/Tech, Pepease",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Ekumfi T. I. Ahmadiiyya Snr. High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Asamankese Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Asawinso Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Kusanaba Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Kwabeng Anglican Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Saviour Senior High, Osiem",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Sefwi Bekwai Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Sefwi-Wiawso Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Sefwi-Wiawso Senior High/Tech",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Sekondi Takoradi Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "E.P.C. Mawuko G Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Sekyedumase Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Serwaah Nyarko Girls’ Snr. High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Shama Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Kwame Nkrumah Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Siddiq Senior High Sch.",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Edinaman Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Kwahu Tafo Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Kwahu Ridge Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Sogakope Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Sankore Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Awutu Winton Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Pentecost Senior High, Koforidua",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Axim Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Nungua Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Nuru-Ameen Islamic Senior High, Asewase",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nyakrom Senior High Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Mpraeso Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Mpohor Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Mpasatia Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Mozano Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Bompeh Senior High./Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Dadieso Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Bompata Presby Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Bomaa Comm. Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Oda Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Odomaseman Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Odorgonno Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Mim Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Ofoase Kokoben Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Methodist Technical  Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nsutaman Cath. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nsoatre Technical Institute",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Daboase Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Nsawkaw State Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Chemu Senior High/Tech",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Charlotte Dolphyne Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "New Edubiase Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "New Juaben Senior High/Com",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Christ the King Cath., Obuasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nifa Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Ningo Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Nkawkaw Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Okadjakrom Senior High/Tech.",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Nkoranman Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Nkrankwanta Comm Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Bueman Senior High.",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Collins Senior High/Commercial, Agogo",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Breman Asikuma Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Comboni Tech/Voc Inst.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Nkwatia Presby Senior High/Com",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Nafana Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Nsaba Presby Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Nkoranza Senior High/Tech",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Queen of Peace Senior High, Nadowli",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Okomfo Anokye Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Boakye Tromo Senior High/Tech",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Bechem Technical Institute",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Bechem Presby Senior High­",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Peki Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Mansen Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Bawku Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Prampram Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Prang Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Presby Senior High, Begoro",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bankoman Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Dompoase Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Don Bosco Voc./Tech. Inst.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Mafi-Kumasi Senior High/Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Baglo Ridge Senior High/Tech.",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Dormaa Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Badu Senior High/Tech.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Maabang Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Drobo Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Diaso Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Benkum Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Manya Krobo Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Oyoko Methodist Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Boa-Amponsem Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Methodist High School, Saltpond",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Oppong Mem. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Methodist Girls Senior High, Mamfe",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Osei Bonsu Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Osei Kyeretwie Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Osei Tutu Senior High, Akropong",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Derma Comm. Day School",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Bodi Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Menji Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Bia Senior High/Tech",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Otumfuo Osei Tutu II College",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Berekum Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Our Lady of Fatima Technical Institute",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Our Lady of Mercy Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Beposo Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Our Lady of Mount Carmel Girls Senior High, Techiman",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Diamono Senior High Sch.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Oti Boateng Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Kukuom Agric Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Armed Forces Senior High/Tech, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Ghana National College",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Wamanafo Senior High/Tech",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Agona Swedru Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Agona Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Wenchi Meth. Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Wesley Grammar Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Toase Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Ada Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Ahafoman Senior High/Tech",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Wesley Senior High, Konongo.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "West Africa Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Jacobu Senior High/Tech.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Achiase Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "KNUST Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Ahantaman GIRL’S Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Acherensua Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Jachie Pramso Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Tepa Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Fomena T.I. Ahmad Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Abutia Senior High/Technical",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Tarkwa Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Tarkwa Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Forces Senior High/Tech, Burma Camp",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Tawheed Senior High.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Tongor Senior High Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Techiman Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Academy of Christ the King, Cape Coast",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Kofiase Adventist Senior High/Tech.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Istiquaama Snr. High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Akim Swedru Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Accra Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Winneba Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Kade Senior High/Tech.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Akrofuom Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Agona Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kibi Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Twifo Praso Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Twifo Hemang Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Adonten Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Tweneboa Kodua Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Twene Amanfo Senior High/Tech.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Kajaji Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Vakpo Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Aduman Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Tuobodom Senior High/Tech",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Kalpohin Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Juaboso Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Government Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Adventist Senior High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Adiembra Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Juaben Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Afienya Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Kanton Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Guakro Effah Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "St. Francis Senior High/Tech, Akim Oda",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Jema Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Adankwaman Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Keta Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Aggrey Mem. A.M.E.Zion Snr. High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Ghana Muslim Mission Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Agate Comm. Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Wa Senior High.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Ghanata Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "W.B.M. Zion Senior High, Old Tafo",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Goka Senior High/Tech.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Jinijini Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Gomoa Adaa Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Afua Kobi Ampem Girl’s Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Tamale Girl’s Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Akontombra Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "University Practice Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Anglican Senior High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Joseph Senior High, Sefwi Wiawso",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "St. Joseph Senior High/Tech, Ahwiren",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Amankwakrom Fisheries Agric. Tech. Inst.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Joseph’s Tech. Inst.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Suhum Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Amanten Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "St. Joseph’s Tech. Inst., Saboba",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Esiama Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "St. Margaret Mary Snr.High/Tech",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Amenfiman Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Hwidiem Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Ameyaw Akumfi Senior High/Tech.",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "St. Martin’s Senior High, Nsawam",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Anlo Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "St. Mary’s Boys’ Senior High, Apowa",
+        "Region": "Western"
+    },
+    {
+        "School Name": "St. Monica’s Senior High, Mampong",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Michael’s Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Mary’s Girl’s Senior High, Konongo",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Half Assini Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "St. Michael’s Senior High, Ahenkro",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Mary’s Sem.& Senior High, Lolobi",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Abetifi Tech. Inst.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Zebilla Senior High/Tech",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Abetifi Presby Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Sumaman Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Al-Azariya Islamic Snr. High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Suhum Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Have Tech. Inst.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Gyamfi Kumanini Senior High/Tech",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "St. Hubert Sem/Senior High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Konadu Yiadom Catholic Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Islamic Senior High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Apam Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "St. Jerome Senior High, Abofour",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Yamfo Anglican Senior High School",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Abuakwa State College",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "T. I. Ahmadiyya Senior High, Wa",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Yeboah Asuamah Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Kpando Senior High.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Anum Presbyterian Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Akwamuman Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Yendi Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Islamic G Senior High, Suhum",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Swedru Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "St. John’s Grammar Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "St. John’s Voc. Tech. Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Enyan-Abaasa Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Yeji Senior High/Tech",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Krobea Asante Technical and Vocational Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "T. I. Ahmadiyya Girl’s Senior High, Asokore",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Jukwa Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Jirapa Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Jubilee Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Holy Child Senior High, Walembelle",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Juaso Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kaakyi Technical Institute",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Methodist Senior High/Tech., Biadan",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Navrongo Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Juaben Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Issa Technical Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Holy Trinity Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Nabango Senior High Tech",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Islamic Senior High, Wa",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Nakori Chansa Technical Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Islamic Science Senior High, Tamale",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Nakpanduri Senior High",
+        "Region": "North East"
+    },
+    {
+        "School Name": "J. A. Kufuor Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "J.E.A. Mills Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Naa-Momori Technical Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "J.G. Knol Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Nalerigu Senior High",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Naab Azantilow Senior High/Tech.",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Nalerigu Technical Institute",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Jachie Special Needs Tech. Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Namalteng Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Jamiat Al-Hidaya Islamic G",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Mpaha Comm. Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Ibadur Rahman Academy",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Janga Senior High/Tech",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Namong Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Morso Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nabango Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Moree Comm. Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Nana Brentu Senior High/Tech",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Mokwaa Senior High Sch",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Huni Valley Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Mirigu Community Day Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Jim Bourton Mem Agric. Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Holy Family Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Nana Ampontua Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Krobo Comm. Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Kadjebi-Asato Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Kwegyir Aggrey Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Kyabobo G’ School",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Kyekyewere Comm. Senior High School",
+        "Region": "Central"
+    },
+    {
+        "School Name": "KYEM AMPONSAH SHS",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "La Presby Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Konkoma Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kongo Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Kwarteng Ankomah Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Lamashegu Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Langbinsi Senior High/Tech",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Larabanga Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Lashibi Comm. Day",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Komenda Senior High/Tech.",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Kokoben Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Koforidua GRATIS Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Leklebi Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Lambussie Comm. Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Likpe Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Kwaobaah Nyanoa Comm. Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Kpandai Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Krachi Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Kumasi Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kumawu Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kraboa-Coaltar Presby Snr. High/Tech.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Kumbungu Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Kumbungu Vocational Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Kurofa Methodist Senior High Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kpalwega Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Kusanaba Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Kwabenya Comm. Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Kpone Comm. Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Kpeve Senior High Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Kwame Danso Senior High/Tech",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Kpedze Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Kpassa Senior High/Tech",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Kwanyarko Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Kpong Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Loagri Technical Institute",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Kofi Annan Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Kofi Adjei Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Manso-Amenfi Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Kete Krachi Senior High/Tech.",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Mansoman Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Keta Business Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Kesse Basahyia Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Kedzi Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Kasuliyili Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Manso-Amenfi Comm. Day School",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Karaga Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Kaneshie Senior High/Tech.",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Kanda Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Mem-Chemfre Comm. Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Kaleo Senior High/Tech",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Kajaji Technical Institute",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Mepe St. Kizito Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Mesu Akompi Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Kanjaga Comm. Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Manso-Adubia Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Kinbu Senior High/Tech",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Mankranso Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Loggu Comm. Day School",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Lolobi Technical Institute",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Kobina Ansah SHS",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Maame Krobo Comm. Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Koase Senior High/Tech",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Ko Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Klo-Agogo Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Mampong/Akw Snr. High/Tech for the Deaf",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Mancell Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Klikor Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Mando Senior High/Tech.",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Mangoase Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Mankessim Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Klefe Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Kintampo Technical Institute",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Kintampo Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Mankessim Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Methodist Senior High, Sekondi",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Nchumuruman Comm. Day Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Piina Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Nerebehi Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Taviefe Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Techiman Technical Institute",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Tema GRATIS Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Tema Manhean Senior High/Tech",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Tema Meth. Day Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Tempane Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Terchire Senior High",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Teshie Tech. Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Tetrefu Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Three Town Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Tibani Technical Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Tatale Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Tijjaniya Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Tolon Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Tongo Senior High/Tech",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "TSC Technical Institute – Asankragwa",
+        "Region": "Western"
+    },
+    {
+        "School Name": "TSC Technical Institute – Bibiani",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "TSC Technical Institute – Garu",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "TSC Technical Institute – Half Assini",
+        "Region": "Western"
+    },
+    {
+        "School Name": "TSC Technical Institute -Kassena Nankana",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "TSC Technical Institute, Asamankese",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "TSC Technical Institute, Assin Edubiase",
+        "Region": "Central"
+    },
+    {
+        "School Name": "TSC Technical Institute, Awutu Senya",
+        "Region": "Central"
+    },
+    {
+        "School Name": "TSC Technical Institute, Bechem",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Toh-Kpalime Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "TSC Technical Institute, Bekwai",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Tapaman Senior High/Tech",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Tamale Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "St. Fidelis Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Francis Seminary/Senior High, Buoyem",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "St. George’s Senior High Tech.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Gregory Catholic Senior High School",
+        "Region": "Central"
+    },
+    {
+        "School Name": "St. John’s Integrated Snr. High/Tech",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "St. Joseph Sem/Senior High, Mampong",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Mary’s Technical Institute, Tamale",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "St. Mary’s Voc./Tech. Inst.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Michael’s Senior High, Akoase (Nkawkaw)",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Paul’s Senior High, Asakraka Kwahu",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Paul’s Senior High, Denu",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Tanyigbe Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "St. Sebastian Cath. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St. Thomas Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Suntreso Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Sunyani GRATIS Technical Institute",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Sunyani Methodist Technical Inst.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Sunyani Technical Institute",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Swedru Sch. Of Business",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Takoradi Community Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Takoradi Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Takpo Senior High Sch.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Takrowase Comm. Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Takrowase Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "St. Stephen’s Presby Snr. High/Tech, Asiakwa",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "TSC Technical Institute, Donkorkrom",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "TSC Technical Institute, Dormaa Ahenkro",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "TSC Technical Institute, Drobo",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Wapuli Comm. Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Wesley High School, Bekwai",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Weta Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Wiafe Akenten Presby Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Wiaga Comm. Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "WIOSO SHS",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Woe Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Worawora Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Wovenu Senior High Technical",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Wulensi Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Wulugu Senior High",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Walewale Technical Institute",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Yaa Pokua Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Yagaba Senior High School",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Yilo Krobo Senior High/Com",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Yunyoo-Nasuan Comm. SHS",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Zabzugu Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Zabzugu Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Zamse Senior High/Tech",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Ziavi Senior High/Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Zion Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ziope Senior High Sch.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Zorkor Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Zuarungu Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Yabram Comm. Day School",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Walewale Senior High",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Wa Senior High/Tech.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Volta Tech Inst",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "TSC Technical Institute, Goaso",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "TSC Technical Institute, Kete Krachi",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "TSC Technical Institute, Konongo",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "TSC Technical Institute, Mampong",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "TSC Technical Institute, Nadowli – Kaleo",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "TSC Technical Institute, Sekyere Kumawu",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "TSC Technical Institute, Somanya",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Tsiame Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Tsibu Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Tsito Senior High/Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Tumu Senior High/Tech.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Tuna Senior High/Tech.",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Tutu Methodist Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Tweapease Senior High School",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Twedie Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "TWEREKU AMPEM SHS",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Ullo Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Uthman Bin Afam SHS",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Uthmaniya Senior High, Tafo",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Vakpo Senior High/Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ve Comm. Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ve- Golokwati Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Vitting Senior High/Tech.",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Volo Comm. Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Volta Senior High School",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "St. Clare’s Technical Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "St. Catherine G Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "St. Bernadettes Tech/Voc. Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "St. Augustine’s Senior High, Bogoso",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Obrachire Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Obuasi Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Odoben Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Odupong Comm. Day School",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Offinso Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Ofoase Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Oguaa Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Ogyeedom Comm. Snr High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Onwe senior High Senior",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Opoku Agyeman Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Opportunities Industralisation Technical Institute – Takoradi",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Obiri Yeboah Senior High/Technical",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Opportunities Industrialization Technical Institute, Accra",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Osino Presby Senior High/Tech.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Osudoku Senior High/Tech.",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Otaakrom Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Oti Senior High/Tech Sch",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Owerriman Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Paga Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Pakyi Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Parkoso Comm. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Peki Senior High/Technical",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Pentecost Senior High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Ho Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Osei Adutwum Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "O’Reilly Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "O.L.L. G Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Nyong Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "New Abirem/Afosu Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "New Ebu Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "New Kokrompe Comm. Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "New Longoro Comm. School (Dega)",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "New Nsutam Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Ngleshie Amanfro Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Ngleshie Amanfro Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Nima Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Nkawie Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nkenkansu Community Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nkonya Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Nkroful Agric. Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Nkwabeng Technical Institute",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Nkwanta Comm.Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Nkwanta Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Nkyeraa Senior High Sch.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Northern School of Business",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Northern Star Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Nsawam Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Nsawora Edumafa Comm. Senior High School",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Ntruboman Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Nuriya Islamic Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Nyankumase Ahenkro Snr. High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Nyinahin Cath. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Nyohini Community Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Pong-Tamale Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Ndewura Jakpa Senior High/Tech.",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Potsin T.I. Ahm. Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Presby Senior High, Mampong Akwapim",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Sankor Senior High School",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Santa Esther G’ Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Savelugu Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Sawla G Vocational Institute",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Sawla Senior High School.",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Sekondi Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Senya Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Shama Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Shia Senior High Technical",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Simms Senior High/Com.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Sirigu Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Sang Comm. Day School",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Social Welfare G’ Technical Institute, Pedu",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Sogakope Technial Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Sokode Senior High/Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Somanya Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Sombo Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Some Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "South Labone G Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Spiritan Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "St Theresa’s Technical Institute",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "St. Anthony of Padua Senior High/Tech",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "St. Augustine Senior High, Nsapor-Berekum",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "St. Augustine Senior High/Tech, Saan Charikpong",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Social Welfare Technical Institute, Sunyani",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Sandema Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Sandema Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Salvation Army Senior High, Akim Wenchi",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Presby Senior High, Osu",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Presby Senior High, Suhum",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Presby Senior High, Tamale",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Presby Senior High, Tema",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Presby Senior High, Teshie",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Presby Senior High/Tech, Aburi",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Presby Senior High/Tech, Adukrom",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Presby Senior High/Tech, Kwamang",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Presby Senior High/Tech, Larteh",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Presby SHTS, Nankpanduri",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Presbyterian B Model Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Presbyterian G Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Prestea Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Prince Of Peace G",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Pusiga Comm. Day Senior High Sch.",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Queens G’ Senior High, Sefwi Awhiaso",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Ramseyer Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "S.D.A Senior High, Gomoa",
+        "Region": "Central"
+    },
+    {
+        "School Name": "S.D.A. Senior High. Akim Sekyere",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Saboba E.P. Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Sabronum Methodist Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Sakogu Senior High/Tech",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Salaga Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Salaga T.I. Ahmad Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Salaga Technical Institute",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Prampram Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Ho -Lokoe Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Abakrampa Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Zugu Dabogni Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Akuse Methodist Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Akumadan Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Dabala Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Akuapem Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Akroso Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Daboya Comm. Day School",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Akrofufu Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Dadease Agric Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Daffiamah Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Avenui-Awudome Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Dagbon State Senior High/Tech",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Dambai Technical Institute",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Akro Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Damongo Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Akramaman Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Danfa Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Danso Agyei Senior High Technical",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "College of Music Senior, Mozano",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Church Of Christ Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Christian Methodist Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Chirano Comm. Day School",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Amuana Praso Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Buipe Technical Institute",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Bunkpurugu Senior High/Tech",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Amoafo Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Business Secretarial and Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Business Senior High, Tamale",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Busunya Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "C.Y.O. Tech/Voc. Inst.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Denkyembour Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Amedzofe Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Caring Sisters Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Catholic Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Amaniampong Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Chereponi Senior High/Tech.",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Chiana Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Alavanyo Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Akyin Senior High School",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Akwesi Awobaa Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Amasaman Senior High/Tech",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Denyaseman Cath.Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Akpafu Senior High/Tech.",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Diabene Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Ahamansu Islamic Senior High School",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Ebenezer Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Agric Nzema Senior High, Kumasi",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Agotime Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Effiduase Senior High/Com",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Agona Namonwora Comm. Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Effiduase Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Agona Fankobaa Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "E.P. Tech/Voc Inst",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Effiduase Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Agomeda Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Eguafo-Abrem Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Agogo State College",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Afoako Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Aflao Community SHS",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ejisuman Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Afigyaman Senior High School",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Afigya Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Effutu Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Buipe Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "E. P. Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ajumako-Afranse Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Diabene Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Diaspora G’ Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Dodi-Papase Senior High/Tech",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Dodowa Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Dofor Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Donkorkrom Agric Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Donkro- Nkwanta Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Dr. Hila Liman Senior High School",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "E. P. Agric Senior High/Tech.",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Akome Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Akokoaso Senior High/Tech",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Dunkwa Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Akim Asafo Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Dwease-Praaso Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Dzodze Penyi Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Akatsi Senior High/Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Dzodze Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Dzolo Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Duadaso No. 1 Senior High/Tech.",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Anbariya Senior High Sch.",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Breman Asikuma Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Brakwa Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Barekese Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Asuom Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bassa Community Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Asukawkaw Senior High",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Battor Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Bawku Senior High/Tech.",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Assin State College",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Assin Nsuta Agric. Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Asuoso Comm. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Assin North Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Assin Manso Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Bedeku Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Assin Jakai Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Benso Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Bepong Senior High School",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Ashiaman Technical Institute",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Ashiaman Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Asesewa Senior High School",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Baworo Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Biakoye Comm. School",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Banka Comm. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Bandaman Senior High",
+        "Region": "Bono"
+    },
+    {
+        "School Name": "Avenorpeme Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Aveyime Battor Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Awe Senior High/Tech.",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Avenor Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ave Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Awutu Bawjiase Comm. Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Ave Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Axim G Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Atebubu Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Avatime Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ayirebi Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Atwima Kwanwoma Snr High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Azeem-Namoa Senior High/Tech",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Atweaman Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Baidoo Bonso Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Atorkor Technical Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Bamboi Comm. Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Atiavi Senior High/Tech",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Ayanfuri Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Ejuraman Anglican Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Asasetre Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Bimbilla Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Anum Asamoah Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Bongo Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Anum Apapam Comm. Day",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bongo Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Bontrase Senior High Tech. Sch",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Bonwire Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Antoa Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Bonzo-Kaku Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Anum Presby Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Annor Adjaye Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Bosome Senior High/Tech.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Anlo Awomefia Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Bosomtwe Oyoko Comm. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Bosomtwe Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Anlo Afiadenyigba Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Botoku Technical Insitute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Bowiri Comm. Day School",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Anfoega Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Boso Senior High Technical",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bibiani Senior High/Tech.",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Bolgatanga Central Technical Institute",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Apedwa Presby Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Binduri Comm. Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Asankrangwa Senior High/Tech",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Birifo Technical Institute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Birifoh Senior High Sch.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Bisease Senior High/Com",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Asankrangwa Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Asakraka Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Asafora Technical Institute",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Apagya Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Boanim Senior High/ Tech Sch",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Applied Technology Institute – Anyinam",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Apesua Comm. Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bodwesango Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Aperade Senior High/Tech.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bole Senior High",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Bole Technical Institute",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Apeguso Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Bolga Sherigu Comm. Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Bodomase Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Afife Senior High Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Akrodie Technical Institute",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Fr. Dogli Memorial Technical Institute",
+        "Region": "Oti"
+    },
+    {
+        "School Name": "Adabokrom Comm. SHS",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Abeaseman Comm. Day Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Adaklu Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Guo Technical Insititute",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "GRATIS Technical Institute – Takoradi",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Adu Gyamfi Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Gyarko Comm. Day Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "Essipun Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Adjena Senior High/Tech.",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Adrobaa Technical Institute",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Fawohoyeden Technical Institute",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Accra Wesley G High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Gushegu Senior High",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Fettehman Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Gbewa Technical Institute",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Gambigo Comm. Day Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Adobewora Comm. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Gyaama Pensan Senior High/Tech",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Abosamso Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Garu Comm. Day Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Gbekor Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Fodoa Comm. Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Adeiso Presby Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Gyedu Technical Institute",
+        "Region": "Ahafo"
+    },
+    {
+        "School Name": "Abor Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Gyaase Community Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Gwiraman Comm. Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Fiaseman Senior High",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Abrafi Senior High",
+        "Region": "Bono East"
+    },
+    {
+        "School Name": "GRATIS Technical Institute, Tamale",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Abiriw Presbyterian Technical Institute",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Adanwomase Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Gowrie Senior High/Tech.",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Adjoafua Comm. Senior High",
+        "Region": "Western North"
+    },
+    {
+        "School Name": "Esaase Bontefufuo Snr. High/Tech.",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Adventist G Senior High, Ntonso",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Enyan Maim Comm. Day School",
+        "Region": "Central"
+    },
+    {
+        "School Name": "GRATIS Technical Institute, Cape Coast",
+        "Region": "Central"
+    },
+    {
+        "School Name": "H’Mount Sinai Senior High",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Ada Senior High/Tech.",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Achinakrom Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "GRATIS Technical Institute, Wa",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Fumbisi Senior High",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Aburaman Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Abura Technical Institute",
+        "Region": "Western"
+    },
+    {
+        "School Name": "Adidome Senior High",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Eremon Senior High/Tech.",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Abeadze State College",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Enyan Denkyira Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Gomoa Senior High/Tech",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Frafraha Comm. Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Adugyama Comm. Senior High",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Gambaga G Senior High",
+        "Region": "North East"
+    },
+    {
+        "School Name": "Ejuraman Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Afadjato Senior High/Tech.",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Hemang Buoho Technical Institute",
+        "Region": "Ashanti"
+    },
+    {
+        "School Name": "Adjen Kotoku Senior High",
+        "Region": "Greater Accra"
+    },
+    {
+        "School Name": "Gomoa Gyaman Senior High",
+        "Region": "Central"
+    },
+    {
+        "School Name": "GRATIS Technical Institute, Bolga",
+        "Region": "Upper East"
+    },
+    {
+        "School Name": "Funsi Senior High School",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Han Senior High",
+        "Region": "Upper West"
+    },
+    {
+        "School Name": "Technology Solution Center, Hohoe",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Technology Solution Center, Savelugu",
+        "Region": "Northern"
+    },
+    {
+        "School Name": "Technology Solution Center, Suhum",
+        "Region": "Eastern"
+    },
+    {
+        "School Name": "Technology Solution Center, Elmina",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Technology Solution Center, Adidome",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Technology Solution Center, Damango",
+        "Region": "Savannah"
+    },
+    {
+        "School Name": "Adidome Farm Institute",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Mankoadzi ICCES",
+        "Region": "Central"
+    },
+    {
+        "School Name": "GRATIS Foundation- Volta Region",
+        "Region": "Volta"
+    },
+    {
+        "School Name": "Kingstech ICCES",
+        "Region": "Central"
+    },
+    {
+        "School Name": "Nzema Maale YLSTI",
+        "Region": "Western"
+    }
+]

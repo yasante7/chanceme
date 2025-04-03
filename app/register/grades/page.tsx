@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation'
 import { NavBar } from "@/components/nav-bar"
 import { GradeData, UserData } from "@/types/user"
 import { calculateQualifyingPrograms } from '@/utils/program-checker'
+import schoolsData from '@/data/schools_loc_data.json'  // Add this import
 
 type Grade = 'A1' | 'B2' | 'B3' | 'C4' | 'C5' | 'C6' | 'D7' | 'E8' | 'F9'
 
@@ -94,8 +95,18 @@ export default function GradesPage() {
   const [selectedProgram, setSelectedProgram] = useState<string>('')
   const [selectedElectives, setSelectedElectives] = useState<string[]>(['', '', '', ''])
   const [grades, setGrades] = useState<Record<string, Grade>>({})
+  const [selectedRegion, setSelectedRegion] = useState<string>('')
+  const [selectedSchool, setSelectedSchool] = useState<string>('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  // Get unique regions from schools data
+  const regions = Array.from(new Set(schoolsData.map(school => school.Region).sort()))
+
+  // Get schools for selected region
+  const getSchoolsForRegion = (region: string) => {
+    return schoolsData.filter(school => school.Region === region).map(school => school["School Name"]).sort()
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -104,6 +115,8 @@ export default function GradesPage() {
     
     const gradeData: GradeData = {
       program: selectedProgram,
+      school: selectedSchool,
+      region: selectedRegion,
       core_subjects: CORE_SUBJECTS.map(subject => ({
         subject,
         grade: grades[subject]
@@ -181,8 +194,54 @@ export default function GradesPage() {
           <h1 className="text-2xl font-semibold text-center mb-8">Enter Your Grades</h1>
           
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Program Selection */}
+            {/* Region Selection */}
             <div>
+              <label htmlFor="region" className="block text-sm font-medium mb-2 text-muted-foreground">
+                Select Your School Region
+              </label>
+              <select
+                id="region"
+                className="w-full p-2 rounded-md border bg-background"
+                value={selectedRegion}
+                onChange={(e) => {
+                  setSelectedRegion(e.target.value)
+                  setSelectedSchool('')
+                }}
+                required
+              >
+                <option value="">Select a region...</option>
+                {regions.map((region) => (
+                  <option key={region} value={region}>
+                    {region}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* School Selection */}
+            {selectedRegion && (
+              <div>
+                <label htmlFor="school" className="block text-sm font-medium mb-2 text-muted-foreground">
+                  Select Your School
+                </label>
+                <select
+                  id="school"
+                  className="w-full p-2 rounded-md border bg-background"
+                  value={selectedSchool}
+                  onChange={(e) => setSelectedSchool(e.target.value)}
+                  required
+                >
+                  <option value="">Select a school...</option>
+                  {getSchoolsForRegion(selectedRegion).map((school) => (
+                    <option key={school} value={school}>
+                      {school}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+              {/* Program Selection */}
+              <div>
               <label htmlFor="program" className="block text-sm font-medium mb-2 text-muted-foreground">
                 Select Your Program
               </label>

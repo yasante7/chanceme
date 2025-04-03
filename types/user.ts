@@ -1,5 +1,5 @@
 export type Gender = 'male' | 'female'
-export type Region = 'Greater Accra' | 'Ashanti' | 'Western' | 'Eastern' | 'Central' | 'Northern' | 'Upper East' | 'Upper West' | 'Volta' | 'Bono' | 'Bono East' | 'Ahafo' | 'Savannah' | 'North East' | 'Oti' | 'Western North'
+export type Region = 'Central' | 'Eastern' | 'Bono' | 'Upper East' | 'Upper West' | 'Greater Accra' | 'Western' | 'Northern' | 'Bono East' | 'Ahafo' | 'Ashanti' | 'Volta' | 'Western North' | 'North East' | 'Oti' | 'Savannah'
 export type Grade = 'A1' | 'B2' | 'B3' | 'C4' | 'C5' | 'C6' | 'D7' | 'E8' | 'F9'
 
 export interface UserRegistration {
@@ -14,6 +14,8 @@ export interface UserRegistration {
 
 export interface GradeData {
   program: string
+  school: string
+  region: string
   core_subjects: {
     subject: string
     grade: Grade
