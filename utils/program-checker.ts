@@ -8,6 +8,15 @@ interface ProgramResult {
   campus: string;
   qualified: boolean;
   specialRequirements: string | null;
+  validCombinations: string[][];
+}
+
+export interface StoredCombination {
+  program: string;
+  college: string;
+  campus: string;
+  combinations: string[][];
+  coreSubjects: string[];
 }
 
 // Helper function to check if a subject matches any in a group
@@ -24,6 +33,155 @@ function matchesTrack(subject: string, track: any): boolean {
     return track.some((item: any) => matchesSubject(subject, item));
   }
   return matchesSubject(subject, track);
+}
+
+
+// Helper function to check if a subject is available in student's electives
+function isSubjectAvailable(subject: SubjectGroup, studentElectives: string[]): boolean {
+  if (Array.isArray(subject)) {
+    if (subject.length === 0) return false;
+    if (typeof subject[0] === 'string') {
+      return subject.some(s => typeof s === 'string' && studentElectives.includes(s));
+    } else {
+      return subject.some(group => isSubjectAvailable(group, studentElectives));
+    }
+  }
+  return studentElectives.includes(subject as string);
+}
+
+// Helper function to get available subjects from a group
+function getAvailableSubjectsFromGroup(group: SubjectGroup, studentElectives: string[]): string[] {
+  if (Array.isArray(group)) {
+    if (group.length === 0) return [];
+    if (typeof group[0] === 'string') {
+      return group.filter(subject => isSubjectAvailable(subject, studentElectives)) as string[];
+    } else {
+      return group.flatMap(subGroup => getAvailableSubjectsFromGroup(subGroup, studentElectives));
+    }
+  }
+  return isSubjectAvailable(group, studentElectives) ? [group as string] : [];
+}
+
+// Helper function to check if main requirements are met
+function checkMainRequirements(main: string | string[] | null, studentElectives: string[]): boolean {
+  if (!main) return true;
+  
+  if (Array.isArray(main)) {
+    // If main is an array, any one of them can satisfy the requirement
+    return main.some(subject => {
+      if (Array.isArray(subject)) {
+        return subject.some(s => isSubjectAvailable(s, studentElectives));
+      }
+      return isSubjectAvailable(subject, studentElectives);
+    });
+  }
+  
+  return isSubjectAvailable(main, studentElectives);
+}
+
+// Helper function to get the main subject(s) to use
+function getMainSubjects(main: string | string[] | null, studentElectives: string[]): string[] {
+  if (!main) return [];
+  
+  if (Array.isArray(main)) {
+    // Find the first available subject from any group
+    for (const subject of main) {
+      if (Array.isArray(subject)) {
+        const available = subject.filter(s => isSubjectAvailable(s, studentElectives));
+        if (available.length > 0) return [available[0]];
+      } else if (isSubjectAvailable(subject, studentElectives)) {
+        return [subject];
+      }
+    }
+    return [];
+  }
+  
+  return isSubjectAvailable(main, studentElectives) ? [main] : [];
+}
+
+// Helper function to check if a combination is valid (no two subjects from same group)
+function isValidCombination(combination: string[], groups: SubjectGroup[]): boolean {
+  for (const group of groups) {
+    const groupSubjects = Array.isArray(group) ? 
+      (typeof group[0] === 'string' ? group : group.flat()) : 
+      [group as string];
+    const subjectsFromGroup = combination.filter(subject => groupSubjects.includes(subject));
+    if (subjectsFromGroup.length > 1) {
+      return false;
+    }
+  }
+  return true;
+}
+
+type SubjectGroup = string | string[] | (string | string[])[];
+type Track = SubjectGroup[];
+type Tracks = Record<string, Track | undefined>;
+
+export function generateValidElectiveCombinations(
+  programElectives: {
+    main: string | string[] | null;
+    tracks: Tracks;
+  },
+  studentElectives: string[]
+): string[][] {
+  const validCombinations: string[][] = [];
+  
+  // Get main subjects to use
+  const mainSubjects = getMainSubjects(programElectives.main, studentElectives);
+  if (mainSubjects.length === 0 && programElectives.main) {
+    return []; // If main is required but not available, return empty
+  }
+  
+  // Get all track groups and flatten them
+  const allGroups = Object.values(programElectives.tracks)
+    .filter((track): track is Track => track !== undefined)
+    .flat();
+  
+  // Get all available subjects from each group
+  const availableSubjectsPerGroup = allGroups.map(group => 
+    getAvailableSubjectsFromGroup(group, studentElectives)
+  );
+  
+  // Flatten all available subjects
+  const allAvailableSubjects = availableSubjectsPerGroup.flat();
+  
+  // If we don't have enough subjects to make combinations, return empty
+  if (allAvailableSubjects.length + mainSubjects.length < 3) {
+    return [];
+  }
+  
+  // Generate all possible combinations of 3 subjects
+  const generateCombinations = (current: string[], start: number, remaining: number): void => {
+    if (remaining === 0) {
+      // Check if the combination is valid (no two subjects from same group)
+      if (isValidCombination(current, allGroups)) {
+        validCombinations.push([...current]);
+      }
+      return;
+    }
+    
+    for (let i = start; i < allAvailableSubjects.length; i++) {
+      current.push(allAvailableSubjects[i]);
+      generateCombinations(current, i + 1, remaining - 1);
+      current.pop();
+    }
+  };
+  
+  // Start with main subjects and find remaining subjects
+  const remainingSubjectsNeeded = 3 - mainSubjects.length;
+  if (remainingSubjectsNeeded > 0) {
+    generateCombinations([...mainSubjects], 0, remainingSubjectsNeeded);
+  } else if (mainSubjects.length === 3) {
+    // If we have exactly 3 main subjects, that's a valid combination
+    validCombinations.push([...mainSubjects]);
+  }
+  
+  // Remove duplicates
+  const uniqueCombinations = Array.from(
+    new Set(validCombinations.map(combination => combination.sort().join(',')))
+  ).map(combination => combination.split(','));
+  
+  return uniqueCombinations;
 }
 
 export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult[] {
@@ -50,7 +208,8 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
           college: program.college || "Unknown College",
           campus: program.campus,
           qualified: true,
-          specialRequirements: program["special requirements / general information"]
+          specialRequirements: program["special requirements / general information"],
+          validCombinations: []
         })
         continue
       }
@@ -61,86 +220,64 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
       
       if (!electiveRequirements) {
         console.log('❌ No elective requirements specified')
+        results.push({
+          program: program.program,
+          college: program.college || "Unknown College",
+          campus: program.campus,
+          qualified: false,
+          specialRequirements: program["special requirements / general information"],
+          validCombinations: []
+        })
         continue
       }
 
-      // Check main requirements if they exist
+      // Check main requirements
       const mainRequirements = electiveRequirements.main
-      if (mainRequirements) {
-        console.log('\nChecking Main Requirements:', mainRequirements)
-        const mainSubjects = Array.isArray(mainRequirements) ? mainRequirements : [mainRequirements]
-        const hasMainSubjects = mainSubjects.every((req: string | string[]) => {
-          if (Array.isArray(req)) {
-            // If it's an array, only one subject needs to match
-            const match = req.some(subject => studentElectives.includes(subject))
-            console.log(`Checking alternative subjects ${req.join(', ')}: ${match ? '✅ Match found' : '❌ No match'}`)
-            return match
-          }
-          const match = studentElectives.includes(req)
-          console.log(`Checking main subject ${req}: ${match ? '✅ Match found' : '❌ No match'}`)
-          return match
+      const hasMainRequirements = checkMainRequirements(mainRequirements, studentElectives)
+      
+      if (!hasMainRequirements) {
+        console.log('❌ Does not meet main subject requirements')
+        results.push({
+          program: program.program,
+          college: program.college || "Unknown College",
+          campus: program.campus,
+          qualified: false,
+          specialRequirements: program["special requirements / general information"],
+          validCombinations: []
         })
-        
-        if (!hasMainSubjects) {
-          console.log('❌ Does not meet main subject requirements')
-          continue
-        }
-        console.log('✅ All main subject requirements met')
+        continue
       }
+      console.log('✅ Main subject requirements met')
 
       // Check track requirements
       const tracks = electiveRequirements.tracks
       if (!tracks) {
         console.log('❌ No track requirements specified')
+        results.push({
+          program: program.program,
+          college: program.college || "Unknown College",
+          campus: program.campus,
+          qualified: false,
+          specialRequirements: program["special requirements / general information"],
+          validCombinations: []
+        })
         continue
       }
 
       console.log('\nChecking Track Requirements:', JSON.stringify(tracks, null, 2))
-      // Check if student's electives match any complete track
-      let hasMatchingTrack = false
       
-      for (const [trackName, trackGroups] of Object.entries(tracks)) {
-        console.log(`\nChecking Track: ${trackName}`)
-        
-        // Each track group represents an alternative set of requirements
-        // The student must meet ALL requirements in at least ONE group
-        const hasMatchingGroup = trackGroups.some((group: any) => {
-          // For each group, check if student has the required subjects
-          const groupSubjects = Array.isArray(group) ? group : [group]
-          console.log(`Checking Group: ${groupSubjects.join(', ')}`)
-          
-          // If the group is an array, only one subject needs to match
-          if (Array.isArray(group)) {
-            const hasAnySubject = group.some((subject: string) => {
-              const hasSubject = studentElectives.includes(subject)
-              console.log(`Checking subject ${subject}: ${hasSubject ? '✅ Found' : '❌ Not found'}`)
-              return hasSubject
-            })
-            
-            if (hasAnySubject) {
-              console.log('✅ Found at least one matching subject in this group')
-              return true
-            }
-            console.log('❌ No subjects in this group match')
-            return false
-          }
-          
-          // If it's a single subject, it must match
-          const hasSubject = studentElectives.includes(group)
-          console.log(`Checking single subject ${group}: ${hasSubject ? '✅ Found' : '❌ Not found'}`)
-          return hasSubject
-        })
-        
-        if (hasMatchingGroup) {
-          console.log('✅ Found matching group in track')
-          hasMatchingTrack = true
-          break
-        }
-      }
+      // Generate valid combinations for this program
+      const validCombinations = generateValidElectiveCombinations(
+        electiveRequirements,
+        studentElectives
+      )
+      console.log('Valid Combinations:', validCombinations)
 
-      if (!hasMatchingTrack) {
-        console.log('❌ Does not meet track requirements')
-        continue
+      // Save combinations to localStorage
+      if (validCombinations.length > 0) {
+        import('./storage').then(({ saveCombinationsToStorage }) => {
+          saveCombinationsToStorage(program, validCombinations);
+        });
       }
 
       // If we get here, the student meets the elective requirements
@@ -150,7 +287,8 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
         college: program.college || "Unknown College",
         campus: program.campus,
         qualified: true,
-        specialRequirements: program["special requirements / general information"]
+        specialRequirements: program["special requirements / general information"],
+        validCombinations: validCombinations
       })
 
     } catch (error) {
@@ -163,3 +301,61 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
   console.log('Qualifying Programs:', JSON.stringify(results, null, 2))
   return results
 }
+
+// Function to get all saved combinations
+export function getAllSavedCombinations(): StoredCombination[] {
+  const storedData = localStorage.getItem('programCombinations');
+  if (!storedData) {
+    console.log('No combinations found in localStorage');
+    return [];
+  }
+
+  try {
+    return JSON.parse(storedData);
+  } catch (error) {
+    console.error('Error parsing stored combinations:', error);
+    return [];
+  }
+}
+
+// Function to get combinations for a specific program and campus
+export function getCombinationsForProgram(program: string, campus: string): StoredCombination | null {
+  const allCombinations = getAllSavedCombinations();
+  return allCombinations.find(
+    item => item.program === program && item.campus === campus
+  ) || null;
+}
+
+// Function to display combinations in a formatted way
+export function displayCombinations(combinations: StoredCombination[]): void {
+  if (combinations.length === 0) {
+    console.log('No combinations found');
+    return;
+  }
+
+  console.log('\n=== SAVED COMBINATIONS ===');
+  combinations.forEach(item => {
+    console.log(`\nProgram: ${item.program}`);
+    console.log(`College: ${item.college}`);
+    console.log(`Campus: ${item.campus}`);
+    console.log('Core Subjects:', item.coreSubjects.join(', '));
+    console.log('Valid Combinations:');
+    item.combinations.forEach((combination, index) => {
+      console.log(`${index + 1}. ${combination.join(', ')}`);
+    });
+    console.log('------------------------');
+  });
+}
+
+// Display all combinations
+displayCombinations(getAllSavedCombinations());
+
+// Example usage:
+// To see all saved combinations:
+// displayCombinations(getAllSavedCombinations());
+
+// To see combinations for a specific program:
+// const programCombinations = getCombinationsForProgram('BSc. Agriculture', 'Kumasi (Main) Campus');
+// if (programCombinations) {
+//   console.log(programCombinations);
+// }

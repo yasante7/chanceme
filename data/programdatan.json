@@ -1,16 +1,16 @@
 [
     {
-        "program":"BSc. Agriculture",
-        "cutoff point":22,
+        "program":"BSc. Agribusiness Management",
+        "cutoff point":17,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
         "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Chemistry", 
+            "main": "as", 
             "tracks": {
-                "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]}}, 
         "applicant type":"WASSCE\/SSSCE",
-        "special requirements \/ general information":null
+        "special requirements \/ general information":"Applicants with Business or General Arts electives must have a minimum of C (SSSCE) or B3 (WASSCE) in Integrated Science"
     },
     {
         "program":"BSc. Agricultural Biotechnology",
@@ -21,7 +21,7 @@
         "elective subjects": {
             "main": "Chemistry", 
             "tracks": {
-                "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
+                "General": ["Physics", "Elective Mathematics", ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information": null
     }
