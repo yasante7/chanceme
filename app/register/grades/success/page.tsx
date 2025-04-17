@@ -27,47 +27,78 @@ interface Program {
 }
 
 export default function GradesSuccessPage() {
-  const [qualifyingPrograms, setQualifyingPrograms] = useState<any[]>([])
+  const [qualifyingPrograms, setQualifyingPrograms] = useState<Program[]>([])
   const [userData, setUserData] = useState<UserData | null>(null)
   const [aggregate, setAggregate] = useState<number>(0)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    const programs = localStorage.getItem('qualifyingPrograms')
-    const user = localStorage.getItem('userData')
-    
-    if (programs) {
-      setQualifyingPrograms(JSON.parse(programs))
-    }
-    if (user) {
-      const parsedUser = JSON.parse(user)
-      setUserData(parsedUser)
+    try {
+      if (typeof window === 'undefined') return; // Prevent SSR issues
+
+      const programs = localStorage.getItem('qualifyingPrograms')
+      const user = localStorage.getItem('userData')
       
-      // Calculate aggregate from grades
-      const gradeData = parsedUser.grades
-      console.log('Grade data:', gradeData)
+      console.log('Retrieved programs from localStorage:', programs)
       
-      const allGrades = [...gradeData.core_subjects, ...gradeData.elective_subjects]
-      console.log('All grades:', allGrades.map(g => `${g.subject}: ${g.grade}`))
+      if (programs) {
+        const parsedPrograms = JSON.parse(programs)
+        console.log('Parsed programs:', parsedPrograms)
+        if (Array.isArray(parsedPrograms)) {
+          console.log('Setting qualifying programs:', parsedPrograms)
+          setQualifyingPrograms(parsedPrograms)
+        } else {
+          console.error('Programs data is not an array:', typeof parsedPrograms)
+        }
+      } else {
+        console.error('No programs found in localStorage')
+      }
       
-      const gradePoints = allGrades.map(subject => {
-        const points = GRADE_POINTS[subject.grade as Grade]
-        console.log(`${subject.subject}: ${subject.grade} = ${points} points`)
-        return points
-      })
-      
-      console.log('Grade points before sorting:', gradePoints)
-      const sortedPoints = gradePoints.sort((a, b) => a - b)
-      console.log('Sorted grade points:', sortedPoints)
-      
-      const bestSixPoints = sortedPoints.slice(0, 6)
-      console.log('Best six points:', bestSixPoints)
-      
-      const bestSixTotal = bestSixPoints.reduce((sum, points) => sum + points, 0)
-      console.log('Final aggregate:', bestSixTotal)
-      
-      setAggregate(bestSixTotal)
+      if (user) {
+        const parsedUser = JSON.parse(user)
+        if (parsedUser && parsedUser.grades) {
+          setUserData(parsedUser)
+          
+          // Calculate aggregate from grades
+          const gradeData = parsedUser.grades
+          const allGrades = [...gradeData.core_subjects, ...gradeData.elective_subjects]
+          
+          const gradePoints = allGrades.map(subject => {
+            const grade = subject.grade as Grade
+            if (!(grade in GRADE_POINTS)) {
+              throw new Error(`Invalid grade: ${grade}`)
+            }
+            return GRADE_POINTS[grade]
+          })
+          
+          const sortedPoints = gradePoints.sort((a, b) => a - b)
+          const bestSixPoints = sortedPoints.slice(0, 6)
+          const bestSixTotal = bestSixPoints.reduce((sum, points) => sum + points, 0)
+          
+          setAggregate(bestSixTotal)
+        }
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred while processing your data')
+      console.error('Error processing user data:', err)
     }
   }, [])
+
+  if (error) {
+    return (
+      <div className="flex flex-col min-h-screen bg-muted/50">
+        <NavBar />
+        <main className="flex-1 p-6 flex items-center justify-center">
+          <div className="max-w-2xl w-full bg-background rounded-xl shadow-lg p-8 border">
+            <div className="text-center text-red-500">
+              <h2 className="text-xl font-semibold mb-4">Error</h2>
+              <p>{error}</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    )
+  }
 
   return (
     <div className="flex flex-col min-h-screen bg-muted/50">
@@ -112,9 +143,6 @@ export default function GradesSuccessPage() {
                     <div key={index} className="p-4 border rounded-lg">
                       <h3 className="font-semibold">{program.program}</h3>
                       <p className="text-sm text-muted-foreground">
-                        {/* College: {program.college} */}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
                         Cutoff Point: {program.cutoffPoint}
                       </p>
                       <p className="text-sm text-muted-foreground">
@@ -136,9 +164,6 @@ export default function GradesSuccessPage() {
                     <div key={index} className="p-4 border rounded-lg">
                       <h3 className="font-semibold">{program.program}</h3>
                       <p className="text-sm text-muted-foreground">
-                        {/* College: {program.college} */}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
                         Cutoff Point: {program.cutoffPoint}
                       </p>
                       <p className="text-sm text-muted-foreground">
@@ -153,12 +178,19 @@ export default function GradesSuccessPage() {
             </div>
           </div>
 
-          <Link href="/dashboard">
-            <Button className="w-full">
-              Continue to Dashboard
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
+          <div className="flex gap-4">
+            <Link href="/register/grades" className="flex-1">
+              <Button className="w-full">
+                Edit Grades
+              </Button>
+            </Link>
+            <Link href="/dashboard" className="flex-1">
+              <Button className="w-full">
+                Continue to Dashboard
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </main>
     </div>

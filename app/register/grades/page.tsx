@@ -214,7 +214,7 @@ export default function GradesPage() {
       // Store qualifying programs for display on the next page
       localStorage.setItem('qualifyingPrograms', JSON.stringify(qualifyingPrograms))
 
-      router.push("/register/grades/success")
+      router.push("/register/grades/progress")
       
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to save grades'
