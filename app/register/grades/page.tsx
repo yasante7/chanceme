@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowLeft, GraduationCap } from "lucide-react"
@@ -35,44 +35,67 @@ const PROGRAM_SUBJECTS = {
     'Physics',
     'Chemistry',
     'Biology',
-    'ICT',
+    'Elective ICT',
     'Geography'
   ],
   'General Arts': [
-    'Literature in English',
-    'Government',
     'Economics',
     'Geography',
     'History',
+    'Elective Mathematics',
+    'Christian Religious Studies',
+    'Music',
+    'Elective ICT',
+    'Literature in English',
     'French',
-    'Elective Mathematics'
+    'Fante',
+    'Akuapem Twi',
+    'Asante Twi',
+    'Ga',
+    'Ewe',
+    'Arabic',
+    'Dagaare',
+    'Dagbani',
+    'Gonja',
+    'Kasem',
+    'Nzema'
   ],
   'Business': [
     'Business Management',
-    'Accounting',
+    'Financial Accounting',
     'Economics',
+    'Cost Accounting',
     'Elective Mathematics',
-    'Cost Accounting'
+    'Elective ICT',
+    'French',
+    'Clerical Office Duties'
   ],
   'Visual Arts': [
+    'ICT',
     'General Knowledge in Art',
-    'Graphic Design',
-    'Picture Making',
-    'Ceramics',
-    'Sculpture',
     'Textiles',
-    'Leatherwork'
+    'Picture Making',
+    'Ceramics and Sculpture',
+    'Ceramics and Basketry',
+    'Graphic Design',
+    'Leather Work',
+    'Basketry',
+    'Sculpture',
+    'French'
   ],
   'Home Economics': [
+    'Economics',
     'Food and Nutrition',
+    'Clothing and Textiles',
     'Management in Living',
-    'Textiles',
-    'Clothing and Construction',
+    'Chemistry',
     'Biology'
   ],
   'Agricultural Science': [
     'General Agriculture',
     'Animal Husbandry',
+    'Agricultural Economics',
+    'Elective Mathematics',
     'Crop Science',
     'Chemistry',
     'Physics'
@@ -84,7 +107,9 @@ const PROGRAM_SUBJECTS = {
     'Metalwork',
     'Auto Mechanics',
     'Electronics',
-    'Applied Electricity'
+    'Applied Electricity',
+    'Automobile Engineering',
+    'Electrical Engineering'
   ]
 } as const
 
@@ -99,6 +124,46 @@ export default function GradesPage() {
   const [selectedSchool, setSelectedSchool] = useState<string>('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  // Load saved data when component mounts
+  useEffect(() => {
+    const savedData = localStorage.getItem('userData')
+    if (savedData) {
+      try {
+        const userData: UserData = JSON.parse(savedData)
+        if (userData.grades) {
+          const { program, school, region, core_subjects, elective_subjects } = userData.grades
+          
+          // Set program
+          setSelectedProgram(program)
+          
+          // Set region and school
+          setSelectedRegion(region)
+          setSelectedSchool(school)
+          
+          // Set core subject grades
+          const coreGrades: Record<string, Grade> = {}
+          core_subjects.forEach(({ subject, grade }) => {
+            if (grade) coreGrades[subject] = grade
+          })
+          setGrades(coreGrades)
+          
+          // Set elective subjects and their grades
+          const electiveGrades: Record<string, Grade> = {}
+          const electives = elective_subjects.map(({ subject, grade }) => {
+            if (grade) electiveGrades[subject] = grade
+            return subject
+          })
+          setSelectedElectives(electives)
+          
+          // Combine all grades
+          setGrades(prev => ({ ...prev, ...electiveGrades }))
+        }
+      } catch (error) {
+        console.error('Error loading saved data:', error)
+      }
+    }
+  }, [])
 
   // Get unique regions from schools data
   const regions = Array.from(new Set(schoolsData.map(school => school.Region).sort()))
@@ -355,4 +420,4 @@ export default function GradesPage() {
       </main>
     </div>
   )
-} 
+}

@@ -1,98 +1,138 @@
-import programRequirements from '@/data/programdata.json'
-import { GradeData, Grade } from '@/types/user'
+import programRequirements from '@/data/programdatan.json'
+import { GradeData } from '@/types/user'
 console.log(programRequirements)
 
-// Points for each grade
-const GRADE_POINTS: Record<Grade, number> = {
-  'A1': 1,
-  'B2': 2,
-  'B3': 3,
-  'C4': 4,
-  'C5': 5,
-  'C6': 6,
-  'D7': 7,
-  'E8': 8,
-  'F9': 9
+interface ProgramResult {
+  program: string;
+  college: string;
+  campus: string;
+  qualified: boolean;
+  specialRequirements: string | null;
 }
 
-export function calculateQualifyingPrograms(gradeData: GradeData) {
-  const results = []
-
-  // Convert student's grades to a map for easier lookup
-  const studentGrades = {
-    ...Object.fromEntries(gradeData.core_subjects.map(s => [s.subject, s.grade])),
-    ...Object.fromEntries(gradeData.elective_subjects.map(s => [s.subject, s.grade]))
+// Helper function to check if a subject matches any in a group
+function matchesSubject(subject: string, group: string | string[]): boolean {
+  if (typeof group === 'string') {
+    return subject === group;
   }
+  return group.includes(subject);
+}
 
-  // Calculate student's aggregate (best 6 subjects)
-  const allGrades = [...gradeData.core_subjects, ...gradeData.elective_subjects]
-  const bestSixTotal = allGrades
-    .map(subject => GRADE_POINTS[subject.grade])
-    .sort((a, b) => a - b) // Sort ascending (better grades have lower points)
-    .slice(0, 6) // Take best 6
-    .reduce((sum, points) => sum + points, 0)
+// Helper function to check if a subject matches any in a track
+function matchesTrack(subject: string, track: any): boolean {
+  if (Array.isArray(track)) {
+    return track.some((item: any) => matchesSubject(subject, item));
+  }
+  return matchesSubject(subject, track);
+}
+
+export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult[] {
+  console.log('Starting program check with grade data:', gradeData)
+  const results: ProgramResult[] = []
 
   // Get student's elective subjects
   const studentElectives = gradeData.elective_subjects.map(s => s.subject)
+  console.log('Student electives:', studentElectives)
 
   for (const program of programRequirements) {
     try {
-      // Check cutoff point
-      const cutoffPoint = parseInt(program["cutoff point"].toString())
-      if (bestSixTotal > cutoffPoint) {
-        continue // Skip if student doesn't meet cutoff
-      }
-
-      // Check core subjects
-      const requiredCore = program["core subjects"]?.split(", ") ?? []
-      const hasRequiredCore = requiredCore.every(subject => {
-        const studentGrade = studentGrades[subject]
-        return studentGrade && GRADE_POINTS[studentGrade] <= 6 // Grade C6 or better
-      })
-
-      if (!hasRequiredCore) continue
-
-      // Parse and check elective requirements
-      const electiveText = program["elective subjects"] ?? ""
-      let qualifiesElectives = false
-
-      // Handle different elective requirement formats
-      if (electiveText.includes("THREE")) {
-        // Case: THREE subjects from list
-        const electiveOptions = electiveText
-          .replace(/THREE subjects from:?\s*/i, '')
-          .split(/[,\n]/)
-          .map(s => s.trim())
-          .filter(Boolean)
-
-        // Check if student has any 3 subjects from the options
-        const validElectives = studentElectives.filter(subject => 
-          electiveOptions.some(option => subject.includes(option))
-        )
-        qualifiesElectives = validElectives.length >= 3
-      } else {
-        // Case: Specific subject requirements
-        const requirements = electiveText.split(", and ")
-        qualifiesElectives = requirements.every(req => {
-          if (req.includes(" or ")) {
-            // Handle OR conditions
-            const options = req.split(" or ").map(s => s.trim())
-            return options.some(opt => 
-              studentElectives.some(subject => subject.includes(opt))
-            )
-          }
-          return studentElectives.some(subject => subject.includes(req.trim()))
+      console.log('\nChecking program:', program.program)
+      console.log('Program campus:', program.campus)
+      
+      // Check if program is in Obuasi campus
+      if (program.campus === "Obuasi Campus") {
+        console.log('Processing Obuasi Campus program - no subject requirements')
+        results.push({
+          program: program.program,
+          college: program.college || "Unknown College",
+          campus: program.campus,
+          qualified: true,
+          specialRequirements: program["special requirements / general information"]
         })
+        continue
       }
 
-      if (!qualifiesElectives) continue
+      // For Kumasi campus programs, check electives
+      const electiveRequirements = program["elective subjects"]
+      console.log('Program elective requirements:', electiveRequirements)
+      
+      if (!electiveRequirements) {
+        console.log('No elective requirements specified')
+        continue
+      }
 
-      // If all checks pass, add to qualifying programs
+      // Check main requirements if they exist
+      const mainRequirements = electiveRequirements.main
+      if (mainRequirements) {
+        console.log('Checking main requirements:', mainRequirements)
+        const mainSubjects = Array.isArray(mainRequirements) ? mainRequirements : [mainRequirements]
+        const hasMainSubjects = mainSubjects.every((req: string | string[]) => {
+          if (Array.isArray(req)) {
+            const match = req.some(subject => studentElectives.includes(subject))
+            console.log(`Checking alternative subjects ${req.join(', ')}: ${match ? 'Match found' : 'No match'}`)
+            return match
+          }
+          const match = studentElectives.includes(req)
+          console.log(`Checking main subject ${req}: ${match ? 'Match found' : 'No match'}`)
+          return match
+        })
+        
+        if (!hasMainSubjects) {
+          console.log('Does not meet main subject requirements')
+          continue
+        }
+        console.log('All main subject requirements met')
+      }
+
+      // Check track requirements
+      const tracks = electiveRequirements.tracks
+      if (!tracks) {
+        console.log('No track requirements specified')
+        continue
+      }
+
+      console.log('Checking track requirements:', tracks)
+      // Check if student's electives match any complete track
+      let hasMatchingTrack = false
+      for (const [trackName, track] of Object.entries(tracks)) {
+        console.log(`\nChecking track: ${trackName}`)
+        if (Array.isArray(track)) {
+          const trackSubjects = track.flatMap((subjectGroup: any) => {
+            if (Array.isArray(subjectGroup)) {
+              return subjectGroup
+            }
+            return [subjectGroup]
+          })
+          
+          console.log('Required subjects for this track:', trackSubjects)
+          // Check if student has all required subjects in this track
+          const hasAllTrackSubjects = trackSubjects.every((subject: string) => {
+            const hasSubject = studentElectives.includes(subject)
+            console.log(`Checking subject ${subject}: ${hasSubject ? 'Found' : 'Not found'}`)
+            return hasSubject
+          })
+          
+          if (hasAllTrackSubjects) {
+            console.log('All subjects in this track are matched')
+            hasMatchingTrack = true
+            break
+          } else {
+            console.log('Some subjects in this track are missing')
+          }
+        }
+      }
+
+      if (!hasMatchingTrack) {
+        console.log('Does not meet track requirements')
+        continue
+      }
+
+      // If we get here, the student meets the elective requirements
+      console.log('Qualified for Main Campus program')
       results.push({
         program: program.program,
-        college: program.college,
-        cutoffPoint: cutoffPoint,
-        userPoints: bestSixTotal,
+        college: program.college || "Unknown College",
+        campus: program.campus,
         qualified: true,
         specialRequirements: program["special requirements / general information"]
       })
@@ -103,6 +143,6 @@ export function calculateQualifyingPrograms(gradeData: GradeData) {
     }
   }
 
-  // Sort results by cutoff point
-  return results.sort((a, b) => a.cutoffPoint - b.cutoffPoint)
+  console.log('\nFinal qualifying programs:', results)
+  return results
 }

@@ -1,0 +1,115 @@
+[
+    {
+        "program":"BSc. Agriculture",
+        "cutoff point":22,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": "Chemistry", 
+            "tracks": {
+                "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Agricultural Biotechnology",
+        "cutoff point":18,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": "Chemistry", 
+            "tracks": {
+                "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information": null
+    },
+    {
+        "program":"BSc. Agribusiness Management",
+        "cutoff point":17,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]], 
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"], 
+                "General Arts": ["Economics", "Geography", "Elective Mathematics"], 
+                "General Agriculture": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Crop Husbandry", "Horticulture"]]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information":"Applicants with Business or General Arts electives must have a minimum of C (SSSCE) or B3 (WASSCE) in Integrated Science"
+    },
+    {
+        "program":"BSc. Landscape Design and Management",
+        "cutoff point":19,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Crop Husbandry", "Biology", "General Agriculture"]], 
+                "General Arts": ["Economics", "Geography", "Elective Mathematics", "Technical Drawing", "General Knowledge in Art"], 
+                "Visual Art": ["General Knowledge in Art", "Graphic Design", "Picture Making", "Painting", "Sculpture", "Chemistry"]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Natural Resources Management",
+        "cutoff point":18,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Forest Resources Technology",
+        "cutoff point":23,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Aquaculture and Water Resources Management",
+        "cutoff point":22,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Packaging Technology",
+        "cutoff point":16,
+        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
+        "core subjects":"English Language, Mathematics, Integrated Science",
+        "elective subjects":{
+            "main": null, 
+            "tracks": {
+                "General Science": ["Elective Mathematics", "Physics","Chemistry","Biology","ICT","Geography"], 
+                "General Arts": ["Literature in English","Government","Economics", "Geography","History","French","Elective Mathematics"],
+                "Visual Arts": ["General Knowledge in Art","Graphic Design","Picture Making","Ceramics","Sculpture","Textiles","Leatherwork"],
+                "Home Economics": ["Food and Nutrition","Management in Living","Textiles","Clothing and Construction","Biology"],
+                "Technical": ["Technical Drawing","Building Construction","Woodwork","Metalwork","Auto Mechanics","Electronics","Applied Electricity"]}},
+        "applicant type":"WASSCE\/SSSCE",
+        "special requirements \/ general information":null
+    }
+]

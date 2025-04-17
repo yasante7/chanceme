@@ -3,27 +3,41 @@
         "program":"BSc. Agriculture",
         "cutoff point":22,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Chemistry, and any TWO (2) from Physics or Mathematics, Biology, General Agriculture, Animal Husbandry, Crop Husbandry, or Horticulture",
+        "elective subjects": {
+            "main": "Chemistry", 
+            "tracks": {
+                "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":null
     },
-    
     {
         "program":"BSc. Agricultural Biotechnology",
         "cutoff point":18,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Chemistry, and any TWO (2) from Physics or Mathematics, Biology, General Agriculture, Animal Husbandry, Crop Husbandry, or Horticulture",
+        "elective subjects": {
+            "main": "Chemistry", 
+            "tracks": {
+                "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
         "applicant type":"WASSCE\/SSSCE",
-        "special requirements \/ general information":null
+        "special requirements \/ general information": null
     },
     {
         "program":"BSc. Agribusiness Management",
         "cutoff point":17,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from: (i) Science: Chemistry, Physics or Mathematics, and Biology or General Agriculture \n(ii) Business: Economics, Accounting, Business Management, Business Mathematics, Costing, Elective Mathematics \n(iii) General Arts: Economics, Geography, Elective Mathematics \n(iv) General Agriculture: Chemistry, Physics or Mathematics, and Biology or General Agriculture, Crop Husbandry, Horticulture",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]], 
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"], 
+                "General Arts": ["Economics", "Geography", "Elective Mathematics"], 
+                "General Agriculture": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Crop Husbandry", "Horticulture"]]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":"Applicants with Business or General Arts electives must have a minimum of C (SSSCE) or B3 (WASSCE) in Integrated Science"
     },
@@ -31,8 +45,14 @@
         "program":"BSc. Landscape Design and Management",
         "cutoff point":19,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from: (i) Science: Chemistry, Physics or Mathematics, Crop Husbandry, Biology, General Agriculture (ii) General Arts: Mathematics, Geography, Economics, Technical Drawing, General Knowledge in Art (iii) Visual Art: General Knowledge in Art, Graphic Design, Chemistry, Picture Making, \nPainting and Sculpture. ",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Crop Husbandry", "Biology", "General Agriculture"]], 
+                "General Arts": ["Economics", "Geography", "Elective Mathematics", "Technical Drawing", "General Knowledge in Art"], 
+                "Visual Art": ["General Knowledge in Art", "Graphic Design", "Picture Making", "Painting", "Sculpture", "Chemistry"]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":null
     },
@@ -40,8 +60,12 @@
         "program":"BSc. Natural Resources Management",
         "cutoff point":18,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Chemistry, Physics or Mathematics, and Biology or General Agriculture",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":null
     },
@@ -49,8 +73,12 @@
         "program":"BSc. Forest Resources Technology",
         "cutoff point":23,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Chemistry, Physics or Mathematics, and Biology or General Agriculture",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":null
     },
@@ -58,8 +86,12 @@
         "program":"BSc. Aquaculture and Water Resources Management",
         "cutoff point":22,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Chemistry, Physics or Mathematics, and Biology or General Agriculture",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Science": ["Chemistry", ["Physics", "Elective Mathematics"], ["Biology", "General Agriculture"]]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":null
     },
@@ -67,8 +99,16 @@
         "program":"BSc. Packaging Technology",
         "cutoff point":16,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from any of the following options: Science, General Arts, Visual Art, Technical, Home Economics",
+        "elective subjects":{
+            "main": null, 
+            "tracks": {
+                "General Science": ["Elective Mathematics", "Physics","Chemistry","Biology","ICT","Geography"], 
+                                                      "General Arts": ["Literature in English","Government","Economics", "Geography","History","French","Elective Mathematics"],
+                                                      "Visual Arts": ["General Knowledge in Art","Graphic Design","Picture Making","Ceramics","Sculpture","Textiles","Leatherwork"],
+                                                      "Home Economics": ["Food and Nutrition","Management in Living","Textiles","Clothing and Construction","Biology"],
+                                                      "Technical": ["Technical Drawing","Building Construction","Woodwork","Metalwork","Auto Mechanics","Electronics","Applied Electricity"]}},
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":null
     },
@@ -76,35 +116,63 @@
         "program":"BSc. Architecture",
         "cutoff point":9,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, and any TWO from: Technical (Technical Drawing, Engineering Science, Woodwork, Metalwork, Building Construction), General Science (Biology, Chemistry, Physics), Visual Art (General Knowledge in Art, Graphic Design, Picture Making), General Arts (Economics, Geography)",
+        "elective subjects": {
+            "main": "Elective Mathematics",
+            "tracks": {
+                "Technical": [["Technical Drawing", "Engineering Science"], "Building Construction", ["Woodwork", "Metalwork"]],
+                "General Science": ["Physics", "Chemistry", "Biology"],
+                "Visual Arts": ["General Knowledge in Art", "Graphic Design", "Picture Making"],
+                "General Arts": ["Economics", "Geography"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Mature applicants must show interest in architectural design and may need to pass an exam and interview\u200b."
+        "special requirements \/ general information":"Mature applicants must show interest in architectural design and may need to pass an exam and interview."
     },
     {
         "program":"BSc. Construction Technology and Management",
         "cutoff point":12,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, and any TWO from: Technical Drawing, Engineering Science, Woodwork, Building Construction, Metalwork, Chemistry, Physics, Economics, Geography",
+        "elective subjects": {
+            "main": "Elective Mathematics", 
+            "tracks": {
+                "Technical": [["Technical Drawing", "Engineering Science"], "Building Construction", "Woodwork", "Metalwork"],
+                "General Science": ["Physics", "Chemistry"],
+                "General Arts": ["Economics", "Geography"]}},
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Candidates may be required to pass a qualifying examination and interview\u200b."
+        "special requirements \/ general information":"Candidates may be required to pass a qualifying examination and interview."
     },
     {
         "program":"BSc. Quantity Surveying and Construction Economics",
         "cutoff point":11,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, and any TWO from: Chemistry, Economics, Geography, Technical Drawing, Building Construction, Physics",
+        "elective subjects": {
+            "main": "Elective Mathematics",
+            "tracks": {
+                "General": ["Chemistry", "Economics", "Geography", "Technical Drawing", "Building Construction", "Physics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Candidates may be required to pass a qualifying examination and interview\u200b."
+        "special requirements \/ general information":"Candidates may be required to pass a qualifying examination and interview."
     },
     {
         "program":"BSc. Development Planning",
         "cutoff point":10,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE electives from Group A (Economics, Business Management, Geography, Government, Elective Mathematics, General Knowledge in Art) OR Two (2) from Group A + One (1) from Group B (Accounting, Technical Drawing, Graphic Design, Picture Making, Sculpture, Painting)",
+        "elective subjects": {
+            "main": "Geography",
+            "tracks": {
+                "Group A": ["Economics", "Business Management", "Government", "Elective Mathematics", "General Knowledge in Art"],
+                "Group B": [["Economics", "Business Management", "Government", "Elective Mathematics", "General Knowledge in Art"], "Accounting", "Technical Drawing", "Graphic Design", "Picture Making", "Sculpture", "Painting"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -112,71 +180,129 @@
         "program":"BSc. Human Settlement Planning",
         "cutoff point":12,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects in Group A (Economics, Business Management, Geography, Government, Mathematics, General Knowledge in Art) OR Two (2) from Group A + One (1) from Group B (Accounting, Technical Drawing, Graphic Design, Picture Making, Sculpture, Painting)",
+        "elective subjects": {
+            "main": "Geography",
+            "tracks": {
+                "Group A": ["Economics", "Business Management", "Government", "Elective Mathematics", "General Knowledge in Art"],
+                "Group B": [["Economics", "Business Management", "Government", "Elective Mathematics", "General Knowledge in Art"], "Accounting", "Technical Drawing", "Graphic Design", "Picture Making", "Sculpture", "Painting"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Candidates must pass an interview\u200b."
+        "special requirements \/ general information":"THREE subjects in Group A or (2) from Group A and (1) from Group B. Candidates must pass an interview."
     },
     {
         "program":"BSc. Land Economy",
         "cutoff point":9,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from: Economics, Geography, and a third subject relevant to the Land Economy programme (Accounting, Business Management, Government, Business Mathematics, French, Literature in English, History, Building Construction, Technical Drawing, Mathematics)",
+        "elective subjects": {
+            "main": "Economics",
+            "tracks": {
+                "General": ["Geography", "Accounting", "Business Management", "Government", "Business Mathematics", "French", "Literature in English", "History", "Building Construction", "General Knowledge in Art", "Technical Drawing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, Diploma Holders",
-        "special requirements \/ general information":"Diploma\/HND holders with CWA 70%+ can enter the second year; others require three years' experience and an interview\u200b."
+        "special requirements \/ general information":"Diploma\/HND holders with CWA 70%+ can enter the second year; others require three years' experience and an interview."
     },
     {
         "program":"BSc. Real Estate",
         "cutoff point":10,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Economics, and TWO from: Elective Mathematics, Geography, Accounting, Business Management, Business Mathematics, Government, French, Building Construction, Technical Drawing, General Knowledge in Art",
+        "elective subjects": {
+            "main": "Economics",
+            "tracks": {
+                "General": ["Geography", "Accounting", "Business Management", "Government", "Business Mathematics", "French", "Literature in English", "History", "Building Construction", "General Knowledge in Art", "Technical Drawing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, Diploma Holders",
-        "special requirements \/ general information":"Diploma\/HND holders with CWA 70%+ can enter the second year; others require three years' experience and an interview\u200b."
+        "special requirements \/ general information":"Diploma\/HND holders with CWA 70%+ can enter the second year; others require three years' experience and an interview."
     },
     {
         "program":"BFA. Painting and Sculpture",
         "cutoff point":15,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"General Knowledge in Art, and any TWO (2) Visual Arts Elective Subjects",
+        "elective subjects": {
+            "main": "General Knowledge in Art",
+            "tracks": {
+                "General Science": ["Elective Mathematics", "Physics","Chemistry","Biology","ICT","Geography"], 
+                "General Arts": ["Literature in English","Government","Economics", "Geography","History","French","Elective Mathematics"],
+                "Visual Arts": ["Graphic Design","Picture Making","Ceramics","Sculpture","Textiles","Leatherwork"],
+                "Home Economics": ["Food and Nutrition","Management in Living","Textiles","Clothing and Construction","Biology"],
+                "Technical": ["Technical Drawing","Building Construction","Woodwork","Metalwork","Auto Mechanics","Electronics","Applied Electricity"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Applicants may need to pass an interview and practical examination\u200b."
+        "special requirements \/ general information":"Applicants may need to pass an interview and practical examination."
     },
     {
         "program":"BA. Communication Design (Graphic Design)",
         "cutoff point":13,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Graphic Design, General Knowledge in Art, ICT, and any other Visual Arts Elective (excluding Leatherwork, Basketry, Beadmaking)",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Visual Arts": ["General Knowledge in Art", "ICT", "Picture Making", "Sculpture", "Textiles", "Ceramics", "Jewellery", "Graphic Design"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Applicants may need to pass an interview and practical examination\u200b."
+        "special requirements \/ general information":"Applicants may need to pass an interview and practical examination."
     },
     {
         "program":"BA. Integrated Rural Art and Industry",
         "cutoff point":15,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from: Picture Making, Leatherwork, Graphic Design, Textiles, Jewellery, Basketry, Sculpture, Ceramics, General Knowledge in Art, Management in Living, Clothing & Textiles, Food and Nutrition, Physics, Chemistry, Elective Mathematics, Biology, Technical Drawing, Woodwork, Metalwork, Religious Studies, Construction, Economics, History, Akan, Geography, Literature in English, Business Management, Accounting, Costing, ICT",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Visual Arts": ["Picture Making", "Leatherwork", "Graphic Design", "Textiles", "Jewellery", "Basketry", "Sculpture", "Ceramics", "General Knowledge in Art"],
+                "Home Economics": ["Management in Living", "Clothing & Textiles", "Food and Nutrition"],
+                "General Science": ["Physics", "Chemistry", "Elective Mathematics", "Biology"],
+                "Technical": ["Technical Drawing", "Woodwork", "Metalwork", "Construction"],
+                "General Arts": [["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"], "Economics", "History", "Akan", "Geography", "Literature in English", "Business Management", "Accounting", "Costing", "ICT"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, Diploma Holders",
-        "special requirements \/ general information":"Applicants must submit a portfolio of artworks for assessment\u200b."
+        "special requirements \/ general information":"Applicants must submit a portfolio of artworks for assessment."
     },
     {
         "program":"BA. Publishing Studies",
         "cutoff point":15,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from: General Knowledge in Art, English Literature, French, History, Economics, Government, Elective Mathematics, Business Management, Accounting, Costing, ICT",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General": ["General Knowledge in Art", "English Literature", "French", "History", "Economics", "Government", "Business Management", "Accounting", "Costing", "Elective Mathematics", "ICT"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Applicants may be required to pass an interview\u200b."
+        "special requirements \/ general information":"Applicants may be required to pass an interview."
     },
     {
         "program":"BSc. Metal Product Design Technology",
         "cutoff point":17,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from: Metalwork, Graphic Design, Technical Drawing, Woodwork, Electronics, Chemistry, Physics, Mathematics, Economics",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General": ["Metalwork", "Technical Drawing", "Woodwork", "Electronics", "Graphic Design", "Chemistry", "Physics", "Elective Mathematics", "Economics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -184,8 +310,14 @@
         "program":"BSc. Textile Design and Technology",
         "cutoff point":13,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from: Textiles, Graphic Design, General Knowledge in Art, Chemistry, Physics, Mathematics, Economics",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General": ["Textiles", "Graphic Design", "General Knowledge in Art", "Chemistry", "Physics", "Elective Mathematics", "Economics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -193,8 +325,14 @@
         "program":"BSc. Fashion Design",
         "cutoff point":12,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from: Textiles, Graphic Design, General Knowledge in Art, Chemistry, Physics, Mathematics, Economics, Management in Living, Clothing and Textiles",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General": ["Textiles", "Graphic Design", "General Knowledge in Art", "Chemistry", "Physics", "Elective Mathematics", "Economics", "Management in Living", "Clothing and Textiles"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -202,17 +340,31 @@
         "program":"BSc. Ceramics Design Technology",
         "cutoff point":24,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from: Visual Art (Ceramics, General Knowledge in Art, and Chemistry\/Mathematics\/Physics), Science (Mathematics, Chemistry, Physics, Biology), Technical (Technical Drawing, Building Construction, Applied Electricity, Auto Mechanics, Electronics, Physics)",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Visual Art": ["Ceramics", "General Knowledge in Art", ["Chemistry", "Elective Mathematics", "Physics"]],
+                "General Science": ["Elective Mathematics", "Chemistry", "Physics", "Biology"],
+                "Technical": ["Technical Drawing", "Building Construction", "Applied Electricity", "Auto Mechanics", "Electronics", "Physics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, HND\/Diploma Holders",
-        "special requirements \/ general information":"Applicants must pass an interview and practical examination\u200b."
+        "special requirements \/ general information":"Applicants must pass an interview and practical examination."
     },
     {
         "program":"B.Ed. Junior High School Specialism",
         "cutoff point":18,
         "college":"COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Any THREE from: Science, General Agriculture, ICT, Visual Art, History, Geography",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General": ["Elective Mathematics", "Physics", "Chemistry", "Biology", "ICT", "Geography", "General Agriculture", "Animal Husbandry", "Crop Science", "Chemistry", "Physics", "ICT", "General Knowledge in Art", "Graphic Design", "Picture Making", "Ceramics", "Sculpture", "Textiles", "Leatherwork",  "History", "Geography"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -220,17 +372,29 @@
         "program":"BSc. Aerospace Engineering",
         "cutoff point":10,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Metal Work, Auto Mechanics, Applied Electricity, etc.)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Metal Work", "Auto Mechanics", "Applied Electricity"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Applicants without Chemistry must obtain at least B3 in Integrated Science\u200b."
+        "special requirements \/ general information":"Applicants without Chemistry must obtain at least B3 in Integrated Science."
     },
     {
         "program":"BSc. Agricultural Engineering",
         "cutoff point":16,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Technical Drawing, Engineering Science, General Agriculture, Biology, etc.)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Technical Drawing", "Engineering Science", "General Agriculture", "Biology"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -238,8 +402,14 @@
         "program":"BSc. Automobile Engineering",
         "cutoff point":13,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Metal Work, Auto Mechanics, Applied Electricity, etc.)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Metal Work", "Auto Mechanics", "Applied Electricity"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -247,17 +417,27 @@
         "program":"BSc. Biomedical Engineering",
         "cutoff point":7,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Biology, Electricity\/Applied Electricity, Electronics, ICT)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Biology", ["Electricity", "Applied Electricity"], "Electronics", "ICT"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, HND Applicants",
-        "special requirements \/ general information":"HND applicants require at least Second Class Honours in a Biomedical Engineering-related program\u200b."
+        "special requirements \/ general information":"HND applicants require at least Second Class Honours in a Biomedical Engineering-related program."
     },
     {
         "program":"BSc. Chemical Engineering",
         "cutoff point":10,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics", "Chemistry"],
+            "tracks": {}
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -265,53 +445,44 @@
         "program":"BSc. Civil Engineering",
         "cutoff point":10,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or Applied Mathematics instead of Chemistry for A-Level applicants)",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
+        "elective subjects": {
+            "main": ["Elective Mathematics", "Physics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Applied Mathematics"]
+            }
+        },
+        "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
     {
         "program":"BSc. Computer Engineering",
         "cutoff point":9,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Electricity\/Applied Electricity, Electronics, ICT)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "General Science": ["Chemistry", ["Electricity", "Applied Electricity"], "Electronics", "ICT"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, HND Applicants",
-        "special requirements \/ general information":"HND applicants require at least Second Class Honours in a Computer Engineering-related program\u200b."
-    },
-    {
-        "program":"BSc. Electrical\/Electronic Engineering",
-        "cutoff point":8,
-        "college":"COLLEGE OF ENGINEERING",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Basic\/Applied Electricity, Basic Electronics, ICT)",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":null
-    },
-    {
-        "program":"BSc. Geological Engineering",
-        "cutoff point":12,
-        "college":"COLLEGE OF ENGINEERING",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":null
-    },
-    {
-        "program":"BSc. Geomatic (Geodetic) Engineering",
-        "cutoff point":13,
-        "college":"COLLEGE OF ENGINEERING",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or Geography instead of Chemistry)",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":null
+        "special requirements \/ general information":"HND applicants require at least Second Class Honours in a Computer Engineering-related program."
     },
     {
         "program":"BSc. Industrial Engineering",
         "cutoff point":13,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Metal Work, Auto Mechanics, Applied Electricity, etc.)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Metal Work", "Auto Mechanics", "Applied Electricity"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -319,44 +490,40 @@
         "program":"BSc. Marine Engineering",
         "cutoff point":11,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Metal Work, Auto Mechanics, Applied Electricity, etc.)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Metal Work", "Auto Mechanics", "Applied Electricity"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
-    },
-    {
-        "program":"BSc. Materials Engineering",
-        "cutoff point":13,
-        "college":"COLLEGE OF ENGINEERING",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":null
-    },
-    {
-        "program":"BSc. Mechanical Engineering",
-        "cutoff point":10,
-        "college":"COLLEGE OF ENGINEERING",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Metal Work, Auto Mechanics, Applied Electricity, etc.)",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Mature applicants require at least 3 years of working experience\u200b."
     },
     {
         "program":"BSc. Metallurgical Engineering",
         "cutoff point":14,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
+        "elective subjects": {
+            "main": ["Elective Mathematics", "Physics", "Chemistry"],
+            "tracks": {}
+        },
+        "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
     {
         "program":"BSc. Petrochemical Engineering",
         "cutoff point":9,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics", "Chemistry"],
+            "tracks": {}
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -364,8 +531,12 @@
         "program":"BSc. Petroleum Engineering",
         "cutoff point":8,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics", "Chemistry"],
+            "tracks": {}
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -373,8 +544,14 @@
         "program":"BSc. Telecommunication Engineering",
         "cutoff point":12,
         "college":"COLLEGE OF ENGINEERING",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Physics, Mathematics, Chemistry (or alternatives: Electricity\/Applied Electricity, Electronics, ICT)",
+        "elective subjects": {
+            "main": ["Physics", "Elective Mathematics"],
+            "tracks": {
+                "Technical": ["Electricity", "Chemistry", "Applied Electricity", "Electronics", "ICT"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -382,26 +559,48 @@
         "program":"Bachelor of Dental Surgery (BDS)",
         "cutoff point":" 06 (FeePaying Only)",
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Shortlisted applicants must pass an interview\u200b."
+        "special requirements \/ general information":"Shortlisted applicants must pass an interview."
     },
     {
         "program":"Doctor of Veterinary Medicine (DVM)",
         "cutoff point":13,
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Animal Husbandry is acceptable in place of Biology\u200b."
+        "special requirements \/ general information":"Animal Husbandry is acceptable in place of Biology."
     },
     {
         "program":"BSc. Disability and Rehabilitation Studies",
         "cutoff point":14,
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Any three from General Science, General Arts, Business, Visual Art, or Vocational",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General Science": ["Elective Mathematics", "Physics", "Chemistry", "Biology", "ICT", "Geography"],
+                "General Arts": ["Literature in English", "Government", "Economics", "Geography", "History", "French", "Elective Mathematics"],
+                "Visual Arts": ["General Knowledge in Art", "Graphic Design", "Picture Making", "Ceramics", "Sculpture", "Textiles", "Leatherwork"],
+                "Home Economics": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology"],
+                "Technical": ["Technical Drawing", "Building Construction", "Woodwork", "Metalwork", "Auto Mechanics", "Electronics", "Applied Electricity"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -409,80 +608,90 @@
         "program":"Bachelor of Herbal Medicine (BHM)",
         "cutoff point":15,
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Registered Diagnostic Medical Sonographers with experience may apply\u200b."
+        "special requirements \/ general information":"Registered Diagnostic Medical Sonographers with experience may apply."
     },
     {
         "program":"BSc. Human Biology (Medicine)",
         "cutoff point":6,
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Shortlisted applicants must pass an interview\u200b."
+        "special requirements \/ general information":"Shortlisted applicants must pass an interview."
     },
-    {
-        "program":"BSc. Medical Laboratory Sciences",
-        "cutoff point":7,
-        "college":"COLLEGE OF HEALTH SCIENCES",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Diploma holders with work experience may enter the second or third year\u200b."
-    },
+
     {
         "program":"BSc. Medical Imaging",
         "cutoff point":9,
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
-    },
-    {
-        "program":"BSc. Midwifery",
-        "cutoff point":9,
-        "college":"COLLEGE OF HEALTH SCIENCES",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Mature applicants must be Registered Midwives with work experience\u200b."
-    },
-    {
-        "program":"BSc. Nursing",
-        "cutoff point":8,
-        "college":"COLLEGE OF HEALTH SCIENCES",
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
-        "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Mature applicants must be Registered General Nurses with work experience\u200b."
     },
     {
         "program":"BSc. Physiotherapy and Sports Science",
         "cutoff point":12,
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Must pass a physical fitness test and interview\u200b."
+        "special requirements \/ general information":"Must pass a physical fitness test and interview."
     },
     {
         "program":"Pharm D (Doctor of Pharmacy)",
         "cutoff point":7,
         "college":"COLLEGE OF HEALTH SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Mature applicants must have a Degree in Pharmacy and pass an interview\u200b."
+        "special requirements \/ general information":"Mature applicants must have a Degree in Pharmacy and pass an interview."
     },
     {
         "program":"BA. Akan Language and Culture",
         "cutoff point":20,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Akan (Asante Twi, Fante, Akuapem Twi) and any TWO from History, Geography, Literature in English, French, Economics, Religious Studies, Government, Business Management",
+        "elective subjects": {
+            "main": [["Asante Twi", "Fante", "Akuapem Twi"]],
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", "Economics", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"], "Government", "Business Management"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -490,8 +699,14 @@
         "program":"BA. Economics",
         "cutoff point":13,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics and any TWO from: Economics, Geography, Government, History, Literature in English, French, Business Management, ICT, Technical Drawing, Engineering Science, Chemistry",
+        "elective subjects": {
+            "main": ["Elective Mathematics"],
+            "tracks": {
+                "Social Sciences": ["Economics", "Geography", "Government", "History", "Literature in English", "French", "Business Management", "ICT", "Technical Drawing", "Engineering Science", "Chemistry"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -499,8 +714,14 @@
         "program":"BA. English",
         "cutoff point":16,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Literature in English and any TWO from French, History, Government, Economics, Geography, Akan, Religious Studies",
+        "elective subjects": {
+            "main": ["Literature in English"],
+            "tracks": {
+                "Humanities": ["French", "History", "Government", "Economics", "Geography", "Akan", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -508,8 +729,14 @@
         "program":"BA. French and Francophone Studies",
         "cutoff point":14,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"French (Grade A1-B3) and any TWO from History, Religious Studies, Economics, Geography, Government, Literature in English, Business Management, Ghanaian Language",
+        "elective subjects": {
+            "main": ["French"],
+            "tracks": {
+                "Humanities": ["History", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"], "Economics", "Geography", "Government", "Literature in English", "Business Management", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"]]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -517,8 +744,14 @@
         "program":"BA. Geography and Rural Development",
         "cutoff point":12,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Geography and any TWO from Economics, Government, French, Literature in English, Religious Studies, History, Elective Mathematics, Akan",
+        "elective subjects": {
+            "main": ["Geography"],
+            "tracks": {
+                "Humanities": ["Economics", "Government", "French", "Literature in English", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"], "History", "Elective Mathematics", "Akan"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -526,8 +759,14 @@
         "program":"BA. History",
         "cutoff point":16,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"History or Government and any one from Economics, Geography, French, Ghanaian Language, Literature in English, Religious Studies",
+        "elective subjects": {
+            "main": [["History", "Government"]],
+            "tracks": {
+                "Humanities": ["Economics", "Geography", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Literature in English", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -535,8 +774,14 @@
         "program":"BA. Linguistics",
         "cutoff point":15,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Any THREE from General Arts subjects, including English, Ghanaian Language, French, History, Literature in English, Geography, Religious Studies, Government",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Humanities": [["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "French", "History", "Literature in English", "Geography", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"], "Government"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -544,17 +789,29 @@
         "program":"BA. Media and Communication Studies",
         "cutoff point":10,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE electives from Group A (English Literature, Ghanaian Language, Foreign Language) OR two from Group A + one from Group B (History, Geography, Economics, Religious Studies, Government, Business Management)",
+        "elective subjects": {
+            "main": ["Literature in English", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "French"],
+            "tracks": {
+                "Humanities": ["History", "Geography", "Economics", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"], "Government", "Business Management"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, Diploma Holders",
-        "special requirements \/ general information":"Diploma holders in Communication Studies, Journalism, Archival Studies, International Relations can enter the second year\u200b."
+        "special requirements \/ general information":"Diploma holders in Communication Studies, Journalism, Archival Studies, International Relations can enter the second year."
     },
     {
         "program":"BA. Political Studies",
         "cutoff point":10,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"History or Government and any one from Economics, Geography, French, Ghanaian Language, Literature in English, Religious Studies",
+        "elective subjects": {
+            "main": ["History", "Government"],
+            "tracks": {
+                "Humanities": ["Economics", "Geography", "French", "Literature in English", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -562,17 +819,30 @@
         "program":"BA. Religious Studies",
         "cutoff point":18,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE General Arts subjects, including Christian Religious Studies (CRS) or Islamic Religious Studies (IRS)",
+        "elective subjects": {
+            "main": [["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]],
+            "tracks": {
+                "Humanities": ["History", "Geography", "Economics", "Government", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"]]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Diploma in Religious Studies or Theology holders can enter the second year\u200b."
+        "special requirements \/ general information":"Diploma in Religious Studies or Theology holders can enter the second year."
     },
     {
         "program":"BA. Sociology",
         "cutoff point":11,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from History, Geography, Literature in English, French, Ghanaian Language, Government, Business Management, Elective Mathematics, Economics, Science electives",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], 
+                "Government", "Business Management", "Elective Mathematics", "Economics", "Physics", "Chemistry", "Biology", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -580,17 +850,33 @@
         "program":"BA. Social Work",
         "cutoff point":12,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE from History, Geography, Literature in English, French, Ghanaian Language, Government, Business Management, Elective Mathematics, Economics, Science electives",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "General": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], 
+                "Government", "Business Management", "Elective Mathematics", "Economics", "Physics", "Chemistry", "Biology", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
-        "special requirements \/ general information":"Diploma in Social Work\/Social Administration holders enter second year\u200b."
+        "special requirements \/ general information":"Diploma in Social Work\/Social Administration holders enter second year."
     },
     {
         "program":"BSc. Business Administration (Human Resource Mgt.\/Management)",
         "cutoff point":9,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from any of: Business, General Arts, General Science, Vocational\/Home Economics",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Government"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Vocational": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology", "Food and Nutrition", "Clothing and Textiles", "Management in Living", "General Agriculture"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -598,8 +884,17 @@
         "program":"BSc. Business Administration (Marketing\/International Business)",
         "cutoff point":10,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from any of: Business, General Arts, General Science, Vocational\/Home Economics",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Government"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Vocational": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology", "Food and Nutrition", "Clothing and Textiles", "Management in Living", "General Agriculture"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -607,8 +902,17 @@
         "program":"BSc. Business Administration (Accounting\/Banking and Finance)",
         "cutoff point":7,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from any of: Business, General Arts, General Science, Vocational\/Home Economics",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Government"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Vocational": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology", "Food and Nutrition", "Clothing and Textiles", "Management in Living", "General Agriculture"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -616,8 +920,17 @@
         "program":"BSc. Business Administration (Logistics and Supply Chain Mgt.\/Bus. Info. Tech.)",
         "cutoff point":9,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from any of: Business, General Arts, General Science, Vocational\/Home Economics",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Government"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Vocational": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology", "Food and Nutrition", "Clothing and Textiles", "Management in Living", "General Agriculture"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -625,8 +938,17 @@
         "program":"BSc. Hospitality and Tourism Management",
         "cutoff point":10,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from Business, General Arts, General Science, Vocational\/Home Economics",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Government"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Vocational": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology", "Food and Nutrition", "Clothing and Textiles", "Management in Living", "General Agriculture"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -634,35 +956,62 @@
         "program":"LLB",
         "cutoff point":7,
         "college":"COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"THREE subjects from General Arts, Business, Visual Arts, or General Science",
+        "elective subjects": {
+            "main": null, 
+            "tracks": {
+                "General Arts": ["History", "Government", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Geography", "Economics", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]],
+                "Business": ["Business Management", "Accounting", "Costing", "Economics"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Visual Arts": ["General Knowledge in Art", "Textiles", "Graphic Design", "Picture Making"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, Degree Holders",
-        "special requirements \/ general information":"Degree holders must pass an entrance exam and interview\u200b."
+        "special requirements \/ general information":"Degree holders must pass an entrance exam and interview."
     },
     {
         "program":"BSc. Biochemistry",
         "cutoff point":12,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and either Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"HND applicants with Second Class (Upper\/Lower Division) may be admitted to the third or second year\u200b."
+        "special requirements \/ general information":"HND applicants with Second Class (Upper\/Lower Division) may be admitted to the third or second year."
     },
     {
         "program":"BSc. Food Science and Technology",
         "cutoff point":13,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and either Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"HND holders in Food Manufacturing, Food Science, or Chemical Engineering may enter the second year\u200b."
+        "special requirements \/ general information":null
     },
     {
         "program":"BSc. Biological Sciences",
         "cutoff point":12,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and either Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -670,17 +1019,29 @@
         "program":"BSc. Environmental Sciences",
         "cutoff point":15,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Chemistry, and either Physics or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Chemistry"],
+            "tracks": {
+                "General Science": ["Physics", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Agricultural Science is acceptable in place of Biology\u200b."
+        "special requirements \/ general information":"Agricultural Science is acceptable in place of Biology."
     },
     {
         "program":"BSc. Chemistry",
         "cutoff point":16,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Chemistry, Physics, Mathematics or Biology",
+        "elective subjects": {
+            "main": ["Chemistry", "Physics"],
+            "tracks": {
+                "General Science": ["Elective Mathematics", "Biology"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -688,17 +1049,29 @@
         "program":"BSc. Computer Science",
         "cutoff point":11,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, Physics, and either Chemistry or Applied Electricity\/Electronics",
+        "elective subjects": {
+            "main": ["Elective Mathematics", "Physics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Applied Electricity", "Electronics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Applicants with HND in Mathematics, Engineering, or related disciplines with Second Class Lower or better may be placed in Year 2 or 3\u200b."
+        "special requirements \/ general information":"Applicants with HND in Mathematics, Engineering, or related disciplines with Second Class Lower or better may be placed in Year 2 or 3."
     },
     {
         "program":"BSc. Mathematics",
         "cutoff point":17,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, Physics, and either Chemistry or Biology",
+        "elective subjects": {
+            "main": ["Elective Mathematics", "Physics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Biology"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -706,8 +1079,17 @@
         "program":"BSc. Actuarial Science",
         "cutoff point":11,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, Physics, and either Chemistry or Biology",
+        "elective subjects": {
+            "main": ["Elective Mathematics"],
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Government"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Vocational": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology", "Food and Nutrition", "Clothing and Textiles", "Management in Living", "General Agriculture"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -715,17 +1097,32 @@
         "program":"BSc. Statistics",
         "cutoff point":12,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, Physics, and either Chemistry or Biology",
+        "elective subjects": {
+            "main": ["Elective Mathematics"],
+            "tracks": {
+                "Humanities": ["History", "Geography", "Literature in English", "French", ["Fante", "Akuapem Twi", "Asante Twi", "Ga", "Ewe", "Arabic", "Dagaare", "Dagbani", "Gonja", "Kasem", "Nzema"], "Government"],
+                "General Science": ["Physics", "Chemistry", "Biology", "Elective Mathematics"],
+                "Vocational": ["Food and Nutrition", "Management in Living", "Textiles", "Clothing and Construction", "Biology", "Food and Nutrition", "Clothing and Textiles", "Management in Living", "General Agriculture"],
+                "Business": ["Economics", "Accounting", "Business Management", "Business Mathematics", "Costing", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"HND holders in Statistics, Economics, or Mathematical Sciences may enter Year 2 or 3\u200b."
+        "special requirements \/ general information":null
     },
     {
         "program":"BSc. Physics",
         "cutoff point":18,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, Physics, and either Chemistry or Electronics",
+        "elective subjects": {
+            "main": ["Elective Mathematics", "Physics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Electronics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -733,8 +1130,14 @@
         "program":"BSc. Meteorology and Climate Science",
         "cutoff point":19,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Mathematics, Physics, and either Chemistry or Electronics",
+        "elective subjects": {
+            "main": ["Elective Mathematics", "Physics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Electronics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -742,141 +1145,242 @@
         "program":"Doctor of Optometry",
         "cutoff point":9,
         "college":"COLLEGE OF SCIENCE",
+        "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects":"Biology, Physics, and either Chemistry or Mathematics",
+        "elective subjects": {
+            "main": ["Biology", "Physics"],
+            "tracks": {
+                "General Science": ["Chemistry", "Elective Mathematics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
-        "special requirements \/ general information":"Shortlisted applicants must pass an interview\u200b."
+        "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Civil Engineering (Obuasi Campus)",
+        "program":"BSc. Civil Engineering",
         "cutoff point":14,
-        "college":"OBUASI CAMPUS",
+        "college":null,
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Electrical\/Electronic Engineering (Obuasi Campus)",
+        "program":"BSc. Electrical\/Electronic Engineering",
         "cutoff point":13,
-        "college":"OBUASI CAMPUS",
+        "college":null,
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Geological Engineering (Obuasi Campus)",
+        "program":"BSc. Geological Engineering",
         "cutoff point":16,
-        "college":"OBUASI CAMPUS",
+        "college":null,
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Geomatic (Geodetic) Engineering (Obuasi Campus)",
+        "program":"BSc. Geomatic (Geodetic) Engineering",
         "cutoff point":17,
-        "college":"OBUASI CAMPUS",
+        "college":null,
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Materials Engineering (Obuasi Campus)",
+        "program":"BSc. Materials Engineering",
         "cutoff point":18,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Mechanical Engineering (Obuasi Campus)",
+        "program":"BSc. Mechanical Engineering",
         "cutoff point":14,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Metallurgical Engineering (Obuasi Campus)",
+        "program":"BSc. Metallurgical Engineering",
         "cutoff point":19,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Medical Laboratory Sciences (Obuasi Campus)",
+        "program":"BSc. Medical Laboratory Sciences",
         "cutoff point":10,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Midwifery (Obuasi Campus)",
+        "program":"BSc. Midwifery",
         "cutoff point":12,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Nursing (Obuasi Campus)",
+        "program":"BSc. Nursing",
         "cutoff point":11,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BBA (HRM\/Management) (Obuasi Campus)",
+        "program":"BBA (HRM\/Management)",
         "cutoff point":16,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BBA (Marketing\/International Business) (Obuasi Campus)",
+        "program":"BBA (Marketing\/International Business)",
         "cutoff point":17,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BBA (Accounting\/Banking and Finance) (Obuasi Campus)",
+        "program":"BBA (Accounting\/Banking and Finance)",
         "cutoff point":13,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BBA (Logistics & Supply Chain Mgt.\/Bus. Info. Tech.) (Obuasi Campus)",
+        "program":"BBA (Logistics & Supply Chain Mgt.\/Bus. Info. Tech.)",
         "cutoff point":15,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,
         "special requirements \/ general information":null
     },
     {
-        "program":"BSc. Environmental Sciences (Obuasi Campus)",
+        "program":"BSc. Environmental Sciences",
         "cutoff point":18,
-        "college":"OBUASI CAMPUS",
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Medical Laboratory Sciences",
+        "cutoff point":7,
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Midwifery",
+        "cutoff point":12,
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Nursing",
+        "cutoff point":11,
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Electrical\/Electronic Engineering",
+        "cutoff point":13,
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Geological Engineering",
+        "cutoff point":16,
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Geomatic (Geodetic) Engineering",
+        "cutoff point":17,
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Materials Engineering",
+        "cutoff point":18,
+        "college":null, 
+        "campus":"Obuasi Campus",
+        "core subjects":null,
+        "elective subjects":null,
+        "applicant type":null,
+        "special requirements \/ general information":null
+    },
+    {
+        "program":"BSc. Mechanical Engineering",
+        "cutoff point":14,
+        "college":null, 
+        "campus":"Obuasi Campus",
         "core subjects":null,
         "elective subjects":null,
         "applicant type":null,

@@ -19,7 +19,7 @@ export default function RegistrationSuccessPage() {
           </p>
           <Link href="/register/grades">
             <Button className="w-full">
-              Continue to Grade Input
+              Continue to Input Results
             </Button>
           </Link>
         </div>

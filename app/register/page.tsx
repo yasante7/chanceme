@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
@@ -30,6 +30,30 @@ export default function RegisterPage() {
   const [error, setError] = useState<string | null>(null)
   const [emailError, setEmailError] = useState("")
 // const { signUp } = useAuth()  // Comment out this line
+
+  // Load saved data when component mounts
+  useEffect(() => {
+    const savedData = localStorage.getItem('userData')
+    if (savedData) {
+      try {
+        const userData = JSON.parse(savedData)
+        // Only load registration data, not grades
+        if (userData.name && !userData.grades) {
+          setFormData({
+            name: userData.name || "",
+            email: userData.email || "",
+            password: userData.password || "",
+            dateOfBirth: userData.dateOfBirth || "",
+            gender: userData.gender || "",
+            phone: userData.phone || "",
+            region: userData.region || "",
+          })
+        }
+      } catch (error) {
+        console.error('Error loading saved data:', error)
+      }
+    }
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
