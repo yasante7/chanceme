@@ -1,6 +1,21 @@
 // Generic function to handle tracks of subjects
 import { generateSubjectCombinations } from "./handlecombinations";
 
+// Function to remove duplicates from combinations of subjects
+function removeNestedArrayDups<T>(array: string[][]): string[][] {
+  const seen = new Set<string>();
+  const result: string[][] = [];
+
+  for (const item of array) {
+      const serialized = JSON.stringify(item);
+      if (!seen.has(serialized)) {
+          seen.add(serialized);
+          result.push(item);
+      }
+  }
+
+  return result;
+}
 
 export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: string[]) {
   const trackKeys = Object.keys(tracks);
@@ -54,14 +69,25 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
         typeof subject === 'string' ? [subject] : subject
       );
       const combinations = generateSubjectCombinations(normalizedSubjects);
-      console.log(`Generated ${combinations.length} combinations for track ${trackName}`);
+      console.log(`Generated ${combinations.length} combinations for ${trackName} below:`);
+      console.log(`Combinations for track ${trackName}:`, combinations);
       allValidCombinations.push(...combinations);  // collect combinations
       allQualifiedSubjects.push(...normalizedSubjects);  // collect all qualified subjects
     }
     }
 
     console.log("Matched Subjects per Track:", JSON.stringify(matchedSubjects, null, 2));
-  return {matchedSubjects, allQualifiedSubjects, allValidCombinations}; // Return the matched subjects and combinations
+  
+  return {
+    matchedSubjects, 
+    allQualifiedSubjects, 
+    allValidCombinations: removeNestedArrayDups(allValidCombinations)
+  } as TrackResult; // Return the matched subjects and combinations
 }  
 
 type Tracks = Record<string, (string | string[])[] | undefined>;
+interface TrackResult {
+  matchedSubjects: Tracks;
+  allQualifiedSubjects: string[][];
+  allValidCombinations: string[][];
+}
