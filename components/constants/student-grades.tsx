@@ -29,6 +29,7 @@ export const PROGRAM_SUBJECTS = {
   'General Arts': [
     'Economics',
     'Geography',
+    'Government',
     'History',
     'Elective Mathematics',
     'Christian Religious Studies',

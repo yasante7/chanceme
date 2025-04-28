@@ -20,13 +20,16 @@ export function handleRegularMain(studentSubjects: string[], mains: string[]) {
 }
 
 export function handleNestedMains(studentSubjects: string[], mainGroups: string[][]) {
-    for (const group of mainGroups) {
-      const result = handleRegularMain(studentSubjects, group);
-      if (result.qualifiesMain) {
-        return result; // student qualifies with this group
-      }
+  for (const group of mainGroups) {
+    const matched = group.filter(subject => studentSubjects.includes(subject));
+    const remainSubjects = studentSubjects.filter(subject => !matched.includes(subject));
+    
+    if (matched.length > 0) { // ✅ Match ANY one subject
+      console.log(`Matched subjects from group ${JSON.stringify(group)}:`, matched);
+      return { qualifiesMain: true, remainSubjects, matched };
     }
-    // If none of the groups matched
-    console.log("Student does not qualify under any nested main group");
-    return { qualifiesMain: false, remainSubjects: studentSubjects, matched: [] };
+  }
+  // ❌ If no group matched even one subject
+  console.log("Student does not qualify under any nested main group");
+  return { qualifiesMain: false, remainSubjects: studentSubjects, matched: [] };
 }

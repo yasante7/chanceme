@@ -39,14 +39,12 @@
         "campus": "Kumasi (Main) Campus",
         "core subjects": "English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": [
-                "Biology",
-                "Chemistry"
-            ],
+            "main": null,
             "tracks": {
                 "General Science": [
                     "Physics",
-                    "Elective Mathematics"
+                    ["Elective Mathematics",
+                    "Chemistry"]
                 ]
             }
         },
@@ -163,37 +161,6 @@
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature",
         "special requirements / general information": "Applicants with HND in Mathematics, Engineering, or related disciplines with Second Class Lower or better may be placed in Year 2 or 3."
-    },
-    {
-        "program": "BA. Political Studies",
-        "cutoff point": 9,
-        "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
-        "campus": "Kumasi (Main) Campus",
-        "core subjects": "English Language, Mathematics, Integrated Science",
-        "elective subjects": {
-            "main": [
-                [
-                    "History",
-                    "Government"
-                ]
-            ],
-            "tracks": {
-                "Humanities": [
-                    "Economics",
-                    "Geography",
-                    "Elective Mathematics",
-                    "French",
-                    "Ghanaian Language",
-                    "Literature in English",
-                    [
-                        "Christian Religious Studies (CRS)",
-                        "Islamic Religious Studies (IRS)"
-                    ]
-                ]
-            }
-        },
-        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
-        "special requirements / general information": null
     },
     {
         "program": "BSc. Information Technology",
@@ -408,5 +375,572 @@
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature",
         "special requirements / general information": null
-    }
+    },
+    
+        {
+            "program": "BA. Akan Language and Culture",
+            "cutoff point": 15,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": [
+                    [
+                        "Asante Twi",
+                        "Fante",
+                        "Akuapem Twi"
+                    ]
+                ],
+                "tracks": {
+                    "Humanities": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Economics",
+                        [
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)"
+                        ],
+                        "Government",
+                        "Business Management"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BA. Economics",
+            "cutoff point": 10,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": [
+                    "Elective Mathematics"
+                ],
+                "tracks": {
+                    "General Arts": [
+                        "Economics",
+                        "Geography",
+                        "Government",
+                        "History",
+                        "Literature in English",
+                        "French",
+                        "Christian Religious Studies (CRS)",
+                        "ICT",
+                        "Ghanaian Language"
+                    ],
+                    "Business": [
+                        "Economics",
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "ICT"
+                    ],
+                    "General Science": [
+                        "Chemistry",
+                        "Biology",
+                        "Physics",
+                        "Geography",
+                        "ICT"
+                    ],
+                    "Group A": [
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Woodwork",
+                        "Metalwork",
+                        "ICT",
+                        "Technical Drawing",
+                        "Engineering Science"
+                    ],
+                    "Home Economics": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ],
+                    "Visual Arts": [
+                        "General Knowledge in Art",
+                        "Literature in English",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BA. English",
+            "cutoff point": 13,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Humanities": [
+                        "Literature in English",
+                        "French",
+                        "History",
+                        "Government",
+                        "Economics",
+                        "Geography",
+                        "Ghanaian Language",
+                        [
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)"
+                        ]
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": "Any other General Arts elective will be considered beside the mentioned requirements."
+        },
+        {
+            "program": "BA. French and Francophone Studies",
+            "cutoff point": 14,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": [
+                    "French"
+                ],
+                "tracks": {
+                    "Humanities": [
+                        "History",
+                        [
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)"
+                        ],
+                        "Economics",
+                        "Geography",
+                        "Government",
+                        "Literature in English",
+                        "Business Management",
+                        "Ghanaian Language"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": "A1-B3 in French. Any other General Arts elective will be considered beside the mentioned requirements."
+        },
+        {
+            "program": "BA. Geography and Rural Development",
+            "cutoff point": 10,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": [
+                    "Geography"
+                ],
+                "tracks": {
+                    "Humanities": [
+                        "Economics",
+                        "Government",
+                        "French",
+                        "Literature in English",
+                        [
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)"
+                        ],
+                        "History",
+                        "Elective Mathematics",
+                        "Ghanaian Language"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": "Any other General Arts elective will be considered beside the mentioned requirements."
+        },
+        {
+            "program": "BA. History",
+            "cutoff point": 15,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": [
+                    [
+                        "History",
+                        "Government"
+                    ]
+                ],
+                "tracks": {
+                    "Humanities": [
+                        "Economics",
+                        "Geography",
+                        "French",
+                        "Elective Mathematics",
+                        "Ghanaian Language",
+                        "Literature in English",
+                        [
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)"
+                        ]
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": "Any other General Arts elective will be considered beside the mentioned requirements. A pass in Social Studies is required"
+        },
+        {
+            "program": "BA. Linguistics",
+            "cutoff point": 15,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Humanities": [
+                        "Literature in English",
+                        "Ghanaian Language",
+                        "French",
+                        "Igbo",
+                        "Wolof",
+                        "Yoruba"
+                    ],
+                    "Group A": [
+                        [
+                            "Literature in English",
+                            "Ghanaian Language",
+                            "French",
+                            "Igbo",
+                            "Wolof",
+                            "Yoruba"
+                        ],
+                        "History",
+                        "Geography",
+                        "Economics",
+                        "Christian Religious Studies (CRS)",
+                        "Islamic Religious Studies (IRS)",
+                        "Government",
+                        "Business Management"
+                    ],
+                    "Group B": [
+                        [
+                            "History",
+                            "Geography",
+                            "Economics",
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)",
+                            "Government",
+                            "Business Management"
+                        ],
+                        "Literature in English",
+                        "Ghanaian Language",
+                        "French",
+                        "Igbo",
+                        "Wolof",
+                        "Yoruba"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BA. Media and Communication Studies",
+            "cutoff point": 9,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Humanities": [
+                        "Literature in English",
+                        "Ghanaian Language",
+                        "French",
+                        "Igbo",
+                        "Wolof",
+                        "Yoruba"
+                    ],
+                    "Group A": [
+                        [
+                            "Literature in English",
+                            "Ghanaian Language",
+                            "French",
+                            "Igbo",
+                            "Wolof",
+                            "Yoruba"
+                        ],
+                        "History",
+                        "Geography",
+                        "Economics",
+                        "Christian Religious Studies (CRS)",
+                        "Islamic Religious Studies (IRS)",
+                        "Government",
+                        "Business Management"
+                    ],
+                    "Group B": [
+                        [
+                            "History",
+                            "Geography",
+                            "Economics",
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)",
+                            "Government",
+                            "Business Management"
+                        ],
+                        "Literature in English",
+                        "Ghanaian Language",
+                        "French",
+                        "Igbo",
+                        "Wolof",
+                        "Yoruba"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, Diploma Holders",
+            "special requirements / general information": "Diploma holders in Communication Studies, Journalism, Archival Studies, International Relations can enter the second year."
+        },
+        {
+            "program": "BA. Political Studies",
+            "cutoff point": 9,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": [
+                    [
+                        "History",
+                        "Government"
+                    ]
+                ],
+                "tracks": {
+                    "Humanities": [
+                        "Economics",
+                        "Geography",
+                        "Elective Mathematics",
+                        "French",
+                        "Ghanaian Language",
+                        "Literature in English",
+                        [
+                            "Christian Religious Studies (CRS)",
+                            "Islamic Religious Studies (IRS)"
+                        ]
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BA. Religious Studies",
+            "cutoff point": 20,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": [
+                    [
+                        "Christian Religious Studies (CRS)",
+                        "Islamic Religious Studies (IRS)"
+                    ]
+                ],
+                "tracks": {
+                    "Group A": [
+                        "Agric",
+                        "GArts",
+                        "Science",
+                        "Biz",
+                        "Tech",
+                        "Visual",
+                        "Home Econs"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": "Diploma in Religious Studies or Theology holders can enter the second year."
+        },
+        {
+            "program": "BA. Sociology",
+            "cutoff point": 11,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Elective Mathematics"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": "Any other General Arts and Science electives will be considered beside the mentioned requirements."
+        },
+        {
+            "program": "BA. Social Work",
+            "cutoff point": 11,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics",
+                        "Physics",
+                        "Chemistry",
+                        "Biology",
+                        "Elective Mathematics"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": "Any other General Arts and Science electives will be considered beside the mentioned requirements. Diploma in Social Work/Social Administration holders enter second year."
+        },
+        {
+            "program": "BSc. Business Administration (Human Resource Mgt./Management)",
+            "cutoff point": 7,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "GArts",
+                        "Science",
+                        "Biz",
+                        "Home Econs"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BSc. Business Administration (Marketing/International Business)",
+            "cutoff point": 9,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "GArts",
+                        "Science",
+                        "Biz",
+                        "Home Econs"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BSc. Business Administration (Accounting/Banking and Finance)",
+            "cutoff point": 7,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "GArts",
+                        "Science",
+                        "Biz"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BSc. Business Administration (Logistics and Supply Chain Mgt./Bus. Info. Tech.)",
+            "cutoff point": 8,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "GArts",
+                        "Science",
+                        "Biz"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "BSc. Hospitality and Tourism Management",
+            "cutoff point": 10,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "GArts",
+                        "Science",
+                        "Biz",
+                        "Home Econs"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+            "special requirements / general information": null
+        },
+        {
+            "program": "LLB",
+            "cutoff point": 6,
+            "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
+            "campus": "Kumasi (Main) Campus",
+            "core subjects": "English Language, Mathematics, Integrated Science",
+            "elective subjects": {
+                "main": null,
+                "tracks": {
+                    "Group A": [
+                        "GArts",
+                        "Science",
+                        "Biz",
+                        "Visual"
+                    ]
+                }
+            },
+            "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, Degree Holders",
+            "special requirements / general information": "Degree holders must pass an entrance exam and interview."
+        }
 ]
