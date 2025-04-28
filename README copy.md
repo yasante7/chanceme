@@ -78,3 +78,7 @@ For each program:
   - Campus
   - Whether student is **qualified**
   - List of all **valid 3-subject combinations**
+
+
+# Up Next
+Replace general subject names and Ghanaian with actual subjects when called.

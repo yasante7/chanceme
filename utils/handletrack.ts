@@ -18,19 +18,24 @@ function removeNestedArrayDups<T>(array: string[][]): string[][] {
 }
 
 export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: string[]) {
+  console.log("originaltracks:", tracks['tracks'])
   const trackKeys = Object.keys(tracks);
   const matchedSubjects: Tracks = {};  // to record matches per track
+  console.log(trackKeys)
 
   // Looping through each track
   for (const key of trackKeys) {
-    const trackList = tracks[key];
-    if (!trackList) continue;  // 🚀 Skip if undefined
-    console.log(`Checking track: ${key}`);
+
+    console.log('trackKeys:',trackKeys)
+    console.log("keys:", key)
+    const trackObjects = tracks[key];
+    if (!trackObjects) continue;  // 🚀 Skip if undefined
+    console.log("trackList:", JSON.stringify(trackObjects));
 
     matchedSubjects[key] = [];  // Initialize empty array for the current track
 
     // Looping through each element of a track: can be string or list
-    for (const subject of trackList) {
+    for (const subject of trackObjects) {
       if (typeof subject === "string") {
         // Single subject
         if (remainSubjects.includes(subject)) {
@@ -80,12 +85,12 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
   
   return {
     matchedSubjects, 
-    allQualifiedSubjects, 
+    allQualifiedSubjects: removeNestedArrayDups(allQualifiedSubjects),
     allValidCombinations: removeNestedArrayDups(allValidCombinations)
   } as TrackResult; // Return the matched subjects and combinations
 }  
 
-type Tracks = Record<string, (string | string[])[] | undefined>;
+type Tracks = Record<string, string[][] | (string | string[])[] | undefined>;
 interface TrackResult {
   matchedSubjects: Tracks;
   allQualifiedSubjects: string[][];

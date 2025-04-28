@@ -1,0 +1,265 @@
+[
+    {
+        "program": "BSc. Civil Engineering",
+        "cutoff point": 11,
+        "college": "COLLEGE OF ENGINEERING",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Elective Mathematics",
+                "Physics",
+                "Chemistry"
+            ],
+            "tracks": {}
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Electrical & Electronic Engineering",
+        "cutoff point": 10,
+        "college": null,
+        "campus": "Obuasi Campus",
+        "core subjects": null,
+        "elective subjects": {
+            "main": null,
+            "tracks": null
+        },
+        "applicant type": null,
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Geological Engineering",
+        "cutoff point": 14,
+        "college": "COLLEGE OF ENGINEERING",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Physics",
+                "Elective Mathematics",
+                "Chemistry"
+            ],
+            "tracks": {}
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Geomatic (Geodetic) Engineering",
+        "cutoff point": 15,
+        "college": "COLLEGE OF ENGINEERING",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Physics",
+                "Elective Mathematics"
+            ],
+            "tracks": {
+                "General": [
+                    "Geography",
+                    "Chemistry",
+                    "Applied Electricity",
+                    "Basic Electronics",
+                    "Basic Electronics"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Materials Engineering",
+        "cutoff point": 15,
+        "college": "COLLEGE OF ENGINEERING",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Physics",
+                "Elective Mathematics",
+                "Chemistry"
+            ],
+            "tracks": {}
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Mechanical Engineering",
+        "cutoff point": 12,
+        "college": "COLLEGE OF ENGINEERING",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Physics",
+                "Elective Mathematics",
+                "Chemistry"
+            ],
+            "tracks": {}
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Metallurgical Engineering",
+        "cutoff point": 16,
+        "college": "COLLEGE OF ENGINEERING",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Elective Mathematics",
+                "Physics",
+                "Chemistry"
+            ],
+            "tracks": {}
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Medical Laboratory Sciences",
+        "cutoff point": 9,
+        "college": "COLLEGE OF HEALTH SCIENCES",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Biology",
+                "Chemistry"
+            ],
+            "tracks": {
+                "General Science": [
+                    "Physics",
+                    "Elective Mathematics"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Midwifery",
+        "cutoff point": 13,
+        "college": "COLLEGE OF HEALTH SCIENCES",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Biology",
+                "Chemistry"
+            ],
+            "tracks": {
+                "General Science": [
+                    "Physics",
+                    "Elective Mathematics"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Nursing",
+        "cutoff point": 12,
+        "college": "COLLEGE OF HEALTH SCIENCES",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Biology",
+                "Chemistry"
+            ],
+            "tracks": {
+                "General Science": [
+                    "Physics",
+                    "Elective Mathematics"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Business Administration (Human Resource Mgt.\/Management)",
+        "cutoff point": 15,
+        "college": null,
+        "campus": "Obuasi Campus",
+        "core subjects": null,
+        "elective subjects": {
+            "main": null,
+            "tracks": null
+        },
+        "applicant type": null,
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Business Administration (Marketing\/International Business)",
+        "cutoff point": 16,
+        "college": null,
+        "campus": "Obuasi Campus",
+        "core subjects": null,
+        "elective subjects": {
+            "main": null,
+            "tracks": null
+        },
+        "applicant type": null,
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Business Administration (Accounting\/Banking and Finance)",
+        "cutoff point": 12,
+        "college": null,
+        "campus": "Obuasi Campus",
+        "core subjects": null,
+        "elective subjects": {
+            "main": null,
+            "tracks": null
+        },
+        "applicant type": null,
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Business Administration (Logistics and Supply Chain Mgt.\/Bus. Info. Tech.)",
+        "cutoff point": 15,
+        "college": null,
+        "campus": "Obuasi Campus",
+        "core subjects": null,
+        "elective subjects": {
+            "main": null,
+            "tracks": null
+        },
+        "applicant type": null,
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Environmental Sciences",
+        "cutoff point": 19,
+        "college": "COLLEGE OF SCIENCE",
+        "campus": "Obuasi Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Chemistry"
+            ],
+            "tracks": {
+                "General Science": [
+                    [
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    [
+                        "Biology",
+                        "Agricultural Science"
+                    ]
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature",
+        "special requirements / general information": null
+    }
+]

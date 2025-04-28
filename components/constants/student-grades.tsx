@@ -101,4 +101,18 @@ export const PROGRAM_SUBJECTS = {
   ]
 } as const
 
+export const Languages = [
+  'Fante',
+  'Akuapem Twi',
+  'Asante Twi',
+  'Ga',
+  'Ewe',
+  'Arabic',
+  'Dagaare',
+  'Dagbani',
+  'Gonja',
+  'Kasem',
+  'Nzema'
+]
+
 export const GRADES: Grade[] = ['A1', 'B2', 'B3', 'C4', 'C5', 'C6', 'D7', 'E8', 'F9']

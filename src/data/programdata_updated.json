@@ -10,7 +10,7 @@
                 "Chemistry"
             ],
             "tracks": {
-                "Group A": [
+                "General": [
                     [
                         "Physics",
                         "Elective Mathematics"
@@ -39,7 +39,7 @@
                 "Chemistry"
             ],
             "tracks": {
-                "Group A": [
+                "General": [
                     [
                         "Physics",
                         "Elective Mathematics"
@@ -233,7 +233,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "Science",
                     "GArts",
                     "Visual",
@@ -256,7 +256,7 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "Group A": [
+                "Technical": [
                     [
                         "Technical Drawing",
                         "Engineering Science"
@@ -299,7 +299,7 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "Group A": [
+                "Technical": [
                     [
                         "Technical Drawing",
                         "Engineering Science"
@@ -332,7 +332,7 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "Group A": [
+                "General": [
                     "Chemistry",
                     "Economics",
                     "Geography",
@@ -432,7 +432,7 @@
                 "Economics"
             ],
             "tracks": {
-                "Group A": [
+                "General": [
                     "Geography",
                     [
                         "Accounting",
@@ -475,7 +475,7 @@
                 "Economics"
             ],
             "tracks": {
-                "Group A": [
+                "General": [
                     "Geography",
                     [
                         "Accounting",
@@ -518,7 +518,7 @@
                 "General Knowledge in Art"
             ],
             "tracks": {
-                "Group A": [
+                "All": [
                     "Science",
                     "GArts",
                     "Visual",
@@ -593,7 +593,7 @@
                     "Costing",
                     "ICT"
                 ],
-                "Group A": [
+                "Technical": [
                     "Welding and Fabrication Technology",
                     "Digital Design Technology",
                     "Industrial Mechanics",
@@ -675,7 +675,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "Science",
                     "Visual",
                     "Home Econs",
@@ -695,7 +695,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "Science",
                     "Visual",
                     "Home Econs",
@@ -717,7 +717,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "Science",
                     "Visual",
                     "Home Econs",
@@ -739,7 +739,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "Visual",
                     "Home Econs",
                     "GArts"
@@ -775,7 +775,7 @@
                         "Biology"
                     ]
                 ],
-                "Group A": [
+                "Technical": [
                     "Technical Drawing",
                     "Building Construction",
                     "Applied Electricity",
@@ -797,7 +797,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "Science",
                     "Visual",
                     "GArts",
@@ -1027,7 +1027,7 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "Group A": [
+                "General": [
                     "Geography",
                     "Chemistry",
                     "Applied Electricity",
@@ -1126,7 +1126,7 @@
         "special requirements / general information": null
     },
     {
-        "program": "BSc. MetGeneralurgical Engineering",
+        "program": "BSc. Metallurgical Engineering",
         "cutoff point": 11,
         "college": "COLLEGE OF ENGINEERING",
         "campus": "Kumasi (Main) Campus",
@@ -1256,7 +1256,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
@@ -1505,7 +1505,7 @@
                     "Geography",
                     "ICT"
                 ],
-                "Group A": [
+                "Technical": [
                     "Applied Electricity",
                     "Auto Mechanics",
                     "Woodwork",
@@ -1721,14 +1721,14 @@
             "main": null,
             "tracks": {
                 "tracks": {
-                    "Group A": [
+                    "All": [
                         "General Arts",
                         "General Science",
                         "Business",
                         "Visual Arts",
                         "Home Economics",
                         "General Agriculture",
-                        "Group A"
+                        "Technical"
                     ]
                 }
             }
@@ -1781,7 +1781,7 @@
                 ]
             ],
             "tracks": {
-                "Group A": [
+                "All": [
                     "Agric",
                     "GArts",
                     "Science",
@@ -1804,7 +1804,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "General": [
                     "History",
                     "Geography",
                     "Literature in English",
@@ -1833,7 +1833,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "General": [
                     "History",
                     "Geography",
                     "Literature in English",
@@ -1862,7 +1862,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
@@ -1882,7 +1882,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
@@ -1902,7 +1902,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz"
@@ -1921,7 +1921,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz"
@@ -1940,7 +1940,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
@@ -1960,7 +1960,7 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
@@ -2114,7 +2114,7 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
@@ -2159,7 +2159,7 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
@@ -2184,7 +2184,7 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "Group A": [
+                "All": [
                     "GArts",
                     "Science",
                     "Biz",
