@@ -18,16 +18,14 @@ function removeNestedArrayDups<T>(array: string[][]): string[][] {
 }
 
 export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: string[]) {
-  console.log("originaltracks:", tracks['tracks'])
+  console.log("Lengh of matches:", matches.length);
+  console.log("Remaining subjects:", remainSubjects);
   const trackKeys = Object.keys(tracks);
   const matchedSubjects: Tracks = {};  // to record matches per track
   console.log(trackKeys)
 
   // Looping through each track
   for (const key of trackKeys) {
-
-    console.log('trackKeys:',trackKeys)
-    console.log("keys:", key)
     const trackObjects = tracks[key];
     if (!trackObjects) continue;  // 🚀 Skip if undefined
     console.log("trackList:", JSON.stringify(trackObjects));

@@ -11,6 +11,7 @@ import { GradeData, UserData } from "@/types/user"
 import schoolsData from '@/src/data/schools_loc_data.json'  // Add this import
 import { PROGRAMS, PROGRAM_SUBJECTS, CORE_SUBJECTS, GRADES } from "@/components/constants/student-grades"
 
+console.clear()
 type Grade = string;
 export default function GradesPage() {
   const router = useRouter()

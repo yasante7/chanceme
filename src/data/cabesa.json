@@ -1,0 +1,566 @@
+[
+    {
+        "program": "BSc. Architecture",
+        "cutoff point": 7,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Elective Mathematics"
+            ],
+            "tracks": {
+                "Group A": [
+                    [
+                        "Technical Drawing",
+                        "Engineering Science"
+                    ],
+                    "Building Construction",
+                    [
+                        "Woodwork",
+                        "Metalwork"
+                    ]
+                ],
+                "General Science": [
+                    "Physics",
+                    "Chemistry",
+                    "Biology"
+                ],
+                "Visual Arts": [
+                    "General Knowledge in Art",
+                    "Graphic Design",
+                    "Picture Making"
+                ],
+                "General Arts": [
+                    "Economics",
+                    "Geography",
+                    "Government",
+                    "History"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": "Mature applicants must show interest in architectural design and may need to pass an exam and interview."
+    },
+    {
+        "program": "BSc. Construction Technology and Management (Building Technology)",
+        "cutoff point": 9,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Elective Mathematics"
+            ],
+            "tracks": {
+                "Group A": [
+                    [
+                        "Technical Drawing",
+                        "Engineering Science"
+                    ],
+                    "Building Construction",
+                    "Woodwork",
+                    "Metalwork"
+                ],
+                "General Science": [
+                    "Physics",
+                    "Chemistry"
+                ],
+                "General Arts": [
+                    "Economics",
+                    "Geography"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": "Candidates may be required to pass a qualifying examination and interview."
+    },
+    {
+        "program": "BSc. Quantity Surveying and Construction Economics (Building Technology)",
+        "cutoff point": 9,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Elective Mathematics"
+            ],
+            "tracks": {
+                "Group A": [
+                    "Chemistry",
+                    "Economics",
+                    "Geography",
+                    "Technical Drawing",
+                    "Building Construction",
+                    "Physics"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": "Candidates may be required to pass a qualifying examination and interview."
+    },
+    {
+        "program": "BSc. Development Planning",
+        "cutoff point": 9,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Group": [
+                    "Geography",
+                    "Economics",
+                    [
+                        "Government",
+                        "History"
+                    ],
+                    "Elective Mathematics",
+                    "General Knowledge in Art",
+                    "Accounting",
+                    "Business Management",
+                    "Business Mathematics",
+                    "Costing"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Human Settlement Planning",
+        "cutoff point": 10,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Geography"
+            ],
+            "tracks": {
+                "Group A": [
+                    "Economics",
+                    "Business Management",
+                    "Government",
+                    "Elective Mathematics",
+                    "Financial Accounting",
+                    "Cost Accounting",
+                    "Graphic Design"
+                ],
+                "Group B": [
+                    "Economics",
+                    "Business Management",
+                    "Government",
+                    "Elective Mathematics",
+                    "Financial Accounting",
+                    "Cost Accounting",
+                    "Graphic Design",
+                    [
+                        "Accounting",
+                        "Technical Drawing",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Physics",
+                        "Painting",
+                        "History",
+                        "Building Technology",
+                        "Woodwork",
+                        "Metalwork",
+                        "General Knowledge in Art"
+                    ]
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": "THREE subjects in Group A or (2) from Group A and (1) from Group B. Candidates must pass an interview."
+    },
+    {
+        "program": "BSc. Land Economy",
+        "cutoff point": 8,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Economics"
+            ],
+            "tracks": {
+                "Group A": [
+                    "Geography",
+                    [
+                        "Accounting",
+                        "Business Management",
+                        "Government",
+                        "Business Mathematics",
+                        "French",
+                        "Literature in English",
+                        "History",
+                        "Building Construction",
+                        "Technical Drawing",
+                        "Elective Mathematics"
+                    ]
+                ],
+                "other": [
+                    "Elective Mathematics",
+                    "Geography",
+                    "Accounting",
+                    "Business Management",
+                    "Business Mathematics",
+                    "Government",
+                    "French",
+                    "Building Construction",
+                    "Technical Drawing",
+                    "General Knowledge in Art"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, Diploma Holders",
+        "special requirements / general information": "Diploma/HND holders with CWA 70%+ can enter the second year; others require three years' experience and an interview."
+    },
+    {
+        "program": "BSc. Real Estate",
+        "cutoff point": 9,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "Economics"
+            ],
+            "tracks": {
+                "Group A": [
+                    "Geography",
+                    [
+                        "Accounting",
+                        "Business Management",
+                        "Government",
+                        "Business Mathematics",
+                        "French",
+                        "Literature in English",
+                        "History",
+                        "Building Construction",
+                        "Technical Drawing",
+                        "Elective Mathematics"
+                    ]
+                ],
+                "other": [
+                    "Elective Mathematics",
+                    "Geography",
+                    "Accounting",
+                    "Business Management",
+                    "Business Mathematics",
+                    "Government",
+                    "French",
+                    "Building Construction",
+                    "Technical Drawing",
+                    "General Knowledge in Art"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, Diploma Holders",
+        "special requirements / general information": "Diploma/HND holders with CWA 70%+ can enter the second year; others require three years' experience and an interview."
+    },
+    {
+        "program": "BFA. Fine Art & Curatorial Practice",
+        "cutoff point": 16,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": [
+                "General Knowledge in Art"
+            ],
+            "tracks": {
+                "Group A": [
+                    "Science",
+                    "GArts",
+                    "Visual",
+                    "Biz",
+                    "Tech",
+                    "Home Econs"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": "Applicants may need to pass an interview and practical examination."
+    },
+    {
+        "program": "BA. Communication Design (Graphic Design)",
+        "cutoff point": 11,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Visual Arts": [
+                    "General Knowledge in Art",
+                    "ICT",
+                    "Picture Making",
+                    "Sculpture",
+                    "Textiles",
+                    "Ceramics",
+                    "Jewellery",
+                    "Graphic Design"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": "Applicants may need to pass an interview and practical examination."
+    },
+    {
+        "program": "BA. Integrated Rural Art and Industry",
+        "cutoff point": 15,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Visual Arts": [
+                    "Picture Making",
+                    "Leatherwork",
+                    "Graphic Design",
+                    "Textiles",
+                    "Jewellery",
+                    "Basketry",
+                    "Sculpture",
+                    "Ceramics",
+                    "General Knowledge in Art",
+                    "Management in Living",
+                    "Clothing & Textiles",
+                    "Food and Nutrition",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology",
+                    "Christian Religious Studies (CRS)",
+                    "Islamic Religious Studies (IRS)",
+                    "Construction",
+                    "Economics",
+                    "History",
+                    "Ghanaian Language",
+                    "Geography",
+                    "Literature in English",
+                    "Business Management",
+                    "Accounting",
+                    "Costing",
+                    "ICT"
+                ],
+                "Group A": [
+                    "Welding and Fabrication Technology",
+                    "Digital Design Technology",
+                    "Industrial Mechanics",
+                    "Wood Construction Technology",
+                    "Furniture Design and Construction",
+                    "Creative Art Technology",
+                    "Building Construction Technology",
+                    "General Textiles",
+                    "Fashion Design Technology",
+                    "Visual Communication Technology"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, Diploma Holders",
+        "special requirements / general information": "Applicants must submit a portfolio of artworks for assessment."
+    },
+    {
+        "program": "BA. Publishing Studies",
+        "cutoff point": 12,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Visual Arts": [
+                    "General Knowledge in Art",
+                    "Picture Making",
+                    "Graphic Design",
+                    [
+                        "Textiles",
+                        "Sculpture",
+                        "Leatherwork"
+                    ]
+                ],
+                "General Arts": [
+                    "English Literature",
+                    "French",
+                    "History",
+                    "Economics",
+                    "Government"
+                ],
+                "Business": [
+                    "Business Management",
+                    "Accounting",
+                    "Costing",
+                    "Economics",
+                    "Elective Mathematics",
+                    "Business Mathematics"
+                ],
+                "Vocational": [
+                    "General knowledge in Art",
+                    "Management in Living",
+                    [
+                        "Food and Nutrition",
+                        "Clothing",
+                        "Textiles"
+                    ]
+                ],
+                "General Science": [
+                    "Biology",
+                    "Chemistry",
+                    [
+                        "Physics",
+                        "Elective Mathematics"
+                    ]
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": "Applicants may be required to pass an interview."
+    },
+    {
+        "program": "BSc. Metal Product Design Technology",
+        "cutoff point": 16,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Group A": [
+                    "Science",
+                    "Visual",
+                    "Home Econs",
+                    "Tech"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Textile Design and Technology",
+        "cutoff point": 13,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Group A": [
+                    "Science",
+                    "Visual",
+                    "Home Econs",
+                    "Tech",
+                    "GArts",
+                    "Biz"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BSc. Fashion Design",
+        "cutoff point": 11,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Group A": [
+                    "Science",
+                    "Visual",
+                    "Home Econs",
+                    "Tech",
+                    "GArts",
+                    "Biz"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    },
+    {
+        "program": "BFA. Ceramics",
+        "cutoff point": null,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Group A": [
+                    "Visual",
+                    "Home Econs",
+                    "GArts"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, HND/Diploma Holders",
+        "special requirements / general information": "Applicants must pass an interview and practical examination."
+    },
+    {
+        "program": "BSc. Ceramic Technology",
+        "cutoff point": 23,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Visual Arts": [
+                    "Ceramics",
+                    "General Knowledge in Art",
+                    [
+                        "Chemistry",
+                        "Elective Mathematics",
+                        "Physics"
+                    ]
+                ],
+                "General Science": [
+                    "Elective Mathematics",
+                    "Chemistry",
+                    [
+                        "Physics",
+                        "Biology"
+                    ]
+                ],
+                "Group A": [
+                    "Technical Drawing",
+                    "Building Construction",
+                    "Applied Electricity",
+                    "Auto Mechanics",
+                    "Electronics",
+                    "Physics"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, HND/Diploma Holders",
+        "special requirements / general information": "Applicants must pass an interview and practical examination."
+    },
+    {
+        "program": "B.Ed. Junior High School Specialism",
+        "cutoff point": 15,
+        "college": "COLLEGE OF ART AND BUILT ENVIRONMENT",
+        "campus": "Kumasi (Main) Campus",
+        "core subjects": "English Language, Mathematics, Integrated Science",
+        "elective subjects": {
+            "main": null,
+            "tracks": {
+                "Group A": [
+                    "Science",
+                    "Visual",
+                    "GArts",
+                    "Agric"
+                ]
+            }
+        },
+        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
+        "special requirements / general information": null
+    }
+]

@@ -1,37 +1,5 @@
 [
-    {
-        "program": "BA. Akan Language and Culture",
-        "cutoff point": 15,
-        "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
-        "campus": "Kumasi (Main) Campus",
-        "core subjects": "English Language, Mathematics, Integrated Science",
-        "elective subjects": {
-            "main": [
-                [
-                    "Asante Twi",
-                    "Fante",
-                    "Akuapem Twi"
-                ]
-            ],
-            "tracks": {
-                "Humanities": [
-                    "History",
-                    "Geography",
-                    "Literature in English",
-                    "French",
-                    "Economics",
-                    [
-                        "Christian Religious Studies (CRS)",
-                        "Islamic Religious Studies (IRS)"
-                    ],
-                    "Government",
-                    "Business Management"
-                ]
-            }
-        },
-        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
-        "special requirements / general information": null
-    },
+
     {
         "program": "BSc. Biochemistry",
         "cutoff point": 9,
@@ -163,37 +131,6 @@
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature",
         "special requirements / general information": "Applicants with HND in Mathematics, Engineering, or related disciplines with Second Class Lower or better may be placed in Year 2 or 3."
-    },
-    {
-        "program": "BA. Political Studies",
-        "cutoff point": 9,
-        "college": "COLLEGE OF HUMANITIES AND SOCIAL SCIENCES",
-        "campus": "Kumasi (Main) Campus",
-        "core subjects": "English Language, Mathematics, Integrated Science",
-        "elective subjects": {
-            "main": [
-                [
-                    "History",
-                    "Government"
-                ]
-            ],
-            "tracks": {
-                "Humanities": [
-                    "Economics",
-                    "Geography",
-                    "Elective Mathematics",
-                    "French",
-                    "Ghanaian Language",
-                    "Literature in English",
-                    [
-                        "Christian Religious Studies (CRS)",
-                        "Islamic Religious Studies (IRS)"
-                    ]
-                ]
-            }
-        },
-        "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
-        "special requirements / general information": null
     },
     {
         "program": "BSc. Information Technology",
