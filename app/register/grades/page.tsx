@@ -185,7 +185,15 @@ export default function GradesPage() {
                 onChange={(e) => {
                   setSelectedProgram(e.target.value)
                   setSelectedElectives(['', '', '', ''])
-                  setGrades({})
+                  
+                  // Preserve core subject grades when changing programs
+                  const coreGrades: Record<string, Grade> = {};
+                  CORE_SUBJECTS.forEach(subject => {
+                    if (grades[subject]) {
+                      coreGrades[subject] = grades[subject];
+                    }
+                  });
+                  setGrades(coreGrades);
                 }}
                 required
               >

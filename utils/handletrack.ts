@@ -1,4 +1,7 @@
 // Generic function to handle tracks of subjects
+import { generateSubjectCombinations } from "./handlecombinations";
+
+
 export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: string[]) {
   const trackKeys = Object.keys(tracks);
   const matchedSubjects: Tracks = {};  // to record matches per track
@@ -7,6 +10,7 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
   for (const key of trackKeys) {
     const trackList = tracks[key];
     if (!trackList) continue;  // 🚀 Skip if undefined
+    console.log(`Checking track: ${key}`);
 
     matchedSubjects[key] = [];  // Initialize empty array for the current track
 
@@ -49,7 +53,7 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
       const normalizedSubjects = matchedSubjectsInTrack.map(subject =>
         typeof subject === 'string' ? [subject] : subject
       );
-      const combinations = generateThreeSubjectCombinations(normalizedSubjects);
+      const combinations = generateSubjectCombinations(normalizedSubjects);
       console.log(`Generated ${combinations.length} combinations for track ${trackName}`);
       allValidCombinations.push(...combinations);  // collect combinations
       allQualifiedSubjects.push(...normalizedSubjects);  // collect all qualified subjects
@@ -60,28 +64,4 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
   return {matchedSubjects, allQualifiedSubjects, allValidCombinations}; // Return the matched subjects and combinations
 }  
 
-
-// Function to generate all combinations of 3 subjects from the matched subjects
-export function generateThreeSubjectCombinations(matchedSubjects: string[][]) {
-    const allOptions: string[][] = matchedSubjects.map(group => group);
-  
-    const results: string[][] = [];
-  
-    function backtrack(path: string[], index: number) {
-      if (path.length === 3) {
-        results.push([...path]);
-        return;
-      }
-      if (index >= allOptions.length) return;
-  
-      for (const subject of allOptions[index]) {
-        backtrack([...path, subject], index + 1);
-      }
-    }
-  
-    backtrack([], 0);
-    return results;
-  }
-  
-
-  type Tracks = Record<string, (string | string[])[] | undefined>;
+type Tracks = Record<string, (string | string[])[] | undefined>;

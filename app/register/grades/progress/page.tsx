@@ -23,6 +23,9 @@ export default function ProgressPage() {
 
   useEffect(() => {
     // Add initial test log
+
+    // clear console on window load
+    console.clear()
     setLogs(prev => [...prev, {
       type: 'info',
       message: 'Starting program checker...',

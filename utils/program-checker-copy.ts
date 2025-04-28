@@ -1,8 +1,9 @@
 import programRequirements from '@/src/data/programdatan.json'
 import { GradeData } from '@/types/user'
 import { isFlatStringArray, handleNestedMains, handleNoMain, handleRegularMain} from './main-helper-functions';
-import { handleTracks, generateThreeSubjectCombinations } from './track-and-combinations';
+import { handleTracks } from './handletrack';
 
+// Clear console on window load
 window.onload = () => {
   console.clear();
 };
