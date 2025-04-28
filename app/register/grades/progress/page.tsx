@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { GradeData } from '@/types/user'
 import {calculateQualifyingPrograms} from '@/utils/program-checker-copy'
 import { NavBar } from '@/components/nav-bar'
 import { CheckCircle, AlertCircle, Loader2, ArrowRight } from 'lucide-react'

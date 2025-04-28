@@ -1,5 +1,4 @@
 "use client"
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Grid, User, GraduationCap, School, BookOpen } from "lucide-react"
 import { NavBar } from "@/components/nav-bar"
@@ -29,7 +28,7 @@ export default function DashboardPage() {
           {/* Getting Started Widget */}
           <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 mb-6">
             <h2 className="text-sm font-medium text-gray-500 mb-4">GETTING STARTED</h2>
-            <h3 className="text-2xl font-bold mb-6">Jane, let's complete your academic profile</h3>
+            <h3 className="text-2xl font-bold mb-6">Jane, let&apos;s complete your academic profile</h3>
             
             {/* Progress Bar */}
             <div className="relative h-2 bg-gray-200 rounded-full mb-8">

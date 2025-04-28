@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle, GraduationCap, School, TrendingUp, Users, MessageSquare } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { NavBar } from "@/components/nav-bar"
 
 export default function LandingPage() {
@@ -45,7 +44,7 @@ export default function LandingPage() {
                 <School className="h-10 w-10 text-primary" />
                 <h3 className="text-xl font-bold">School-Specific Insights</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Get tailored predictions based on your specific high school's track record.
+                  Get tailored predictions based on your specific high school&apos;s track record.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-3 text-center">
@@ -85,7 +84,7 @@ export default function LandingPage() {
                 <School className="h-10 w-10 text-primary" />
                 <h3 className="text-xl font-bold">Choose Universities</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Select the Ghanaian universities you're interested in.
+                  Select the Ghanaian universities you&apos;re interested in.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-3 text-center">

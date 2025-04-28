@@ -8,8 +8,6 @@ import { NavBar } from "@/components/nav-bar"
 // import { supabase } from "@/lib/supabase"  // Comment out this line
 import { Input } from "@/components/ui/input"
 // import { useAuth } from "@/hooks/useAuth"  // Comment out this line
-import { UserCircle } from "lucide-react"
-import { UserRegistration } from "@/types/user"
 
 type Gender = 'male' | 'female'
 type Region = 'Greater Accra' | 'Ashanti' | 'Western' | 'Eastern' | 'Central' | 'Northern' | 'Upper East' | 'Upper West' | 'Volta' | 'Bono' | 'Bono East' | 'Ahafo' | 'Savannah' | 'North East' | 'Oti' | 'Western North'
