@@ -18,11 +18,11 @@ export interface GradeData {
   region: string
   core_subjects: {
     subject: string
-    grade: Grade
+    grade: string
   }[]
   elective_subjects: {
     subject: string
-    grade: Grade
+    grade: string
   }[]
 }
 

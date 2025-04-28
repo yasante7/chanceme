@@ -1,18 +1,5 @@
 [
     {
-        "program":"BSc. Agriculture",
-        "cutoff point":20,
-        "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",
-        "campus":"Kumasi (Main) Campus", 
-        "core subjects":"English Language, Mathematics, Integrated Science",
-        "elective subjects": {
-            "main": "Chemistry", 
-            "tracks": {
-                "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
-        "applicant type":"WASSCE\/SSSCE",
-        "special requirements \/ general information":null
-    },
-    {
         "program":"BSc. Agribusiness Management",
         "cutoff point":15,
         "college":"COLLEGE OF AGRICULTURE AND NATURAL RESOURCES",

@@ -6,7 +6,7 @@
         "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Chemistry", 
+            "main": ["Chemistry"], 
             "tracks": {
                 "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
         "applicant type":"WASSCE\/SSSCE",
@@ -19,7 +19,7 @@
         "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Chemistry", 
+            "main": ["Chemistry"], 
             "tracks": {
                 "General": [["Physics", "Elective Mathematics"], ["Biology", "General Agriculture", "Animal Husbandry", "Crop Husbandry", "Horticulture"]]}},
         "applicant type":"WASSCE\/SSSCE",
@@ -103,7 +103,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects":{
             "main": null, 
-            "tracks": ["General Science", "General Arts", "Visual Arts", "Home Economics", "Technical"]},
+            "tracks": {
+                "All": ["General Science", "General Arts", "Visual Arts", "Home Economics", "Technical"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE",
         "special requirements \/ general information":null
     },
@@ -116,7 +119,7 @@
         "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Elective Mathematics",
+            "main": ["Elective Mathematics"],
             "tracks": {
                 "Technical": [["Technical Drawing", "Engineering Science"], "Building Construction", ["Woodwork", "Metalwork"]],
                 "General Science": ["Physics", "Chemistry", "Biology"],
@@ -134,7 +137,7 @@
         "campus":"Kumasi (Main) Campus", 
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Elective Mathematics", 
+            "main": ["Elective Mathematics"], 
             "tracks": {
                 "Technical": [["Technical Drawing", "Engineering Science"], "Building Construction", "Woodwork", "Metalwork"],
                 "General Science": ["Physics", "Chemistry"],
@@ -149,7 +152,7 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Elective Mathematics",
+            "main": ["Elective Mathematics"],
             "tracks": {
                 "General": ["Chemistry", "Economics", "Geography", "Technical Drawing", "Building Construction", "Physics"]
             }
@@ -179,7 +182,7 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Geography",
+            "main": ["Geography"],
             "tracks": {
                 "Group A": ["Economics", "Business Management", "Government", "Elective Mathematics", "Financial Accounting", "Cost Accounting", "Graphic Design"],
                 "Group B": ["Economics", "Business Management", "Government", "Elective Mathematics", "Financial Accounting", "Cost Accounting", "Graphic Design", 
@@ -197,7 +200,7 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Economics",
+            "main": ["Economics"],
             "tracks": {
                 "General": ["Geography", ["Accounting", "Business Management", "Government", "Business Mathematics", "French", "Literature in English", "History", "Building Construction", "Technical Drawing", "Elective Mathematics"]],
                 "other": ["Elective Mathematics", "Geography", "Accounting", "Business Management", "Business Mathematics", "Government", "French", "Building Construction", "Technical Drawing", "General Knowledge in Art"]
@@ -213,7 +216,7 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Economics",
+            "main": ["Economics"],
             "tracks": {
                 "General": ["Geography", ["Accounting", "Business Management", "Government", "Business Mathematics", "French", "Literature in English", "History", "Building Construction", "Technical Drawing", "Elective Mathematics"]],
                 "other": ["Elective Mathematics", "Geography", "Accounting", "Business Management", "Business Mathematics", "Government", "French", "Building Construction", "Technical Drawing", "General Knowledge in Art"]
@@ -229,9 +232,11 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "General Knowledge in Art",
-            "tracks": ["General Science", "General Arts", "Visual Arts", "Business", "Technical", "Home Economics"]
-            },
+            "main": ["General Knowledge in Art"],
+            "tracks": {
+                "All": ["General Science", "General Arts", "Visual Arts", "Business", "Technical", "Home Economics"]
+            }
+        },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":"Applicants may need to pass an interview and practical examination."
     },
@@ -296,8 +301,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Science", "Visual Arts", "Home Economics", "Technical"]
-        },
+            "tracks": {
+                "All": ["General Science", "Visual Arts", "Home Economics", "Technical"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -309,8 +316,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Science", "Visual Arts", "Home Economics", "Technical", "General Arts", "Business"]
-        },
+            "tracks": {
+                "All": ["General Science", "Visual Arts", "Home Economics", "Technical", "General Arts", "Business"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -322,8 +331,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Science", "Visual Arts", "Home Economics", "Technical", "General Arts", "Business"]
-        },
+            "tracks": {
+                "All": ["General Science", "Visual Arts", "Home Economics", "Technical", "General Arts", "Business"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -335,8 +346,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["Visual Arts", "Home Economics", "General Arts"]
-        },
+            "tracks": {
+                "All": ["Visual Arts", "Home Economics", "General Arts"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, HND\/Diploma Holders",
         "special requirements \/ general information":"Applicants must pass an interview and practical examination."
     },
@@ -365,8 +378,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Science", "Visual Arts", "General Arts", "General Agriculture"]
-        },
+            "tracks": {
+                "All": ["General Science", "Visual Arts", "General Arts", "General Agriculture"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -509,7 +524,7 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": ["Physics", "Elective Mathematics", "Chemistry"],
+            "main": ["Physics", "Elective Mathematics"],
             "tracks": {
                 "General": ["Geography", "Chemistry", "Applied Electricity", "Basic Electronics", "Basic Electronics"]
             }
@@ -667,8 +682,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Arts", "General Science", "Business", "Visual Arts", "Home Economics"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Visual Arts", "Home Economics"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -823,7 +840,7 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "Elective Mathematics",
+            "main": ["Elective Mathematics"],
             "tracks": {
                 "General Arts": ["Economics", "Geography", "Government", "History", "Literature in English", "French", "Christian Religious Studies (CRS)", "ICT", "Ghanaian Language"],
                 "Business":["Economics", "Accounting", "Business Management", "Costing", "ICT"],
@@ -858,7 +875,7 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": "French",
+            "main": ["French"],
             "tracks": {
                 "Humanities": ["History", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"], "Economics", "Geography", "Government", "Literature in English", "Business Management", "Ghanaian Language"]
             }
@@ -890,7 +907,7 @@
         "elective subjects": {
             "main": [["History", "Government"]],
             "tracks": {
-                "Humanities": ["Economics", "Geography", "French", "Ghanaian Language", "Literature in English", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]]
+                "Humanities": ["Economics", "Geography", "French", "Elective Mathematics", "Ghanaian Language", "Literature in English", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]]
             }
         },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
@@ -922,9 +939,11 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "tracks": ["General Arts", "General Science", "Business", "Visual Arts", "Home Economics", "General Agriculture", "Technical"]
+                "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Visual Arts", "Home Economics", "General Agriculture", "Technical"]
             }
-        },
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, Diploma Holders",
         "special requirements \/ general information":"Diploma holders in Communication Studies, Journalism, Archival Studies, International Relations can enter the second year."
     },
@@ -935,9 +954,9 @@
         "campus":"Kumasi (Main) Campus",
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
-            "main": ["History", "Government"],
+            "main": [["History", "Government"]],
             "tracks": {
-                "Humanities": ["Economics", "Geography", "French", "Ghanaian Language", "Literature in English", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]]
+                "Humanities": ["Economics", "Geography", "Elective Mathematics", "French", "Ghanaian Language", "Literature in English", ["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]]
             }
         },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
@@ -951,8 +970,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": [["Christian Religious Studies (CRS)", "Islamic Religious Studies (IRS)"]],
-            "tracks": ["General Agriculture", "General Arts", "General Science", "Business", "Technical", "Visual Arts", "Home Economics"]
-        },
+            "tracks": {
+                "All": ["General Agriculture", "General Arts", "General Science", "Business", "Technical", "Visual Arts", "Home Economics"]
+            }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":"Diploma in Religious Studies or Theology holders can enter the second year."
     },
@@ -996,8 +1017,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Arts", "General Science", "Business", "Home Economics"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Home Economics"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -1009,8 +1032,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Arts", "General Science", "Business", "Home Economics"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Home Economics"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -1022,8 +1047,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Arts", "General Science", "Business"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -1035,8 +1062,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Arts", "General Science", "Business"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -1048,8 +1077,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null,
-            "tracks": ["General Arts", "General Science", "Business", "Home Economics"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Home Economics"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants",
         "special requirements \/ general information":null
     },
@@ -1061,8 +1092,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": null, 
-            "tracks": ["General Arts", "General Science", "Business", "Visual Arts"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Visual Arts"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature Applicants, Degree Holders",
         "special requirements \/ general information":"Degree holders must pass an entrance exam and interview."
     },
@@ -1167,9 +1200,9 @@
         "elective subjects": {
             "main": ["Elective Mathematics"],
             "tracks": {
-                "General Science": ["Chemistry", "Applied Electricity", "Electronics"]
-            }
-        },
+                "All": ["General Arts", "General Science", "Business", "Visual Arts", "Technical", "Home Economics"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":"Applicants with HND in Mathematics, Engineering, or related disciplines with Second Class Lower or better may be placed in Year 2 or 3."
     },
@@ -1196,8 +1229,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": ["Elective Mathematics"],
-            "tracks": ["General Arts", "General Science", "Business", "Visual Arts", "Technical", "General Agriculture", "Home Economics"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Visual Arts", "Technical", "General Agriculture", "Home Economics"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },
@@ -1209,8 +1244,10 @@
         "core subjects":"English Language, Mathematics, Integrated Science",
         "elective subjects": {
             "main": ["Elective Mathematics"],
-            "tracks": ["General Arts", "General Science", "Business", "Visual Arts", "Technical", "General Agriculture", "Home Economics"]
-        },
+            "tracks": {
+                "All": ["General Arts", "General Science", "Business", "Visual Arts", "Technical", "General Agriculture", "Home Economics"]
+        }
+    },
         "applicant type":"WASSCE\/SSSCE, A-Level, Mature",
         "special requirements \/ general information":null
     },

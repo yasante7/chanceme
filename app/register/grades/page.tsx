@@ -1,4 +1,5 @@
 "use client"
+import { retrieveUserData, createGradesRecord, extractElectives } from '@/utils/retrieve-restore-data'
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -7,114 +8,10 @@ import { ArrowLeft, GraduationCap } from "lucide-react"
 import { useRouter } from 'next/navigation'
 import { NavBar } from "@/components/nav-bar"
 import { GradeData, UserData } from "@/types/user"
-import { calculateQualifyingPrograms } from '@/utils/program-checker'
-import schoolsData from '@/data/schools_loc_data.json'  // Add this import
+import schoolsData from '@/src/data/schools_loc_data.json'  // Add this import
+import { PROGRAMS, PROGRAM_SUBJECTS, CORE_SUBJECTS, GRADES } from "@/components/constants/student-grades"
 
-type Grade = 'A1' | 'B2' | 'B3' | 'C4' | 'C5' | 'C6' | 'D7' | 'E8' | 'F9'
-
-const PROGRAMS = [
-  'General Science',
-  'General Arts',
-  'Business',
-  'Visual Arts',
-  'Home Economics',
-  'Agricultural Science',
-  'Technical'
-] as const
-
-const CORE_SUBJECTS = [
-  'English Language',
-  'Mathematics (Core)',
-  'Integrated Science',
-  'Social Studies'
-] as const
-
-const PROGRAM_SUBJECTS = {
-  'General Science': [
-    'Elective Mathematics',
-    'Physics',
-    'Chemistry',
-    'Biology',
-    'Elective ICT',
-    'Geography'
-  ],
-  'General Arts': [
-    'Economics',
-    'Geography',
-    'History',
-    'Elective Mathematics',
-    'Christian Religious Studies',
-    'Music',
-    'Elective ICT',
-    'Literature in English',
-    'French',
-    'Fante',
-    'Akuapem Twi',
-    'Asante Twi',
-    'Ga',
-    'Ewe',
-    'Arabic',
-    'Dagaare',
-    'Dagbani',
-    'Gonja',
-    'Kasem',
-    'Nzema'
-  ],
-  'Business': [
-    'Business Management',
-    'Financial Accounting',
-    'Economics',
-    'Cost Accounting',
-    'Elective Mathematics',
-    'Elective ICT',
-    'French',
-    'Clerical Office Duties'
-  ],
-  'Visual Arts': [
-    'ICT',
-    'General Knowledge in Art',
-    'Textiles',
-    'Picture Making',
-    'Ceramics and Sculpture',
-    'Ceramics and Basketry',
-    'Graphic Design',
-    'Leather Work',
-    'Basketry',
-    'Sculpture',
-    'French'
-  ],
-  'Home Economics': [
-    'Economics',
-    'Food and Nutrition',
-    'Clothing and Textiles',
-    'Management in Living',
-    'Chemistry',
-    'Biology'
-  ],
-  'Agricultural Science': [
-    'General Agriculture',
-    'Animal Husbandry',
-    'Agricultural Economics',
-    'Elective Mathematics',
-    'Crop Science',
-    'Chemistry',
-    'Physics'
-  ],
-  'Technical': [
-    'Technical Drawing',
-    'Building Construction',
-    'Woodwork',
-    'Metalwork',
-    'Auto Mechanics',
-    'Electronics',
-    'Applied Electricity',
-    'Automobile Engineering',
-    'Electrical Engineering'
-  ]
-} as const
-
-const GRADES: Grade[] = ['A1', 'B2', 'B3', 'C4', 'C5', 'C6', 'D7', 'E8', 'F9']
-
+type Grade = string;
 export default function GradesPage() {
   const router = useRouter()
   const [selectedProgram, setSelectedProgram] = useState<string>('')
@@ -125,43 +22,19 @@ export default function GradesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  // Load saved data when component mounts
   useEffect(() => {
-    const savedData = localStorage.getItem('userData')
-    if (savedData) {
-      try {
-        const userData: UserData = JSON.parse(savedData)
-        if (userData.grades) {
-          const { program, school, region, core_subjects, elective_subjects } = userData.grades
-          
-          // Set program
-          setSelectedProgram(program)
-          
-          // Set region and school
-          setSelectedRegion(region)
-          setSelectedSchool(school)
-          
-          // Set core subject grades
-          const coreGrades: Record<string, Grade> = {}
-          core_subjects.forEach(({ subject, grade }) => {
-            if (grade) coreGrades[subject] = grade
-          })
-          setGrades(coreGrades)
-          
-          // Set elective subjects and their grades
-          const electiveGrades: Record<string, Grade> = {}
-          const electives = elective_subjects.map(({ subject, grade }) => {
-            if (grade) electiveGrades[subject] = grade
-            return subject
-          })
-          setSelectedElectives(electives)
-          
-          // Combine all grades
-          setGrades(prev => ({ ...prev, ...electiveGrades }))
-        }
-      } catch (error) {
-        console.error('Error loading saved data:', error)
-      }
+    const userData = retrieveUserData()
+    if (userData?.grades) {
+      const { program, school, region } = userData.grades
+      
+      // Set program, region and school
+      setSelectedProgram(program)
+      setSelectedRegion(region)
+      setSelectedSchool(school)
+      
+      // Set grades and electives
+      setGrades(createGradesRecord(userData))
+      setSelectedElectives(extractElectives(userData))
     }
   }, [])
 
@@ -189,7 +62,7 @@ export default function GradesPage() {
       elective_subjects: selectedElectives.filter(Boolean).map(subject => ({
         subject,
         grade: grades[subject]
-      }))
+      }))      
     }
 
     try {
@@ -207,13 +80,8 @@ export default function GradesPage() {
 
       // Store complete user data
       localStorage.setItem('userData', JSON.stringify(userData))
-      
-      // Calculate qualifying programs
-      const qualifyingPrograms = calculateQualifyingPrograms(gradeData)
-      
-      // Store qualifying programs for display on the next page
-      localStorage.setItem('qualifyingPrograms', JSON.stringify(qualifyingPrograms))
 
+      // Navigate to progress page
       router.push("/register/grades/progress")
       
     } catch (error) {

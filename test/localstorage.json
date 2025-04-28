@@ -1,0 +1,24 @@
+{
+    "name": "Yaw Asante",
+    "email": "asanteyawq6300@gmail.com",
+    "password": "8247784319",
+    "dateOfBirth": "2222-12-02",
+    "gender": "male",
+    "grades": {
+      "program": "General Arts",
+      "school": "Ofoase Kokoben Senior High",
+      "region": "Ashanti"
+    },
+    "core_subjects": [
+      { "subject": "English Language", "grade": "A1" },
+      { "subject": "Mathematics (Core)",  "grade": "A1" },
+      { "subject": "Integrated Science",  "grade": "A1" },
+      { "subject": "Social Studies",     "grade": "A1" }
+    ],
+    "elective_subjects": [
+      { "subject": "Elective ICT", "grade": "A1" },
+      { "subject": "Geography",    "grade": "A1" },
+      { "subject": "History",      "grade": "A1" },
+      { "subject": "Economics",    "grade": "A1" }
+    ]
+  }  

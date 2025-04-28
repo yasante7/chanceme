@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { GradeData } from '@/types/user'
-import { calculateQualifyingPrograms } from '@/utils/program-checker'
+import {calculateQualifyingPrograms} from '@/utils/program-checker-copy'
 import { NavBar } from '@/components/nav-bar'
 import { CheckCircle, AlertCircle, Loader2, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -71,7 +71,7 @@ export default function ProgressPage() {
       const userData = localStorage.getItem('userData')
       if (userData) {
         const parsedData = JSON.parse(userData)
-        console.log('Parsed user data:', JSON.stringify(parsedData, null, 2))
+        // console.log('Parsed user data:', JSON.stringify(parsedData, null, 2))
         
         if (parsedData.grades) {
           const results = calculateQualifyingPrograms(parsedData.grades)
