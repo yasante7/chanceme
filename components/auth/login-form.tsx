@@ -19,7 +19,8 @@ export function LoginForm() {
     setError(null)
 
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
+      // Only destructure the error since we're not using data
+      const { error } = await supabase.auth.signInWithPassword({
         email: formData.email,
         password: formData.password,
       })
@@ -88,4 +89,4 @@ export function LoginForm() {
       </p>
     </div>
   )
-} 
+}

@@ -72,9 +72,16 @@ export default function RegisterPage() {
       
       router.push("/register/success")
       
-    } catch (error: any) {
+    } catch (error: unknown) {
+      // Replace 'any' with 'unknown' for better type safety
       console.error("Error signing up:", error)
-      setError("Error signing up. Please try again.")
+      
+      // Handle the error with proper type narrowing
+      if (error instanceof Error) {
+        setError(`Error signing up: ${error.message}`)
+      } else {
+        setError("Error signing up. Please try again.")
+      }
     } finally {
       setIsSubmitting(false)
     }

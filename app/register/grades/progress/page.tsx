@@ -13,10 +13,18 @@ interface LogEntry {
   timestamp: Date
 }
 
+interface QualifyingProgram {
+  program: string
+  college: string
+  campus: string
+  specialRequirements: string | null
+}
+
+
 export default function ProgressPage() {
   const [logs, setLogs] = useState<LogEntry[]>([])
   const [isLoading, setIsLoading] = useState(true)
-  const [qualifyingPrograms, setQualifyingPrograms] = useState<any[]>([])
+  const [qualifyingPrograms, setQualifyingPrograms] = useState<QualifyingProgram[]>([])
   const [progress, setProgress] = useState(0)
   const [hasError, setHasError] = useState(false)
 
