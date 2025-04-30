@@ -17,19 +17,16 @@ function removeNestedArrayDups<T>(array: string[][]): string[][] {
   return result;
 }
 
-export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: string[]) {
+export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: string[] | string[][]) {
   console.log("Lengh of matches:", matches.length);
   console.log("Remaining subjects:", remainSubjects);
   const trackKeys = Object.keys(tracks);
   const matchedSubjects: Tracks = {};  // to record matches per track
-  console.log(trackKeys)
 
   // Looping through each track
   for (const key of trackKeys) {
     const trackObjects = tracks[key];
     if (!trackObjects) continue;  // 🚀 Skip if undefined
-    console.log("trackList:", JSON.stringify(trackObjects));
-
     matchedSubjects[key] = [];  // Initialize empty array for the current track
 
     // Looping through each element of a track: can be string or list
@@ -71,9 +68,9 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
       const normalizedSubjects = matchedSubjectsInTrack.map(subject =>
         typeof subject === 'string' ? [subject] : subject
       );
-      const combinations = generateSubjectCombinations(normalizedSubjects);
-      console.log(`Generated ${combinations.length} combinations for ${trackName} below:`);
-      console.log(`Combinations for track ${trackName}:`, combinations);
+      console.log(`Passing Normalized subjects for ${trackName} to generate combinations:`, normalizedSubjects);
+      const combinations = generateSubjectCombinations (normalizedSubjects, matches);
+      console.log(`${combinations.length} Combinations created for track ${trackName}:`, combinations);
       allValidCombinations.push(...combinations);  // collect combinations
       allQualifiedSubjects.push(...normalizedSubjects);  // collect all qualified subjects
     }

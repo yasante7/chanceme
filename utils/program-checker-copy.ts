@@ -1,4 +1,4 @@
-import programRequirements from '@/src/data/programdatan.json'
+import programRequirements from '@/src/data/programdata.json'
 import { GradeData } from '@/types/user'
 import { isFlatStringArray, handleNestedMains, handleNoMain, handleRegularMain } from './main-functions';
 import { handleTracks } from './handletrack';
@@ -23,7 +23,6 @@ type Tracks = Record<string, (string | string[])[] | undefined>;
 
 export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult[] {
   const programResults: ProgramResult[] = [];
-  console.log("Starting program qualification check...");
 
   // Extract subjects and grades from student data
   const electiveSubjects = gradeData.elective_subjects.map(s => s.subject);
@@ -74,7 +73,7 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
     // Process based on main subject requirement type
     let qualifiesMain = false;
     let remainSubjects: string[] = [];
-    let matches: string[] = [];
+    let matches: string[] | string[][] = [];
 
     // Case 1: No main subjects required
     if (main === null) {
@@ -118,8 +117,6 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
       if ('tracks' in tracks && tracks.tracks) {
         tracksToProcess = tracks.tracks as any;
       }
-      console.log("Matched main subjects:", matches);
-      console.log("Remaining subjects after main match:", remainSubjects);
 
       const { matchedSubjects, allQualifiedSubjects, allValidCombinations } = 
         handleTracks(remainSubjects, tracksToProcess as Tracks, matches);

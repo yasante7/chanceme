@@ -233,71 +233,52 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ]
-            }
-        },
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ]
+                }
+            },
         "applicant type": "WASSCE/SSSCE",
         "special requirements / general information": null
     },
@@ -574,79 +555,57 @@
                 "General Knowledge in Art"
             ],
             "tracks": {
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -706,19 +665,7 @@
                     "Construction",
                     "Economics",
                     "History",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     "Geography",
                     "Literature in English",
                     "Business Management",
@@ -808,46 +755,39 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ]
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -862,79 +802,57 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ],
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ]
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ],
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -949,79 +867,57 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ],
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ]
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ],
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -1036,50 +932,36 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ],
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ]
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ],
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, HND/Diploma Holders",
@@ -1133,59 +1015,37 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Agric": [
-                    "General Agriculture",
-                    "Animal Husbandry",
-                    "Agricultural Economics",
-                    "Elective Mathematics",
-                    "Crop Science",
-                    "Chemistry",
-                    "Physics"
-                ]
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Agric": [
+                        "Animal Husbandry",
+                        "Crop Husbandry",
+                        "General Agriculture"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -1639,68 +1499,49 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature",
@@ -1927,19 +1768,7 @@
                     "French",
                     "Christian Religious Studies (CRS)",
                     "ICT",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ]
+                    "Ghanaian Language"
                 ],
                 "Business": [
                     "Economics",
@@ -2005,19 +1834,7 @@
                     "Government",
                     "Economics",
                     "Geography",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     [
                         "Christian Religious Studies (CRS)",
                         "Islamic Religious Studies (IRS)"
@@ -2050,19 +1867,7 @@
                     "Government",
                     "Literature in English",
                     "Business Management",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ]
+                    "Ghanaian Language"
                 ]
             }
         },
@@ -2091,19 +1896,7 @@
                     ],
                     "History",
                     "Elective Mathematics",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ]
+                    "Ghanaian Language"
                 ]
             }
         },
@@ -2129,19 +1922,7 @@
                     "Geography",
                     "French",
                     "Elective Mathematics",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     "Literature in English",
                     [
                         "Christian Religious Studies (CRS)",
@@ -2164,19 +1945,7 @@
             "tracks": {
                 "Humanities": [
                     "Literature in English",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     "French",
                     "Igbo",
                     "Wolof",
@@ -2185,19 +1954,7 @@
                 "Group A": [
                     [
                         "Literature in English",
-                        [
-                            "Fante",
-                            "Akuapem Twi",
-                            "Asante Twi",
-                            "Ga",
-                            "Ewe",
-                            "Arabic",
-                            "Dagaare",
-                            "Dagbani",
-                            "Gonja",
-                            "Kasem",
-                            "Nzema"
-                        ],
+                        "Ghanaian Language",
                         "French",
                         "Igbo",
                         "Wolof",
@@ -2222,19 +1979,7 @@
                         "Business Management"
                     ],
                     "Literature in English",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     "French",
                     "Igbo",
                     "Wolof",
@@ -2289,19 +2034,7 @@
                     "Geography",
                     "Elective Mathematics",
                     "French",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     "Literature in English",
                     [
                         "Christian Religious Studies (CRS)",
@@ -2327,88 +2060,62 @@
                 ]
             ],
             "tracks": {
-                "Agric": [
-                    "General Agriculture",
-                    "Animal Husbandry",
-                    "Agricultural Economics",
-                    "Elective Mathematics",
-                    "Crop Science",
-                    "Chemistry",
-                    "Physics"
-                ],
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "Agric": [
+                        "Animal Husbandry",
+                        "Crop Husbandry",
+                        "General Agriculture"
+                    ],
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -2428,19 +2135,7 @@
                     "Geography",
                     "Literature in English",
                     "French",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     "Government",
                     "Business Management",
                     "Elective Mathematics",
@@ -2469,19 +2164,7 @@
                     "Geography",
                     "Literature in English",
                     "French",
-                    [
-                        "Fante",
-                        "Akuapem Twi",
-                        "Asante Twi",
-                        "Ga",
-                        "Ewe",
-                        "Arabic",
-                        "Dagaare",
-                        "Dagbani",
-                        "Gonja",
-                        "Kasem",
-                        "Nzema"
-                    ],
+                    "Ghanaian Language",
                     "Government",
                     "Business Management",
                     "Elective Mathematics",
@@ -2505,55 +2188,40 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -2568,55 +2236,40 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -2631,47 +2284,30 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -2686,47 +2322,30 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -2741,55 +2360,40 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
@@ -2804,60 +2408,38 @@
         "elective subjects": {
             "main": null,
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants, Degree Holders",
@@ -3006,79 +2588,57 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature",
@@ -3116,88 +2676,62 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ],
-                "Agric": [
-                    "General Agriculture",
-                    "Animal Husbandry",
-                    "Agricultural Economics",
-                    "Elective Mathematics",
-                    "Crop Science",
-                    "Chemistry",
-                    "Physics"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ],
+                    "Agric": [
+                        "Animal Husbandry",
+                        "Crop Husbandry",
+                        "General Agriculture"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature",
@@ -3214,88 +2748,62 @@
                 "Elective Mathematics"
             ],
             "tracks": {
-                "GArts": [
-                    "Economics",
-                    "Geography",
-                    "Government",
-                    "History",
-                    "Elective Mathematics",
-                    "Christian Religious Studies",
-                    "Music",
-                    "Elective ICT",
-                    "Literature in English",
-                    "French",
-                    "Fante",
-                    "Akuapem Twi",
-                    "Asante Twi",
-                    "Ga",
-                    "Ewe",
-                    "Arabic",
-                    "Dagaare",
-                    "Dagbani",
-                    "Gonja",
-                    "Kasem",
-                    "Nzema"
-                ],
-                "Science": [
-                    "Elective Mathematics",
-                    "Physics",
-                    "Chemistry",
-                    "Biology",
-                    "Elective ICT",
-                    "Geography"
-                ],
-                "Biz": [
-                    "Business Management",
-                    "Financial Accounting",
-                    "Economics",
-                    "Cost Accounting",
-                    "Elective Mathematics",
-                    "Elective ICT",
-                    "French",
-                    "Clerical Office Duties"
-                ],
-                "Visual": [
-                    "ICT",
-                    "General Knowledge in Art",
-                    "Textiles",
-                    "Picture Making",
-                    "Ceramics and Sculpture",
-                    "Ceramics and Basketry",
-                    "Graphic Design",
-                    "Leather Work",
-                    "Basketry",
-                    "Sculpture",
-                    "French"
-                ],
-                "Tech": [
-                    "Technical Drawing",
-                    "Building Construction",
-                    "Woodwork",
-                    "Metalwork",
-                    "Auto Mechanics",
-                    "Electronics",
-                    "Applied Electricity",
-                    "Automobile Engineering",
-                    "Electrical Engineering"
-                ],
-                "Agric": [
-                    "General Agriculture",
-                    "Animal Husbandry",
-                    "Agricultural Economics",
-                    "Elective Mathematics",
-                    "Crop Science",
-                    "Chemistry",
-                    "Physics"
-                ],
-                "Home Econs": [
-                    "Economics",
-                    "Food and Nutrition",
-                    "Clothing and Textiles",
-                    "Management in Living",
-                    "Chemistry",
-                    "Biology"
-                ]
+                    "GArts": [
+                        "History",
+                        "Geography",
+                        "Literature in English",
+                        "French",
+                        "Ghanaian Language",
+                        "Government",
+                        "Business Management",
+                        "Elective Mathematics",
+                        "Economics"
+                    ],
+                    "Science": [
+                        "Biology",
+                        "Chemistry",
+                        "Physics",
+                        "Elective Mathematics"
+                    ],
+                    "Biz": [
+                        "Accounting",
+                        "Business Management",
+                        "Costing",
+                        "Economics",
+                        "General Knowledge in Art"
+                    ],
+                    "Visual": [
+                        "General Knowledge in Art",
+                        "Graphic Design",
+                        "Picture Making",
+                        "Sculpture",
+                        "Ceramics",
+                        "Batik",
+                        "Tie and Die"
+                    ],
+                    "Tech": [
+                        "Technical Drawing",
+                        "Engineering Science",
+                        "Applied Electricity",
+                        "Auto Mechanics",
+                        "Building Construction",
+                        "Metal Work"
+                    ],
+                    "Agric": [
+                        "Animal Husbandry",
+                        "Crop Husbandry",
+                        "General Agriculture"
+                    ],
+                    "Home Econs": [
+                        "Management in Living",
+                        "Clothing and Textiles",
+                        "Food and Nutrition",
+                        "Textiles",
+                        "French",
+                        "General Knowledge in Arts",
+                        "Biology",
+                        "Chemistry"
+                    ]
             }
         },
         "applicant type": "WASSCE/SSSCE, A-Level, Mature",
