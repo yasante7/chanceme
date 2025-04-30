@@ -17,7 +17,7 @@ export const CORE_SUBJECTS = [
   'Social Studies'
 ] as const
 
-export let PROGRAM_SUBJECTS = {
+export const PROGRAM_SUBJECTS = {
   'General Science': [
     'Elective Mathematics',
     'Physics',
