@@ -1,38 +1,101 @@
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useEffect, useState } from 'react'
-import type { User } from '@supabase/auth-helpers-nextjs'
-import { AuthError } from '@supabase/supabase-js'
+
+// Define a simple User type to replace Supabase's User
+export type User = {
+  email: string;
+  id: string;
+  isLoggedIn: boolean;
+}
 
 export function useAuth() {
-  const supabase = createClientComponentClient()
   const [user, setUser] = useState<User | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Get initial session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setUser(session?.user ?? null)
+    // Get current session from localStorage
+    const loadSession = () => {
+      try {
+        const sessionData = localStorage.getItem('userSession')
+        if (sessionData) {
+          const userData = JSON.parse(sessionData)
+          setUser({
+            email: userData.email,
+            id: userData.email, // Use email as ID for simplicity
+            isLoggedIn: true
+          })
+        } else {
+          setUser(null)
+        }
+      } catch (error) {
+        console.error('Error loading session from localStorage:', error)
+        setUser(null)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    // Only run in browser environment
+    if (typeof window !== 'undefined') {
+      loadSession()
+      
+      // Listen for changes in localStorage
+      const handleStorageChange = (e: StorageEvent) => {
+        if (e.key === 'userSession') {
+          loadSession()
+        }
+      }
+      
+      window.addEventListener('storage', handleStorageChange)
+      return () => window.removeEventListener('storage', handleStorageChange)
+    } else {
       setLoading(false)
-    })
-
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_, session) => {
-      setUser(session?.user ?? null)
-    })
-
-    return () => subscription.unsubscribe()
+    }
   }, [])
 
   return {
     user,
     loading,
     signUp: async (email: string, password: string) => {
-      const { error } = await supabase.auth.signUp({ email, password })
-      if (error) throw error
+      if (!email || !password) {
+        throw new Error('Email and password are required')
+      }
+      
+      const userData = {
+        email,
+        isLoggedIn: true,
+        createdAt: new Date().toISOString()
+      }
+      
+      localStorage.setItem('userSession', JSON.stringify(userData))
+      
+      setUser({
+        email,
+        id: email,
+        isLoggedIn: true
+      })
+    },
+    signIn: async (email: string, password: string) => {
+      if (!email || !password) {
+        throw new Error('Email and password are required')
+      }
+      
+      const userData = {
+        email,
+        isLoggedIn: true,
+        lastLoginAt: new Date().toISOString()
+      }
+      
+      localStorage.setItem('userSession', JSON.stringify(userData))
+      
+      setUser({
+        email,
+        id: email,
+        isLoggedIn: true
+      })
     },
     signOut: async () => {
-      const { error } = await supabase.auth.signOut()
-      if (error) throw error
+      localStorage.removeItem('userSession')
+      setUser(null)
     }
   } as const
-} 
+}

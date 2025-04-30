@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
 
 export function LoginForm() {
@@ -19,18 +18,16 @@ export function LoginForm() {
     setError(null)
 
     try {
-      // Only destructure the error since we're not using data
-      const { error } = await supabase.auth.signInWithPassword({
+      // Store user info in localStorage instead of using Supabase
+      localStorage.setItem('userSession', JSON.stringify({ 
         email: formData.email,
-        password: formData.password,
-      })
-
-      if (error) throw error
+        isLoggedIn: true
+      }))
 
       // Successful login
-      router.push('/dashboard') // or wherever you want to redirect after login
+      router.push('/dashboard')
     } catch (error) {
-      setError(error instanceof Error ? error.message : "Failed to sign in")
+      setError("Failed to sign in. Please try again.")
       console.error('Error details:', error)
     } finally {
       setLoading(false)
