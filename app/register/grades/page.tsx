@@ -8,7 +8,7 @@ import { ArrowLeft, GraduationCap } from "lucide-react"
 import { useRouter } from 'next/navigation'
 import { NavBar } from "@/components/nav-bar"
 import { GradeData, UserData } from "@/types/user"
-import schoolsData from '@/src/data/schools_loc_data.json'  // Add this import
+import schoolsData from '@/src/data/schoolsdata/schools_loc_data.json'  // Add this import
 import { PROGRAMS, PROGRAM_SUBJECTS, CORE_SUBJECTS, GRADES } from "@/components/constants/student-grades"
 
 console.clear()
