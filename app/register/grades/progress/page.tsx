@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import {calculateQualifyingPrograms} from '@/utils/program-checker-copy'
+import { calculateQualifyingPrograms } from '@/utils/program-checker'
+import { ProgramResult } from '@/utils/program-checker'
 import { NavBar } from '@/components/nav-bar'
 import { CheckCircle, AlertCircle, Loader2, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -18,13 +19,14 @@ interface QualifyingProgram {
   college: string
   campus: string
   specialRequirements: string | null
+  cuttoffPoint: number
 }
 
 
 export default function ProgressPage() {
   const [logs, setLogs] = useState<LogEntry[]>([])
   const [isLoading, setIsLoading] = useState(true)
-  const [qualifyingPrograms, setQualifyingPrograms] = useState<QualifyingProgram[]>([])
+  const [qualifyingPrograms, setQualifyingPrograms] = useState<ProgramResult[]>([])
   const [progress, setProgress] = useState(0)
   const [hasError, setHasError] = useState(false)
 
@@ -171,7 +173,7 @@ export default function ProgressPage() {
               </div>
 
               {/* Processing Logs */}
-              <div className="p-6 border rounded-lg bg-muted/30">
+              {/* <div className="p-6 border rounded-lg bg-muted/30">
                 <div className="flex items-center gap-4 mb-4">
                   <AlertCircle className="h-6 w-6 text-blue-500" />
                   <h2 className="text-xl font-semibold">Processing Logs</h2>
@@ -199,7 +201,7 @@ export default function ProgressPage() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Qualifying Programs */}
               <div className="p-6 border rounded-lg bg-muted/30">
@@ -215,7 +217,7 @@ export default function ProgressPage() {
                       <p className="text-sm text-muted-foreground">{program.campus}</p>
                       {program.specialRequirements && (
                         <p className="text-sm text-blue-600 mt-1">
-                          Note: {program.specialRequirements}
+                          CutoffPoint: {program.cutoffPoint} | Applicant's Aggregate: {program.Aggregate}
                         </p>
                       )}
                     </div>

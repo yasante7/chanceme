@@ -3,20 +3,21 @@ import { GradeData } from '@/types/user'
 import { isFlatStringArray, handleNestedMains, handleNoMain, handleRegularMain } from './main-functions';
 import { handleTracks } from './handletrack';
 import { validGradesCheck } from './validgrades';
+import { calculateAggregate } from './calculatecutoffpoint';
 
 // Clear console on window load
 if (typeof window !== 'undefined') {
   window.onload = () => console.clear();
 }
 
-interface ProgramResult {
+export interface ProgramResult {
   program: string;
   college: string;
+  cutoffPoint: number;
+  Aggregate: number;
   campus: string;
-  qualified: boolean;
   specialRequirements: string | null;
   validCombinations: string[][];
-  qualifiedSubjects: string[][];
 }
 
 type Tracks = Record<string, (string | string[])[] | undefined>;
@@ -46,7 +47,6 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
   const onlyFailedSocialStudies = (failedCoreSubjects.length === 1 && failedCoreSubjects.includes("Social Studies"));
   
   if (onlyFailedSocialStudies) {
-    console.log("⚡ Only failed Social Studies. Adjusting core qualification conditionally...");
   }
   
   for (const program of programRequirements) {
@@ -57,7 +57,6 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
       : coreResults.qualifies;
   
     if (!programQualified) {
-      console.log(`Skipping ${program.program} - student doesn't qualify for core requirements`);
       continue;
     }
 
@@ -66,7 +65,6 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
     
     // Skip programs without track requirements
     if (!tracks) {
-      console.log(`Skipping ${program.program} - no tracks defined`);
       continue;
     }
 
@@ -77,7 +75,6 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
 
     // Case 1: No main subjects required
     if (main === null) {
-      console.log(`${program.program} has no main subject requirements`);
       const result = handleNoMain(studentElectives);
       qualifiesMain = result.qualifiesMain;
       remainSubjects = result.remainSubjects;
@@ -91,20 +88,17 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
       matches = result.matched || [];
       
       if (!qualifiesMain) {
-        console.log(`Student doesn't meet main subject requirements for ${program.program}`);
         continue;
       }
     } 
     // Case 3: Nested main subjects (array of arrays)
     else {
-      console.log(`${program.program} has nested main subjects`);
       const result = handleNestedMains(studentElectives, main as string[][]);
       qualifiesMain = result.qualifiesMain;
       remainSubjects = result.remainSubjects;
       matches = result.matched || [];
       
       if (!qualifiesMain) {
-        console.log(`Student doesn't meet nested main subject requirements for ${program.program}`);
         continue;
       }
     }
@@ -120,22 +114,11 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
 
       const { matchedSubjects, allQualifiedSubjects, allValidCombinations } = 
         handleTracks(remainSubjects, tracksToProcess as Tracks, matches);
-      
-      // If student qualifies for this program, add to results
-      if (allQualifiedSubjects.length > 0) {
-        console.log(`✅ Student QUALIFIES for ${program.program}`);
-        programResults.push({
-          program: program.program,
-          college: program.college,
-          campus: program.campus,
-          qualified: true,
-          specialRequirements: program["special requirements / general information"] || null,
-          validCombinations: allValidCombinations,
-          qualifiedSubjects: allQualifiedSubjects,
-        });
-      } else {
-        console.log(`❌ Student does NOT qualify for ${program.program} - insufficient track matches`);
-      }
+
+      const results = calculateAggregate(program.program, program.campus, program.college, 
+        program["cutoff point"] ?? 0, program['special requirements / general information'], allValidCombinations, gradeData);
+
+      programResults.push(...results);
     }
   }
 

@@ -18,8 +18,6 @@ function removeNestedArrayDups<T>(array: string[][]): string[][] {
 }
 
 export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: string[] | string[][]) {
-  console.log("Lengh of matches:", matches.length);
-  console.log("Remaining subjects:", remainSubjects);
   const trackKeys = Object.keys(tracks);
   const matchedSubjects: Tracks = {};  // to record matches per track
 
@@ -35,9 +33,6 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
         // Single subject
         if (remainSubjects.includes(subject)) {
           matchedSubjects[key].push([subject]);  // Wrap in array to keep consistent structure
-          console.log(`✅ Matched Single Subject: ${subject}`);
-        } else {
-          console.log(`❌ Missed Single Subject: ${subject}`);
         }
       } else if (Array.isArray(subject)) {
         // Nested options: match all possible subjects in the group
@@ -45,9 +40,6 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
 
         if (foundInGroup.length > 0) {
           matchedSubjects[key].push(foundInGroup);
-          console.log(`✅ Matched Group [${foundInGroup.join(", ")}]`);
-        } else {
-          console.log(`❌ Missed Entire Group [${subject.join(", ")}]`);
         }
       }
     }
@@ -61,22 +53,18 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
 
   for (const trackName in matchedSubjects) {
     const matchedSubjectsInTrack = matchedSubjects[trackName];
-    console.log(`Matched subjects in track ${trackName}:`, matchedSubjectsInTrack);
     if (!matchedSubjectsInTrack) continue; // Skip if undefined
 
     if (matchedSubjectsInTrack.length >= requiredElectives) {
       const normalizedSubjects = matchedSubjectsInTrack.map(subject =>
         typeof subject === 'string' ? [subject] : subject
       );
-      console.log(`Passing Normalized subjects for ${trackName} to generate combinations:`, normalizedSubjects);
       const combinations = generateSubjectCombinations (normalizedSubjects, matches);
       console.log(`${combinations.length} Combinations created for track ${trackName}:`, combinations);
       allValidCombinations.push(...combinations);  // collect combinations
       allQualifiedSubjects.push(...normalizedSubjects);  // collect all qualified subjects
     }
     }
-
-    console.log("Matched Subjects per Track:", JSON.stringify(matchedSubjects, null, 2));
   
   return {
     matchedSubjects, 
