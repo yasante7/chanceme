@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
-import { GraduationCap, Menu, X, UserCircle, Home, Book, Info, MessageSquare, Phone } from "lucide-react"
+import { GraduationCap, Menu, X, UserCircle, Book, Info, MessageSquare, Phone } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
