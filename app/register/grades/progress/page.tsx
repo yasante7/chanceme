@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { calculateQualifyingPrograms } from '@/utils/program-checker'
 import { ProgramResult } from '@/utils/program-checker'
 import { NavBar } from '@/components/nav-bar'
-import { CheckCircle, AlertCircle, Loader2, ArrowRight } from 'lucide-react'
+import { CheckCircle, AlertCircle, Loader2, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
@@ -14,21 +14,16 @@ interface LogEntry {
   timestamp: Date
 }
 
-interface QualifyingProgram {
-  program: string
-  college: string
-  campus: string
-  specialRequirements: string | null
-  cuttoffPoint: number
-}
-
+// We'll remove the unused QualifyingProgram interface
 
 export default function ProgressPage() {
+  // We'll use logs with the toggle functionality
   const [logs, setLogs] = useState<LogEntry[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [qualifyingPrograms, setQualifyingPrograms] = useState<ProgramResult[]>([])
   const [progress, setProgress] = useState(0)
   const [hasError, setHasError] = useState(false)
+  const [showLogs, setShowLogs] = useState(false) // Add toggle state
 
   useEffect(() => {
     // Add initial test log
@@ -83,7 +78,6 @@ export default function ProgressPage() {
       const userData = localStorage.getItem('userData')
       if (userData) {
         const parsedData = JSON.parse(userData)
-        // console.log('Parsed user data:', JSON.stringify(parsedData, null, 2))
         
         if (parsedData.grades) {
           const results = calculateQualifyingPrograms(parsedData.grades)
@@ -121,7 +115,7 @@ export default function ProgressPage() {
   return (
     <div className="flex flex-col min-h-screen bg-muted/50">
       <NavBar />
-      <main className="flex-1 p-6 flex items-center justify-center">
+      <main className="flex-1 pt-24 md:pt-28 p-6 flex items-center justify-center">
         <div className="max-w-4xl w-full bg-background rounded-xl shadow-lg p-8 border">
           <h1 className="text-2xl font-semibold text-center mb-8">Processing Your Results</h1>
           
@@ -172,36 +166,45 @@ export default function ProgressPage() {
                 </p>
               </div>
 
-              {/* Processing Logs */}
-              {/* <div className="p-6 border rounded-lg bg-muted/30">
-                <div className="flex items-center gap-4 mb-4">
-                  <AlertCircle className="h-6 w-6 text-blue-500" />
-                  <h2 className="text-xl font-semibold">Processing Logs</h2>
-                </div>
-                <div className="space-y-2 max-h-96 overflow-y-auto font-mono text-sm">
-                  {logs.map((log, index) => (
-                    <div
-                      key={index}
-                      className={`p-3 rounded ${
-                        log.type === 'error'
-                          ? 'bg-red-50 text-red-700'
-                          : log.type === 'success'
-                          ? 'bg-green-50 text-green-700'
-                          : log.type === 'debug'
-                          ? 'bg-blue-50 text-blue-700'
-                          : 'bg-muted text-muted-foreground'
-                      }`}
-                    >
-                      <div className="flex justify-between items-start">
-                        <span>{log.message}</span>
-                        <span className="text-xs text-muted-foreground">
-                          {log.timestamp.toLocaleTimeString()}
-                        </span>
+              {/* Processing Logs - Toggle Now Using the logs state */}
+              <div className="p-6 border rounded-lg bg-muted/30">
+                <button 
+                  onClick={() => setShowLogs(!showLogs)} 
+                  className="w-full flex items-center justify-between"
+                >
+                  <div className="flex items-center gap-4">
+                    <AlertCircle className="h-6 w-6 text-blue-500" />
+                    <h2 className="text-xl font-semibold">Processing Logs</h2>
+                  </div>
+                  {showLogs ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                </button>
+                
+                {showLogs && (
+                  <div className="space-y-2 max-h-96 overflow-y-auto font-mono text-sm mt-4">
+                    {logs.map((log, index) => (
+                      <div
+                        key={index}
+                        className={`p-3 rounded ${
+                          log.type === 'error'
+                            ? 'bg-red-50 text-red-700'
+                            : log.type === 'success'
+                            ? 'bg-green-50 text-green-700'
+                            : log.type === 'debug'
+                            ? 'bg-blue-50 text-blue-700'
+                            : 'bg-muted text-muted-foreground'
+                        }`}
+                      >
+                        <div className="flex justify-between items-start">
+                          <span>{log.message}</span>
+                          <span className="text-xs text-muted-foreground">
+                            {log.timestamp.toLocaleTimeString()}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              </div> */}
+                    ))}
+                  </div>
+                )}
+              </div>
 
               {/* Qualifying Programs */}
               <div className="p-6 border rounded-lg bg-muted/30">
@@ -217,7 +220,7 @@ export default function ProgressPage() {
                       <p className="text-sm text-muted-foreground">{program.campus}</p>
                       {program.specialRequirements && (
                         <p className="text-sm text-blue-600 mt-1">
-                          CutoffPoint: {program.cutoffPoint} | Applicant's Aggregate: {program.Aggregate}
+                          CutoffPoint: {program.cutoffPoint} | Applicant&apos;s Aggregate: {program.Aggregate}
                         </p>
                       )}
                     </div>
@@ -245,4 +248,4 @@ export default function ProgressPage() {
       </main>
     </div>
   )
-} 
+}
