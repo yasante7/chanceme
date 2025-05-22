@@ -218,6 +218,7 @@ export default function GradesPage() {
                       className="w-24 p-2 rounded-md border bg-background"
                       value={grades[subject] || ''}
                       onChange={(e) => handleGradeChange(subject, e.target.value as Grade)}
+                      aria-label={`Grade for ${subject}`}
                       required
                     >
                       <option value="">Grade</option>
@@ -240,11 +241,12 @@ export default function GradesPage() {
                   {selectedElectives.map((selectedElective, index) => (
                     <div key={index} className="flex items-center gap-4">
                       <select
-                        className="flex-1 p-2 rounded-md border bg-background"
-                        value={selectedElective}
-                        onChange={(e) => handleElectiveChange(index, e.target.value)}
-                        required
-                      >
+                          className="flex-1 p-2 rounded-md border bg-background"
+                          value={selectedElective}
+                          onChange={(e) => handleElectiveChange(index, e.target.value)}
+                          aria-label={`Elective Subject ${index + 1}`}
+                          required
+                        >
                         <option value="">Select Elective {index + 1}</option>
                         {getAvailableElectives(index).map((subject) => (
                           <option key={subject} value={subject}>
@@ -252,13 +254,14 @@ export default function GradesPage() {
                           </option>
                         ))}
                       </select>
-                      {selectedElective && (
                         <select
                           className="w-24 p-2 rounded-md border bg-background"
                           value={grades[selectedElective] || ''}
                           onChange={(e) => handleGradeChange(selectedElective, e.target.value as Grade)}
+                          aria-label={`Grade for ${selectedElective}`}
                           required
                         >
+                        
                           <option value="">Grade</option>
                           {GRADES.map((grade) => (
                             <option key={grade} value={grade}>
@@ -266,7 +269,7 @@ export default function GradesPage() {
                             </option>
                           ))}
                         </select>
-                      )}
+                      
                     </div>
                   ))}
                 </div>

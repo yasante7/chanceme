@@ -81,4 +81,4 @@ For each program:
 
 
 # Up Next
-Replace general subject names and Ghanaian with actual subjects when called.
+Check program requirements for business. Different subject names with the subject requirements.

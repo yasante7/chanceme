@@ -100,7 +100,7 @@ export default function LandingPage() {
         <section id="enrolled-students" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Already Enrolled?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray">Already Enrolled?</h2>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 Help future students by reporting your admission status. Your input improves our prediction accuracy!
               </p>
@@ -120,14 +120,14 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section id="cta" className="w-full py-12 md:py-24 lg:py-32 bg-primary">
+        <section id="cta" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-background">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray">
                   Ready to Calculate Your Chances?
                 </h2>
-                <p className="mx-auto max-w-[600px] text-background/90 md:text-xl">
+                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   Start your journey to higher education with confidence. Use ChanceMe today!
                 </p>
               </div>
