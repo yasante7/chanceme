@@ -84,11 +84,28 @@ export function SignupForm() {
     setIsSubmitting(true)
     setError(null)
     setEmailError("")
+    setMessage("")
+
+    // ✅ Check agreement FIRST before any other validation
+    if (!agree) {
+      setMessage("You must agree to the terms to continue.")
+      setIsSubmitting(false)
+      return
+    }
 
     try {
       const formatError = validateEmail(formData.email)
       if (formatError) {
         setEmailError(formatError)
+        setIsSubmitting(false)
+        return
+      }
+
+      // Basic phone validation
+      const phonePattern = /^\+?[0-9\s\-\(\)]+$/;
+      if (!phonePattern.test(formData.phone)) {
+        setMessage("Please enter a valid phone number")
+        setIsSubmitting(false)
         return
       }
 
@@ -97,76 +114,50 @@ export function SignupForm() {
       localStorage.removeItem('signupFormData')
       console.log('Registration data saved:', formData)
       
-      router.push("../register/success")
-      localStorage.removeItem('signupFormData')
+      // ✅ Use Supabase Auth to sign up the user
+      const { error, data } = await supabase.auth.signUp({
+        email: formData.email,
+        password: formData.password,
+        options: {
+          data: {
+            first_name: formData.firstName,
+            last_name: formData.lastName,
+            phone_number: formData.phone,
+          },
+        },
+      })
       
+      // Log to check the response
+      console.log("Signup response:", data)
+
+      if (error) {
+        if (error.message.includes("already registered") || 
+            error.message.includes("User already registered")) {
+          setMessage("Email already registered. Please log in.")
+        } else {
+          setMessage(`Error: ${error.message}`)
+        }
+        setIsSubmitting(false)
+      } else {
+        // Check if user was created successfully
+        if (data.user) {
+          router.push("../register/success")
+          setMessage("Signup successful! Your account has been created.")
+          console.log("User metadata:", data.user.user_metadata)
+        } else {
+          setMessage("Account created, but user data couldn't be set. Please contact support.")
+          setIsSubmitting(false)
+        }
+      }
     } catch (error: unknown) {
-      // Replace 'any' with 'unknown' for better type safety
       console.error("Error signing up:", error)
       
-      // Handle the error with proper type narrowing
       if (error instanceof Error) {
-        setError(`Error signing up: ${error.message}`)
+        setMessage(`Error signing up: ${error.message}`)
       } else {
-        setError("Error signing up. Please try again.")
-      }
-    } finally {
-      setIsSubmitting(false)
-    }
-
-    if (!agree) {
-      setMessage("You must agree to the terms.")
-      return
-    }
-
-    // Basic phone validation
-    const phonePattern = /^\+?[0-9\s\-\(\)]+$/;
-    if (!phonePattern.test(formData.phone)) {
-      setMessage("Please enter a valid phone number")
-      return
-    }
-
-    setIsSubmitting(true)
-    setMessage("")
-
-    // ✅ Use Supabase Auth to sign up the user
-    const { error, data } = await supabase.auth.signUp({
-      email: formData.email,
-      password: formData.password,
-      options: {
-        data: {
-          first_name: formData.firstName,
-          last_name: formData.lastName,
-          phone_number: formData.phone, // Changed key from 'phone' to 'phone_number'
-        },
-      },
-    })
-    
-    // Log to check the response
-    console.log("Signup response:", data)
-
-    if (error) {
-      if (error.message.includes("already registered") || 
-          error.message.includes("User already registered")) {
-        setMessage("Email already registered. Please log in.")
-      } else {
-          setMessage(`Error: ${error.message}`)
-
+        setMessage("Error signing up. Please try again.")
       }
       setIsSubmitting(false)
-    } else {
-      // Check if user was created successfully
-      if (data.user) {
-        setTimeout(() => router.push("../register/success"), 5000)
-        setMessage("Signup successful! Your account has been created.")
-        console.log("User metadata:", data.user.user_metadata)
-      
-        
-        // Navigate to success page
-      } else {
-        setMessage("Account created, but user data couldn't be set. Please contact support.")
-        setIsSubmitting(false)
-      }
     }
   }
 
@@ -324,7 +315,7 @@ export function SignupForm() {
                 checked={agree}
                 onCheckedChange={handleCheckboxChange}
                 disabled={isAnimating}
-                className={isAnimating ? "opacity-0" : "opacity-100 transition-opacity duration-200"}
+                className={`${isAnimating ? "opacity-0" : "opacity-100 transition-opacity duration-200"} ${!agree && message?.includes("agree") ? "ring-2 ring-red-500" : ""}`}
               />
               {isAnimating && (
                 <motion.div 
@@ -337,10 +328,21 @@ export function SignupForm() {
                 </motion.div>
               )}
             </div>
-            <Label htmlFor="terms" className="text-sm font-normal">
+            <Label 
+              htmlFor="terms" 
+              className={`text-sm font-normal ${!agree && message?.includes("agree") ? "text-red-500" : ""}`}
+            >
               I agree to receive emails about university recommendations and application deadlines
             </Label>
           </div>
+
+          {/* Show the error message more prominently when agree is required */}
+          {message && (
+            <p className={`text-sm mt-2 ${message.includes("agree") ? "text-red-500 font-medium" : "text-muted-foreground"}`}>
+              {message}
+            </p>
+          )}
+
           <div className="flex gap-4 pt-6">
             <Button variant='outline' type="button" className="flex-1" onClick={() => setStep(1)}>
               Back

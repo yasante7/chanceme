@@ -3,8 +3,15 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { CheckCircle } from "lucide-react"
 import { NavBar } from "@/components/nav-bar"
+import { useEffect } from "react"
 
 export default function RegistrationSuccessPage() {
+    useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.href = "../../dashboard/";
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="flex flex-col min-h-screen bg-muted/50">
       <NavBar />
@@ -15,9 +22,9 @@ export default function RegistrationSuccessPage() {
           </div>
           <h1 className="text-2xl font-semibold mb-4">Account Created Successfully!</h1>
           <p className="text-muted-foreground mb-8">
-            Your account has been created. Please proceed to input your grades and school information.
+            Your account has been created. Redirecting to your Dashboard to complete Profile for Recommendations.
           </p>
-          <Link href="/register/grades">
+          <Link href="../dashboard/">
             <Button className="w-full">
               Continue to Input Results
             </Button>

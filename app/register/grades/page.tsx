@@ -3,17 +3,18 @@ import { retrieveUserData, createGradesRecord, extractElectives } from '@/utils/
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft, GraduationCap } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 // import { supabase } from '@/lib/supabase'  // Comment out this line
 import { useRouter } from 'next/navigation'
-import { NavBar } from "@/components/nav-bar"
 import { GradeData, UserData } from "@/types/user"
-import schoolsData from '@/src/data/schoolsdata/schools_loc_data.json'  // Add this import
+import schoolsData from '@/src/data/schoolsdata/schools_loc_data.json' 
 import { PROGRAMS, PROGRAM_SUBJECTS, CORE_SUBJECTS, GRADES } from "@/components/constants/student-grades"
+import { Card, CardContent, CardHeader, CardDescription, CardTitle } from '@/components/ui/card'
 
 console.clear()
 type Grade = string;
-export default function GradesPage() {
+
+export function GradesPage() {
   const router = useRouter()
   const [selectedProgram, setSelectedProgram] = useState<string>('')
   const [selectedElectives, setSelectedElectives] = useState<string[]>(['', '', '', ''])
@@ -23,8 +24,98 @@ export default function GradesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  // Save form data to localStorage when any relevant state changes
+  useEffect(() => {
+    // Don't save if we haven't loaded initial data yet or if nothing is selected
+    if (!selectedProgram && !selectedRegion && Object.keys(grades).length === 0) {
+      return;
+    }
+
+    // Create grade data object
+    const gradeData: GradeData = {
+      program: selectedProgram,
+      school: selectedSchool,
+      region: selectedRegion,
+      core_subjects: CORE_SUBJECTS.map(subject => ({
+        subject,
+        grade: grades[subject] || ''
+      })),
+      elective_subjects: selectedElectives.filter(Boolean).map(subject => ({
+        subject,
+        grade: grades[subject] || ''
+      }))
+    }
+
+    // Get existing user data
+    const existingData = localStorage.getItem('userData')
+    if (existingData) {
+      try {
+        // Update the grades portion of existing data
+        const userData: UserData = {
+          ...JSON.parse(existingData),
+          grades: gradeData
+        }
+        
+        // Save draft data to localStorage
+        localStorage.setItem('gradesFormDraft', JSON.stringify(userData.grades))
+        console.log('Grades draft saved to localStorage')
+      } catch (error) {
+        console.error('Error saving grades draft:', error)
+      }
+    }
+  }, [selectedProgram, selectedElectives, grades, selectedRegion, selectedSchool])
+
   useEffect(() => {
     const userData = retrieveUserData()
+    
+    // Try to load from draft first
+    const draftData = localStorage.getItem('gradesFormDraft')
+    
+    if (draftData) {
+      try {
+        const parsedDraft = JSON.parse(draftData) as GradeData
+        
+        // Set program, region and school
+        setSelectedProgram(parsedDraft.program || '')
+        setSelectedRegion(parsedDraft.region || '')
+        setSelectedSchool(parsedDraft.school || '')
+        
+        // Create grades object from draft data
+        const gradesObj: Record<string, Grade> = {}
+        
+        // Add core subject grades
+        parsedDraft.core_subjects?.forEach(item => {
+          if (item.subject && item.grade) {
+            gradesObj[item.subject] = item.grade
+          }
+        })
+        
+        // Add elective subject grades
+        parsedDraft.elective_subjects?.forEach(item => {
+          if (item.subject && item.grade) {
+            gradesObj[item.subject] = item.grade
+          }
+        })
+        
+        setGrades(gradesObj)
+        
+        // Set electives
+        const electiveSubjects = parsedDraft.elective_subjects?.map(item => item.subject) || []
+        setSelectedElectives([
+          electiveSubjects[0] || '',
+          electiveSubjects[1] || '',
+          electiveSubjects[2] || '',
+          electiveSubjects[3] || ''
+        ])
+        
+        console.log('Loaded grades from draft')
+        return
+      } catch (error) {
+        console.error('Error loading grades draft:', error)
+      }
+    }
+    
+    // Fall back to user data if no draft
     if (userData?.grades) {
       const { program, school, region } = userData.grades
       
@@ -77,13 +168,14 @@ export default function GradesPage() {
       const userData: UserData = {
         ...JSON.parse(existingData),
         grades: gradeData
-      }
-
-      // Store complete user data
+      }      // Store complete user data
       localStorage.setItem('userData', JSON.stringify(userData))
+      
+      // Clear the draft data since we've successfully saved and are moving on
+      localStorage.removeItem('gradesFormDraft')
 
       // Navigate to progress page
-      router.push("/register/grades/progress")
+      router.push("../dashboard/recommendations")
       
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to save grades'
@@ -118,186 +210,206 @@ export default function GradesPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-muted/50">
-      <NavBar />
-      <main className="flex-1 p-6 flex items-center justify-center">
-        <div className="max-w-2xl w-full bg-background rounded-xl shadow-lg p-8 border">
-          <div className="flex items-center justify-center mb-6">
-            <GraduationCap className="h-10 w-10" />
+    <form onSubmit={handleSubmit}>
+      <Card>
+        <CardHeader>
+          <CardTitle>Enter your Academic Details</CardTitle>
+          <CardDescription>
+            Choose your School&apos;s location, name, and enter your academic information. <br /> Select your program and provide your grades for recommendations.
+          </CardDescription>
+        </CardHeader>
+<CardContent className="space-y-6">
+          {/* Region Selection */}
+          <div>
+            <label htmlFor="region" className="block text-sm font-medium mb-2 text-muted-foreground">
+              Select Your School Region
+            </label>
+            <select
+              id="region"
+              className="w-full p-2 rounded-md border bg-background"
+              value={selectedRegion}
+              onChange={(e) => {
+                setSelectedRegion(e.target.value)
+                setSelectedSchool('')
+              }}
+              required
+            >
+              <option value="">Select a region...</option>
+              {regions.map((region) => (
+                <option key={region} value={region}>
+                  {region}
+                </option>
+              ))}
+            </select>
           </div>
-          <h1 className="text-2xl font-semibold text-center mb-8">Enter Your Grades</h1>
-          
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Region Selection */}
+
+          {/* School Selection */}
+          {selectedRegion && (
             <div>
-              <label htmlFor="region" className="block text-sm font-medium mb-2 text-muted-foreground">
-                Select Your School Region
+              <label htmlFor="school" className="block text-sm font-medium mb-2 text-muted-foreground">
+                Select Your School
               </label>
               <select
-                id="region"
+                id="school"
                 className="w-full p-2 rounded-md border bg-background"
-                value={selectedRegion}
-                onChange={(e) => {
-                  setSelectedRegion(e.target.value)
-                  setSelectedSchool('')
-                }}
+                value={selectedSchool}
+                onChange={(e) => setSelectedSchool(e.target.value)}
                 required
               >
-                <option value="">Select a region...</option>
-                {regions.map((region) => (
-                  <option key={region} value={region}>
-                    {region}
+                <option value="">Select a school...</option>
+                {getSchoolsForRegion(selectedRegion).map((school) => (
+                  <option key={school} value={school}>
+                    {school}
                   </option>
                 ))}
               </select>
             </div>
-
-            {/* School Selection */}
-            {selectedRegion && (
-              <div>
-                <label htmlFor="school" className="block text-sm font-medium mb-2 text-muted-foreground">
-                  Select Your School
-                </label>
-                <select
-                  id="school"
-                  className="w-full p-2 rounded-md border bg-background"
-                  value={selectedSchool}
-                  onChange={(e) => setSelectedSchool(e.target.value)}
-                  required
-                >
-                  <option value="">Select a school...</option>
-                  {getSchoolsForRegion(selectedRegion).map((school) => (
-                    <option key={school} value={school}>
-                      {school}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            )}
-              {/* Program Selection */}
-              <div>
-              <label htmlFor="program" className="block text-sm font-medium mb-2 text-muted-foreground">
-                Select Your Program
-              </label>
-              <select
-                id="program"
-                className="w-full p-2 rounded-md border bg-background"
-                value={selectedProgram}
-                onChange={(e) => {
-                  setSelectedProgram(e.target.value)
-                  setSelectedElectives(['', '', '', ''])
-                  
-                  // Preserve core subject grades when changing programs
-                  const coreGrades: Record<string, Grade> = {};
-                  CORE_SUBJECTS.forEach(subject => {
-                    if (grades[subject]) {
-                      coreGrades[subject] = grades[subject];
-                    }
-                  });
-                  setGrades(coreGrades);
-                }}
-                required
-              >
-                <option value="">Select a program...</option>
-                {PROGRAMS.map((program) => (
-                  <option key={program} value={program}>
-                    {program}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Core Subjects */}
+          )}
+            {/* Program Selection */}
             <div>
-              <h2 className="text-lg font-semibold mb-4 text-muted-foreground">Core Subjects</h2>
+            <label htmlFor="program" className="block text-sm font-medium mb-2 text-muted-foreground">
+              Select Your Program to see Electives
+            </label>
+            <select
+              id="program"
+              className="w-full p-2 rounded-md border bg-background"
+              value={selectedProgram}
+              onChange={(e) => {
+                setSelectedProgram(e.target.value)
+                setSelectedElectives(['', '', '', ''])
+                
+                // Preserve core subject grades when changing programs
+                const coreGrades: Record<string, Grade> = {};
+                CORE_SUBJECTS.forEach(subject => {
+                  if (grades[subject]) {
+                    coreGrades[subject] = grades[subject];
+                  }
+                });
+                setGrades(coreGrades);
+              }}
+              required
+            >
+              <option value="">Select a program...</option>
+              {PROGRAMS.map((program) => (
+                <option key={program} value={program}>
+                  {program}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Core Subjects */}
+          <div>
+            <h2 className="text-lg font-semibold mb-4 text-muted-foreground">Core Subjects</h2>
+            <div className="space-y-4">
+              {CORE_SUBJECTS.map((subject) => (
+                <div key={subject} className="flex items-center gap-4">
+                  <label className="flex-1 text-sm font-medium text-muted-foreground">{subject}</label>
+                  <select
+                    className="w-24 p-2 rounded-md border bg-background"
+                    value={grades[subject] || ''}
+                    onChange={(e) => handleGradeChange(subject, e.target.value as Grade)}
+                    aria-label={`Grade for ${subject}`}
+                    required
+                  >
+                    <option value="">Grade</option>
+                    {GRADES.map((grade) => (
+                      <option key={grade} value={grade}>
+                        {grade}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Elective Subjects */}
+          {selectedProgram && (
+            <div>
+              <h2 className="text-lg font-semibold mb-4 text-muted-foreground">Select 4 Elective Subjects</h2>
               <div className="space-y-4">
-                {CORE_SUBJECTS.map((subject) => (
-                  <div key={subject} className="flex items-center gap-4">
-                    <label className="flex-1 text-sm font-medium text-muted-foreground">{subject}</label>
+                {selectedElectives.map((selectedElective, index) => (
+                  <div key={index} className="flex items-center gap-4">
                     <select
-                      className="w-24 p-2 rounded-md border bg-background"
-                      value={grades[subject] || ''}
-                      onChange={(e) => handleGradeChange(subject, e.target.value as Grade)}
-                      aria-label={`Grade for ${subject}`}
-                      required
-                    >
-                      <option value="">Grade</option>
-                      {GRADES.map((grade) => (
-                        <option key={grade} value={grade}>
-                          {grade}
+                        className="flex-1 p-2 rounded-md border bg-background"
+                        value={selectedElective}
+                        onChange={(e) => handleElectiveChange(index, e.target.value)}
+                        aria-label={`Elective Subject ${index + 1}`}
+                        required
+                      >
+                      <option value="">Select Elective {index + 1}</option>
+                      {getAvailableElectives(index).map((subject) => (
+                        <option key={subject} value={subject}>
+                          {subject}
                         </option>
                       ))}
                     </select>
+                      <select
+                        className="w-24 p-2 rounded-md border bg-background"
+                        value={grades[selectedElective] || ''}
+                        onChange={(e) => handleGradeChange(selectedElective, e.target.value as Grade)}
+                        aria-label={`Grade for ${selectedElective}`}
+                        required
+                      >
+                      
+                        <option value="">Grade</option>
+                        {GRADES.map((grade) => (
+                          <option key={grade} value={grade}>
+                            {grade}
+                          </option>
+                        ))}
+                      </select>
+                    
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* Elective Subjects */}
-            {selectedProgram && (
-              <div>
-                <h2 className="text-lg font-semibold mb-4 text-muted-foreground">Select 4 Elective Subjects</h2>
-                <div className="space-y-4">
-                  {selectedElectives.map((selectedElective, index) => (
-                    <div key={index} className="flex items-center gap-4">
-                      <select
-                          className="flex-1 p-2 rounded-md border bg-background"
-                          value={selectedElective}
-                          onChange={(e) => handleElectiveChange(index, e.target.value)}
-                          aria-label={`Elective Subject ${index + 1}`}
-                          required
-                        >
-                        <option value="">Select Elective {index + 1}</option>
-                        {getAvailableElectives(index).map((subject) => (
-                          <option key={subject} value={subject}>
-                            {subject}
-                          </option>
-                        ))}
-                      </select>
-                        <select
-                          className="w-24 p-2 rounded-md border bg-background"
-                          value={grades[selectedElective] || ''}
-                          onChange={(e) => handleGradeChange(selectedElective, e.target.value as Grade)}
-                          aria-label={`Grade for ${selectedElective}`}
-                          required
-                        >
-                        
-                          <option value="">Grade</option>
-                          {GRADES.map((grade) => (
-                            <option key={grade} value={grade}>
-                              {grade}
-                            </option>
-                          ))}
-                        </select>
-                      
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="flex gap-4 pt-6">
-              <Link href="/register" className="flex-1">
-                <Button variant="outline" className="w-full">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back
-                </Button>
-              </Link>
-              <Button 
-                type="submit" 
-                className="flex-1"
-                disabled={selectedElectives.filter(Boolean).length !== 4 || isSubmitting}
-              >
-                {isSubmitting ? 'Saving...' : 'Complete Registration'}
-              </Button>
-            </div>
-          </form>
-          
-          {error && (
-            <p className="text-red-500 text-sm mt-4 text-center">{error}</p>
           )}
-        </div>
-      </main>
-    </div>
+
+          <div className="flex gap-4 pt-6">
+            <Link href="/register" className="flex-1">
+              <Button variant="outline" className="w-full">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back
+              </Button>
+            </Link>
+            <Button 
+              type="button"
+              variant="outline" 
+              className="flex-1"
+              onClick={() => {
+                // Clear the draft data
+                localStorage.removeItem('gradesFormDraft')
+                
+                // Reset form state
+                setSelectedProgram('')
+                setSelectedRegion('')
+                setSelectedSchool('')
+                setSelectedElectives(['', '', '', ''])
+                setGrades({})
+                
+                setError(null)
+              }}
+            >
+              Reset Form
+            </Button>
+            <Button 
+              type="submit" 
+              className="flex-1"
+              disabled={selectedElectives.filter(Boolean).length !== 4 || isSubmitting}
+            >
+              {isSubmitting ? 'Saving...' : 'Complete Registration'}
+            </Button>
+          </div>
+        
+        {error && (
+          <p className="text-red-500 text-sm mt-4 text-center">{error}</p>
+        )}
+      </CardContent>
+    </Card>
+    </form>
   )
 }
+
+export default GradesPage;
