@@ -21,7 +21,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="/register">
+                <Link href="/register/get-started">
                   <Button>Get Started</Button>
                 </Link>
                 <Button variant="outline">Learn More</Button>

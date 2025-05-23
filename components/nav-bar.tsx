@@ -23,7 +23,7 @@ export function NavBar() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full z-50 px-6 lg:px-8 h-16 md:h-20 flex items-center border-b bg-background shadow-sm">
+    <header className="fixed top-0 left-0 right-0 w-full z-50 px-6 lg:px-8 h-16 md:h-16 flex items-center border-b bg-background shadow-sm">
       <Link className="flex items-center justify-center" href="/">
         <GraduationCap className="h-7 w-7 mr-3 text-primary" />
         <span className="font-bold text-lg md:text-xl">ChanceMe</span>
