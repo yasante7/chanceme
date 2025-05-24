@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import { ProfileHeader } from "./components/profile-header"
 import { ProfileTabs } from "./components/profile-tabs"
 
@@ -11,7 +12,9 @@ export default function ProfilePage() {
   return (
     <div className="space-y-8">
       <ProfileHeader />
-      <ProfileTabs />
+      <Suspense fallback={<div className="animate-pulse h-[500px] bg-card rounded-lg"></div>}>
+        <ProfileTabs />
+      </Suspense>
     </div>
   )
 }

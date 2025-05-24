@@ -7,7 +7,7 @@ import { ArrowUpRight, Star, User, FileText, BookOpen } from "lucide-react"
 import { supabase } from "@/lib/supabase"
 import { Button } from "@/components/ui/button"
 
-export function RecommendedUniversities() {
+function UniversitiesPage() {
   const [profileComplete, setProfileComplete] = useState(false)
   const [loading, setLoading] = useState(true)
   
@@ -176,4 +176,6 @@ export function RecommendedUniversities() {
   )
 }
 
-export default RecommendedUniversities;
+export default function RecommendedUniversities(){
+  return <UniversitiesPage />
+};

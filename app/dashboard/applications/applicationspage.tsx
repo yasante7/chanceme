@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from "@/components/ui/card"
 
-export function ApplicationsTabContent() {
+export default function ApplicationsTabContent () {
   return (
     <Card>
       <CardHeader>
@@ -13,5 +13,3 @@ export function ApplicationsTabContent() {
     </Card>
   )
 }
-
-export default ApplicationsTabContent;
