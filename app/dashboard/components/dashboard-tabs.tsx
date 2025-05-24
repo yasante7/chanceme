@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { OverviewTabContent } from "./overview-tab"
-import { RecommendationsTabContent } from "../recommendations/recommendationspage"
+import RecommendationsTabContent from "../recommendations/page"
 import ApplicationsTabContent from "../applications/applicationspage"
 import { TimelineTabContent } from "./timeline-tab"
 

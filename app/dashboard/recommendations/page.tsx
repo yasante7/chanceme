@@ -16,7 +16,7 @@ interface LogEntry {
 
 // We'll remove the unused QualifyingProgram interface
 
-export function RecommendationsTabContent () {
+export default function RecommendationsTabContent () {
   // We'll use logs with the toggle functionality
   const [logs, setLogs] = useState<LogEntry[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -249,5 +249,3 @@ export function RecommendationsTabContent () {
     </div>
   )
 }
-
-export default RecommendationsTabContent;

@@ -175,7 +175,7 @@ export function GradesPage() {
       localStorage.removeItem('gradesFormDraft')
 
       // Navigate to progress page
-      router.push("../dashboard/recommendations")
+      router.push("../dashboard/recommendations/")
       
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to save grades'
