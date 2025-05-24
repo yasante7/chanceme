@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from "@/components/ui/card"
 
-export default function ApplicationsTabContent () {
+function ApplicationsPage {
   return (
     <Card>
       <CardHeader>
@@ -12,4 +12,9 @@ export default function ApplicationsTabContent () {
       </CardContent>
     </Card>
   )
+}
+
+// This is the required Next.js Page export
+export default function ApplicationsTabContent() {
+  return ApplicationsPage/>;
 }
