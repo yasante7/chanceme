@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
-// import { supabase } from '@/lib/supabase'  // Comment out this line
+import { supabase } from "@/lib/supabase"
 import { useRouter } from 'next/navigation'
 import { GradeData, UserData } from "@/types/user"
 import schoolsData from '@/src/data/schoolsdata/schools_loc_data.json' 
@@ -142,7 +142,7 @@ export function GradesPage() {
     e.preventDefault()
     setIsSubmitting(true)
     setError(null)
-    
+
     const gradeData: GradeData = {
       program: selectedProgram,
       school: selectedSchool,
@@ -168,15 +168,21 @@ export function GradesPage() {
       const userData: UserData = {
         ...JSON.parse(existingData),
         grades: gradeData
-      }      // Store complete user data
+      }
+      // Store complete user data
       localStorage.setItem('userData', JSON.stringify(userData))
-      
-      // Clear the draft data since we've successfully saved and are moving on
       localStorage.removeItem('gradesFormDraft')
+
+      // --- SUPABASE: Update user metadata with grade data ---
+      const { error: updateError } = await supabase.auth.updateUser({
+        data: { grades: gradeData }
+      })
+      if (updateError) {
+        throw updateError
+      }
 
       // Navigate to progress page
       router.push("../dashboard/recommendations/")
-      
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to save grades'
       setError(errorMessage)
