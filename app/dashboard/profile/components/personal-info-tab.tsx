@@ -38,6 +38,7 @@ export function PersonalInfoTab() {
     lastName: "",
     email: "",
     phone: "",
+    avatarUrl: "", // <-- Add this line
     addressLine1: "",
     addressLine2: "",
     city: "",
@@ -49,48 +50,38 @@ export function PersonalInfoTab() {
   
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState("")
-  
+
   useEffect(() => {
     async function fetchUserData() {
       try {
-        const { data: { user }, error } = await supabase.auth.getUser()
         
+        const { data: { user }, error } = await supabase.auth.getUser();
         if (error) {
-          console.error("Error fetching user:", error.message)
-          return
+          console.error("Error fetching user:", error.message);
+          return;
         }
-        
         if (user) {
-          // Get basic info from auth metadata
-          const { first_name, last_name, phone_number } = user.user_metadata || {}
-          
-          // Get additional profile info from profiles table if exists
-          const { data: profileData } = await supabase
-            .from('profiles')
-            .select('*')
-            .eq('id', user.id)
-            .single()
-            
+          const meta = user.user_metadata || {};
           setFormData({
-            firstName: first_name || "",
-            lastName: last_name || "",
+            firstName: meta.first_name || "",
+            lastName: meta.last_name || "",
             email: user.email || "",
-            phone: phone_number || "",
-            addressLine1: profileData?.address_line1 || "",
-            addressLine2: profileData?.address_line2 || "",
-            city: profileData?.city || "",
-            state: profileData?.state || "",
-            zipCode: profileData?.zip_code || "",
-            country: profileData?.country || "",
-            bio: profileData?.bio || ""
-          })
+            phone: meta.phone_number || meta.phone || "",
+            avatarUrl: meta.avatarUrl || "",
+            addressLine1: meta.address_line1 || "",
+            addressLine2: meta.address_line2 || "",
+            city: meta.city || "",
+            state: meta.state || "",
+            zipCode: meta.zip_code || "",
+            country: meta.country || "",
+            bio: meta.bio || ""
+          });
         }
       } catch (error) {
-        console.error("Error fetching profile data:", error)
+        console.error("Error fetching profile data:", error);
       }
     }
-    
-    fetchUserData()
+    fetchUserData();
   }, [])
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -100,60 +91,63 @@ export function PersonalInfoTab() {
     }))
   }
   
+  // Define type for user metadata update
+  type UserMetadataUpdate = {
+    first_name: string;
+    last_name: string;
+    phone_number: string;
+    address_line1: string;
+    address_line2: string;
+    city: string;
+    state: string;
+    zip_code: string;
+    country: string;
+    bio: string;
+    updated_at: string;
+    avatarUrl?: string;
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setLoading(true)
-    setMessage("")
-    
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
     try {
-      const { data: { user }, error: userError } = await supabase.auth.getUser()
-      
-      if (userError) {
-        throw userError
+      const { data: { user }, error: userError } = await supabase.auth.getUser();
+      if (userError) throw userError;
+      if (!user) throw new Error("User not authenticated");
+
+      // Build the update data object
+      const updateData: UserMetadataUpdate = {
+        first_name: formData.firstName,
+        last_name: formData.lastName,
+        phone_number: formData.phone,
+        address_line1: formData.addressLine1,
+        address_line2: formData.addressLine2,
+        city: formData.city,
+        state: formData.state,
+        zip_code: formData.zipCode,
+        country: formData.country,
+        bio: formData.bio,
+        updated_at: new Date().toISOString()
+      };
+      // Only include avatarUrl if it's not empty
+      if (formData.avatarUrl) {
+        updateData.avatarUrl = formData.avatarUrl;
       }
-      
-      if (!user) {
-        throw new Error("User not authenticated")
-      }
-      
-      // Update user metadata in auth
+
       const { error: updateError } = await supabase.auth.updateUser({
-        data: {
-          first_name: formData.firstName,
-          last_name: formData.lastName,
-          phone_number: formData.phone
-        }
-      })
-      
-      if (updateError) {
-        throw updateError
-      }
-      
-      // Upsert additional profile data in profiles table
-      const { error: profileError } = await supabase
-        .from('profiles')
-        .upsert({
-          id: user.id,
-          address_line1: formData.addressLine1,
-          address_line2: formData.addressLine2,
-          city: formData.city,
-          state: formData.state,
-          zip_code: formData.zipCode,
-          country: formData.country,
-          bio: formData.bio,
-          updated_at: new Date().toISOString()
-        })
-      
-      if (profileError) {
-        throw profileError
-      }
-      
-      setMessage("Profile updated successfully!")
+        data: updateData
+      });
+
+      if (updateError) throw updateError;
+
+      window.dispatchEvent(new Event("avatar-updated"));
+      setMessage("Profile updated successfully!");
     } catch (error: unknown) {
-      console.error("Error updating profile:", error)
-      setMessage(`Error: ${getErrorMessage(error)}`)
+      console.error("Error updating profile:", error);
+      setMessage(`Error: ${getErrorMessage(error)}`);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   }
   

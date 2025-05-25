@@ -32,7 +32,7 @@ export function NextSteps() {
         
         // Check personal info completion
         const { data: personalData } = await supabase
-          .from('profiles')
+          .from('userProfiles')
           .select('*')
           .eq('id', user.id)
           .single()

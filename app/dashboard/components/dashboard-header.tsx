@@ -21,40 +21,45 @@ import { DashboardSidebar } from "./dashboard-sidebar"
 
 export function DashboardHeader() {
   const [userName, setUserName] = useState("Loading...");
+  const [avatarUrl, setAvatarUrl] = useState<string>("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
     async function getUserData() {
       try {
         const { data: { user }, error } = await supabase.auth.getUser();
-        
         if (error) {
           console.error("Error fetching user:", error.message);
           setUserName("Guest User");
+          setAvatarUrl("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
           return;
         }
-        
         if (user) {
-          // User found, extract first_name and last_name from metadata
-          const { first_name, last_name } = user.user_metadata;
+          const { first_name, last_name, avatarUrl } = user.user_metadata;
+          setAvatarUrl(avatarUrl || "/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
           if (first_name && last_name) {
             setUserName(`${first_name}`);
           } else {
-            // Fallback to email if names are not available
             setUserName(user.email || "User");
           }
         } else {
           setUserName("Guest User");
+          setAvatarUrl("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
         }
       } catch (error) {
         console.error("Unexpected error:", error);
         setUserName("Guest User");
+        setAvatarUrl("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
       } finally {
         setIsLoading(false);
       }
     }
     
     getUserData();
+    // Listen for avatar updates from anywhere in the app
+    const handler = () => getUserData();
+    window.addEventListener("avatar-updated", handler);
+    return () => window.removeEventListener("avatar-updated", handler);
   }, []);
 
   const handleLogout = async () => {
@@ -129,7 +134,7 @@ export function DashboardHeader() {
         <DropdownMenuTrigger asChild>
           <Button variant="outline" className="gap-2">
             <Image 
-              src="/placeholder.svg?height=32&width=32" 
+              src={avatarUrl} 
               alt="Avatar" 
               className="h-6 w-6 rounded-full" 
               width={24}
