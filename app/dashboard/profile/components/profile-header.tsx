@@ -36,9 +36,8 @@ export function ProfileHeader() {
 
   // Handler to update avatar
   const handleAvatarChange = async (url: string) => {
-    // Update in Supabase user_metadata
-    await supabase.auth.updateUser({ data: { avatarUrl: url } });
-    // Re-fetch the latest user data from Supabase
+
+    // fetch the latest user data from Supabase
     const { data: { user } } = await supabase.auth.getUser();
     setUserData(prev => ({
       ...prev,

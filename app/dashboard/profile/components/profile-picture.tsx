@@ -36,17 +36,22 @@ const avatarslists = [
  '/avatars/Trouvez et téléchargez des ressources graphiques… (1).jpg',
  '/avatars/Trouvez et téléchargez des ressources graphiques….jpg']
 
-export function ProfilePicture({ avatarUrl, onChange }: { avatarUrl: string; onChange: (url: string) => void }) {
+export function ProfilePicture({
+  avatarUrl,
+  onChange,
+}: {
+  avatarUrl: string;
+  onChange: (url: string) => void;
+}) {
   const [showGrid, setShowGrid] = useState(false);
   const [saving, setSaving] = useState(false);
 
-  // Save avatar to Supabase and update parent
   const handleAvatarSelect = async (url: string) => {
     setSaving(true);
     try {
       const { error } = await supabase.auth.updateUser({ data: { avatarUrl: url } });
       if (!error) {
-        onChange(url); // update parent state
+        onChange(url);
         window.dispatchEvent(new Event("avatar-updated"));
       }
     } finally {
@@ -58,40 +63,46 @@ export function ProfilePicture({ avatarUrl, onChange }: { avatarUrl: string; onC
   return (
     <div>
       <Image
-        src={avatarUrl || "/placeholder.svg?height=96&width=96"}
+        src={avatarUrl || "/avatars/avatar10.jpg"}
         alt="User Avatar"
         width={96}
         height={96}
-        className="rounded-full cursor-pointer"
+        className="rounded-full cursor-pointer hover:scale-105 transition-transform duration-200 shadow-md"
         onClick={() => setShowGrid(true)}
       />
       {showGrid && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="bg-white p-6 rounded-lg grid grid-cols-4 gap-4 max-h-[80vh] overflow-y-auto">
-            {avatarslists.map((avatar, idx) => (
-              <Button
-                key={avatar}
-                className={`focus:outline-none ${saving ? 'opacity-50 pointer-events-none' : ''}`}
-                onClick={() => handleAvatarSelect(avatar)}
-                disabled={saving}
-              >
-                <Image
-                  src={avatar}
-                  alt={`Avatar ${idx + 1}`}
-                  width={64}
-                  height={64}
-                  className="rounded-full border-2 hover:border-blue-500"
-                />
-              </Button>
-            ))}
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+          <div className="relative bg-white p-6 rounded-2xl shadow-xl max-w-4xl w-full max-h-[80vh] overflow-y-auto transition-all duration-300">
+            <h2 className="text-lg font-semibold mb-4 text-gray-950 text-center">Choose Your Avatar</h2>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+              {avatarslists.map((avatar, idx) => (
+                <Button
+                  key={avatar}
+                  onClick={() => handleAvatarSelect(avatar)}
+                  disabled={saving}
+                  className={`p-1 rounded-full transition-transform duration-200 hover:scale-105 focus:outline-none ${
+                    saving ? "opacity-50 pointer-events-none" : ""
+                  }`}
+                >
+                  <Image
+                    src={avatar}
+                    alt={`Avatar ${idx + 1}`}
+                    width={64}
+                    height={64}
+                    className="rounded-full border-2 border-transparent hover:border-blue-500 shadow"
+                  />
+                </Button>
+              ))}
+            </div>
+            <button
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl"
+              onClick={() => setShowGrid(false)}
+              disabled={saving}
+              aria-label="Close"
+            >
+              &times;
+            </button>
           </div>
-          <button
-            className="absolute top-4 right-4 text-white text-2xl"
-            onClick={() => setShowGrid(false)}
-            disabled={saving}
-          >
-            ×
-          </button>
         </div>
       )}
     </div>

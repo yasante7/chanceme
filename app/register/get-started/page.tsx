@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
-import { NavBar } from "@/components/nav-bar"
+// import { NavBar } from "@/components/nav-bar"
 
 import {
   Card,
@@ -28,7 +28,7 @@ export default function GetStartedPage() {
 
   return (
     <div className="flex min-h-screen flex-col pt-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
-      <NavBar />
+      {/* <NavBar /> */}
       <main className="container flex flex-1 items-center justify-center py-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

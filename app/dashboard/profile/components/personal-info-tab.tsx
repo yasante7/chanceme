@@ -128,12 +128,9 @@ export function PersonalInfoTab() {
         zip_code: formData.zipCode,
         country: formData.country,
         bio: formData.bio,
+        // avatarUrl: formData.avatarUrl || "", // Ensure avatarUrl is included
         updated_at: new Date().toISOString()
       };
-      // Only include avatarUrl if it's not empty
-      if (formData.avatarUrl) {
-        updateData.avatarUrl = formData.avatarUrl;
-      }
 
       const { error: updateError } = await supabase.auth.updateUser({
         data: updateData

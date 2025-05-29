@@ -119,6 +119,7 @@ export function SignupForm() {
         email: formData.email,
         password: formData.password,
         options: {
+          emailRedirectTo: "localhost/dashboard",
           data: {
             first_name: formData.firstName,
             last_name: formData.lastName,

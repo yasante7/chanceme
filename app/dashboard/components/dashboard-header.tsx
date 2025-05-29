@@ -21,7 +21,7 @@ import { DashboardSidebar } from "./dashboard-sidebar"
 
 export function DashboardHeader() {
   const [userName, setUserName] = useState("Loading...");
-  const [avatarUrl, setAvatarUrl] = useState<string>("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
+  const [avatarUrl, setAvatarUrl] = useState<string>("/avatars/avatar01.jpg");
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
@@ -31,32 +31,34 @@ export function DashboardHeader() {
         if (error) {
           console.error("Error fetching user:", error.message);
           setUserName("Guest User");
-          setAvatarUrl("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
+          setAvatarUrl("/avatars/avatar02.jpg");
           return;
         }
         if (user) {
-          const { first_name, last_name, avatarUrl } = user.user_metadata;
-          setAvatarUrl(avatarUrl || "/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
-          if (first_name && last_name) {
+          const { first_name, avatarUrl } = user.user_metadata;
+          console.log("User data:", user);
+          console.log("User data:", user.user_metadata);
+          setAvatarUrl(avatarUrl || "/avatars/avatar03.jpg");
+          if (first_name) {
             setUserName(`${first_name}`);
           } else {
             setUserName(user.email || "User");
           }
         } else {
           setUserName("Guest User");
-          setAvatarUrl("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
+          setAvatarUrl("/avatars/avatar04.jpg");
         }
       } catch (error) {
         console.error("Unexpected error:", error);
         setUserName("Guest User");
-        setAvatarUrl("/avatars/13b485a8-99a1-4527-81dc-b1b96f3adf8f.jpg");
+        setAvatarUrl("/avatars/avatar0.jpg");
       } finally {
         setIsLoading(false);
       }
     }
     
     getUserData();
-    // Listen for avatar updates from anywhere in the app
+    // Listen for avatar updates
     const handler = () => getUserData();
     window.addEventListener("avatar-updated", handler);
     return () => window.removeEventListener("avatar-updated", handler);
