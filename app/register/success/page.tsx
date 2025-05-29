@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs"
 import { CheckCircle } from "lucide-react"
-import { NavBar } from "@/components/nav-bar"
+// import { NavBar } from "@/components/nav-bar"
 
 export default function RegistrationSuccessPage() {
   const supabase = createClientComponentClient()
@@ -24,7 +24,7 @@ export default function RegistrationSuccessPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-muted/50">
-      <NavBar />
+      {/* <NavBar /> */}
       <main className="flex-1 p-6 flex items-center justify-center">
         <div className="max-w-md w-full bg-background rounded-xl shadow-lg p-8 border text-center">
           <div className="flex justify-center mb-6">
