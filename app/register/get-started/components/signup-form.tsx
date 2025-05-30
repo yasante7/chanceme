@@ -12,6 +12,7 @@ import { Label } from "@/components/ui/label"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { Gender, Region, REGIONS, validateEmail } from "../../../components/load-user-data"
+// import { CardFooter } from "@/components/ui/card"
 
 export function SignupForm() {
   const router = useRouter()
@@ -354,6 +355,20 @@ export function SignupForm() {
           </div>
 
           {message && <p className="text-sm text-muted-foreground">{message}</p>}
+
+          {/* <CardFooter className="flex flex-col space-y-4 border-t bg-muted/30 px-6 py-4 text-center">
+            <p className="text-sm text-muted-foreground">
+              By continuing, you agree to our{" "}
+              <a href="#" className="underline hover:text-primary">
+                Terms
+              </a>{" "}
+              and{" "}
+              <a href="#" className="underline hover:text-primary">
+                Privacy Policy
+              </a>
+              .
+            </p>
+          </CardFooter> */}
         </form>
       </>)}
     </div>

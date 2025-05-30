@@ -9,7 +9,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -68,19 +67,7 @@ export default function GetStartedPage() {
               </Tabs>
             </CardContent>
 
-            <CardFooter className="flex flex-col space-y-4 border-t bg-muted/30 px-6 py-4 text-center">
-              <p className="text-sm text-muted-foreground">
-                By continuing, you agree to our{" "}
-                <a href="#" className="underline hover:text-primary">
-                  Terms
-                </a>{" "}
-                and{" "}
-                <a href="#" className="underline hover:text-primary">
-                  Privacy Policy
-                </a>
-                .
-              </p>
-            </CardFooter>
+
           </Card>
         </motion.div>
       </main>

@@ -16,14 +16,16 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { DashboardSidebar } from "./dashboard-sidebar"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
+import { useSidebarContent } from "./sidebar/dashboard-sidebar"
 
 export function DashboardHeader() {
   const [userName, setUserName] = useState("Loading...");
   const [avatarUrl, setAvatarUrl] = useState<string>("/avatars/avatar01.jpg");
   const [isLoading, setIsLoading] = useState(true);
-  
+  const [open, setOpen] = useState(false);
+  const sidebarContent = useSidebarContent(setOpen);
+
   useEffect(() => {
     async function getUserData() {
       try {
@@ -36,8 +38,6 @@ export function DashboardHeader() {
         }
         if (user) {
           const { first_name, avatarUrl } = user.user_metadata;
-          console.log("User data:", user);
-          console.log("User data:", user.user_metadata);
           setAvatarUrl(avatarUrl || "/avatars/avatar03.jpg");
           if (first_name) {
             setUserName(`${first_name}`);
@@ -70,7 +70,6 @@ export function DashboardHeader() {
       if (error) {
         console.error("Error signing out:", error.message);
       } else {
-        // Redirect to home page or login page after logout
         window.location.href = "../../register/get-started/components/login-form";
       }
     } catch (error) {
@@ -79,90 +78,94 @@ export function DashboardHeader() {
   };
 
   return (
-    <header className="sticky top-0 z-50 flex h-16 items-center gap-4 border-b bg-background px-6">
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="outline" size="icon" className="md:hidden">
-            <Menu className="h-5 w-5" />
-            <span className="sr-only">Toggle Menu</span>
-          </Button>
-        </SheetTrigger>
-        <SheetContent side="left" className="p-0">
-          <DashboardSidebar />
-        </SheetContent>
-      </Sheet>
+    <>
+      <header className="sticky top-0 z-50 flex h-16 items-center gap-4 border-b bg-background px-6">
+        {/* Hamburger menu for mobile */}
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild>
+            <Button variant="outline" size="icon" className="md:hidden">
+              <Menu className="h-5 w-5" />
+              <span className="sr-only">Toggle Menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="p-0 w-64">
+            <SheetTitle className="sr-only">Sidebar Navigation</SheetTitle>
+            {sidebarContent}
+          </SheetContent>
+        </Sheet>
 
-      <div className="flex items-center gap-2">
-        <Link href="/dashboard" className="flex items-center">
-          <GraduationCapLogo />
-          <span className="ml-2 text-xl font-bold">UniMatch</span>
-        </Link>
-      </div>
+        <div className="flex items-center gap-2">
+          <Link href="/dashboard" className="flex items-center">
+            <GraduationCapLogo />
+            <span className="ml-2 text-xl font-bold">UniMatch</span>
+          </Link>
+        </div>
 
-      <div className="relative ml-auto flex-1 max-w-md">
-        <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-        <Input
-          type="search"
-          placeholder="Search universities, programs..."
-          className="w-full bg-background pl-8 md:w-[300px] lg:w-[400px]"
-        />
-      </div>
+        <div className="relative ml-auto flex-1 max-w-md">
+          <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+          <Input
+            type="search"
+            placeholder="Search universities, programs..."
+            className="w-full bg-background pl-8 md:w-[300px] lg:w-[400px]"
+          />
+        </div>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon" className="rounded-full">
-            <Bell className="h-4 w-4" />
-            <span className="sr-only">Notifications</span>
-            <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-medium text-primary-foreground">
-              2
-            </span>
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          <DropdownMenuLabel>Notifications</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem>
-            <span className="font-medium">Application Update</span>
-            <span className="ml-2 text-xs text-muted-foreground">Stanford University</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span className="font-medium">Deadline Reminder</span>
-            <span className="ml-2 text-xs text-muted-foreground">MIT Application</span>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="icon" className="rounded-full">
+              <Bell className="h-4 w-4" />
+              <span className="sr-only">Notifications</span>
+              <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-medium text-primary-foreground">
+                2
+              </span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuLabel>Notifications</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <span className="font-medium">Application Update</span>
+              <span className="ml-2 text-xs text-muted-foreground">Stanford University</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <span className="font-medium">Deadline Reminder</span>
+              <span className="ml-2 text-xs text-muted-foreground">MIT Application</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="gap-2">
-            <Image 
-              src={avatarUrl} 
-              alt="Avatar" 
-              className="h-6 w-6 rounded-full" 
-              width={24}
-              height={24}
-            />
-            <span className="hidden md:inline-flex">
-              {isLoading ? (
-                <span className="animate-pulse">Loading...</span>
-              ) : (
-                userName
-              )}
-            </span>
-            <ChevronDown className="h-4 w-4 text-muted-foreground" />
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          <DropdownMenuLabel>My Account</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Settings</DropdownMenuItem>
-          <DropdownMenuItem>Support</DropdownMenuItem>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem onClick={handleLogout}>Log out</DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </header>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className="gap-2">
+              <Image 
+                src={avatarUrl} 
+                alt="Avatar" 
+                className="h-6 w-6 rounded-full" 
+                width={24}
+                height={24}
+              />
+              <span className="hidden md:inline-flex">
+                {isLoading ? (
+                  <span className="animate-pulse">Loading...</span>
+                ) : (
+                  userName
+                )}
+              </span>
+              <ChevronDown className="h-4 w-4 text-muted-foreground" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>Profile</DropdownMenuItem>
+            <DropdownMenuItem>Settings</DropdownMenuItem>
+            <DropdownMenuItem>Support</DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={handleLogout}>Log out</DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </header>
+    </>
   )
 }
 

@@ -1,29 +1,18 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
-import { GraduationCap, Menu, X, UserCircle, Book, Info, MessageSquare, Phone } from "lucide-react"
+import { GraduationCap, Menu, X, Book, Info, MessageSquare, Phone } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { useAuth } from "@/hooks/useAuth"
-import { useRouter } from "next/navigation"
+import  Image  from "next/image"
+
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
-  const { user, signOut } = useAuth()
-  const router = useRouter()
-
-  const handleAuthAction = async () => {
-    if (user) {
-      await signOut()
-      router.push('/')
-    } else {
-      router.push('/login')
-    }
-  }
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full z-50 px-6 lg:px-8 h-16 md:h-16 flex items-center border-b bg-background shadow-sm">
+    <header className="fixed top-0 left-0 right-0 w-full z-50 px-6 lg:px-8 h-16 md:h-20 flex items-center border-b bg-background shadow-sm">
       <Link className="flex items-center justify-center" href="/">
         <GraduationCap className="h-7 w-7 mr-3 text-primary" />
         <span className="font-bold text-lg md:text-xl">ChanceMe</span>
@@ -85,28 +74,29 @@ export function NavBar() {
             Contact
           </Link>
           <div className="lg:hidden pt-4 mt-2 border-t">
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="w-full justify-center gap-2"
-              onClick={handleAuthAction}
-            >
-              {user ? 'Sign Out' : 'Sign In'}
-              <UserCircle className="h-5 w-5" />
-            </Button>
+            <Link href="/register/get-started/">
+              <Image
+                src="/avatars/login.jpg"
+                width={24}
+                height={24}
+                alt="Sign-in image"
+                className="h-8 w-8 rounded-full object-cover"
+              />
+            </Link>
+
           </div>
         </div>
         
         <div className="hidden lg:flex items-center gap-4">
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="gap-2 px-6"
-            onClick={handleAuthAction}
-          >
-            {user ? 'Sign Out' : 'Sign In'}
-            <UserCircle className="h-5 w-5" />
-          </Button>
+          <Link href="/register/get-started/">
+            <Image
+              src="/avatars/login.jpg"
+              width={24}
+              height={24}
+              alt="Sign-in image"
+              className="h-8 w-8 rounded-full object-cover"
+            />
+          </Link>
           
           <div className="pl-2 border-l h-8 flex items-center">
             <ThemeToggle />
