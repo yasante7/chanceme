@@ -63,7 +63,7 @@ export function ProfilePicture({
   return (
     <div>
       <Image
-        src={avatarUrl || "/avatars/avatar10.jpg"}
+        src={avatarUrl || "/avatars/login.jpg"}
         alt="User Avatar"
         width={96}
         height={96}

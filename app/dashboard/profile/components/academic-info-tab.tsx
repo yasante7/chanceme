@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
 
-import { GradesPage } from "../../../register/grades/gradescomponent"
+import { GradesPage } from "../../../register/grades/page"
 
 export function AcademicInfoTab() {
   const [, setFormData] = useState({

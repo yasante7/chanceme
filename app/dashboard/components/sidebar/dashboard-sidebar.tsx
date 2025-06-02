@@ -9,7 +9,6 @@ import {
   GraduationCap, 
   BookOpen, 
   FileText,
-  Calendar,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -39,16 +38,16 @@ export function useSidebarContent(setOpen?: (open: boolean) => void) {
           href: "/dashboard/profile",
           icon: User
         },
-        {
-          name: "Applications",
-          href: "/dashboard/applications",
-          icon: FileText
-        },
-        {
-          name: "Schedule",
-          href: "/dashboard/schedule",
-          icon: Calendar
-        },
+        // {
+        //   name: "Applications",
+        //   href: "/dashboard/applications",
+        //   icon: FileText
+        // },
+        // {
+        //   name: "Schedule",
+        //   href: "/dashboard/schedule",
+        //   icon: Calendar
+        // },
         {
           name: "Qualified Programs",
           href: "../dashboard/recommendations",

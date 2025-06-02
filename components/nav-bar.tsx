@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
-import { GraduationCap, Menu, X, Book, Info, MessageSquare, Phone } from "lucide-react"
+import { GraduationCap, Menu, X, Book, MessageSquare, Phone } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -47,16 +47,16 @@ export function NavBar() {
             onClick={() => setIsOpen(false)}
           >
             <Book className="h-4 w-4 lg:hidden" />
-            Features
+            Report Status
           </Link>
-          <Link 
+          {/* <Link 
             className="flex items-center gap-2 text-base font-medium hover:text-primary transition-colors py-3 lg:py-0" 
             href="#how-it-works"
             onClick={() => setIsOpen(false)}
           >
             <Info className="h-4 w-4 lg:hidden" />
             How It Works
-          </Link>
+          </Link> */}
           <Link 
             className="flex items-center gap-2 text-base font-medium hover:text-primary transition-colors py-3 lg:py-0" 
             href="#forum"

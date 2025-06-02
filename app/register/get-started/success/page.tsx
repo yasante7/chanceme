@@ -1,12 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs"
 import { CheckCircle } from "lucide-react"
+import { supabase } from "@/lib/supabase"
 // import { NavBar } from "@/components/nav-bar"
 
 export default function RegistrationSuccessPage() {
-  const supabase = createClientComponentClient()
   const [isVerified, setIsVerified] = useState(false)
 
   useEffect(() => {

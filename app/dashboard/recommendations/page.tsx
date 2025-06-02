@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react'
 import { calculateQualifyingPrograms } from '@/utils/program-checker'
 import { ProgramResult } from '@/utils/program-checker'
-import { NavBar } from '@/components/nav-bar'
 import { CheckCircle, AlertCircle, Loader2, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { supabase } from '@/lib/supabase'
+import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
 
 interface LogEntry {
   type: 'info' | 'error' | 'success' | 'debug'
@@ -14,9 +16,7 @@ interface LogEntry {
   timestamp: Date
 }
 
-// We'll remove the unused QualifyingProgram interface
-
-export default function RecommendationsTabContent () {
+export default function ProgressPage() {
   // We'll use logs with the toggle functionality
   const [logs, setLogs] = useState<LogEntry[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -24,6 +24,7 @@ export default function RecommendationsTabContent () {
   const [progress, setProgress] = useState(0)
   const [hasError, setHasError] = useState(false)
   const [showLogs, setShowLogs] = useState(false) // Add toggle state
+  const router = useRouter()
 
   useEffect(() => {
     // Add initial test log
@@ -112,9 +113,33 @@ export default function RecommendationsTabContent () {
     }
   }, [])
 
+  const handleSaveResults = async (results: ProgramResult[]) => {
+    try {
+      // Save results to localStorage or send to backend
+      localStorage.setItem('qualifyingPrograms', JSON.stringify(results))
+
+      // Save to Supabase or another backend
+
+      const { error: updateError } = await supabase.auth.updateUser({
+        data: { qualifyingPrograms: JSON.stringify(results) }
+      });    
+      if (updateError) throw updateError
+    
+      // Alert the user of success
+      toast.success('Programs saved successfully! Redirecting to dashboard...')
+      console.log('Results saved successfully')
+    } catch (error) {
+      console.error('Error saving results:', error)
+    }
+    // Redirect to success page
+    setTimeout(() => {
+      router.push('/dashboard')  
+    }, 3000);
+    
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-muted/50">
-      <NavBar />
       <main className="flex-1 pt-24 md:pt-28 p-6 flex items-center justify-center">
         <div className="max-w-4xl w-full bg-background rounded-xl shadow-lg p-8 border">
           <h1 className="text-2xl font-semibold text-center mb-8">Processing Your Results</h1>
@@ -147,7 +172,7 @@ export default function RecommendationsTabContent () {
               <p className="text-muted-foreground">
                 Please go back and enter your grades again.
               </p>
-              <Link href="/register/grades">
+              <Link href="/app/register/grades/gradescomponent">
                 <Button variant="outline">
                   Back to Grades
                 </Button>
@@ -232,17 +257,15 @@ export default function RecommendationsTabContent () {
           
           {/* Action Buttons */}
           <div className="flex gap-4 mt-8">
-            <Link href="/register/grades" className="flex-1">
+            <Link href="/app/register/grades/page" className="flex-1">
               <Button variant="outline" className="w-full">
                 Edit Grades
               </Button>
             </Link>
-            <Link href="/register/grades/success" className="flex-1">
-              <Button className="w-full">
-                View Results
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+            <Button className="w-full flex-1" onClick={() => handleSaveResults (qualifyingPrograms)}>
+              Save Results
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
           </div>
         </div>
       </main>

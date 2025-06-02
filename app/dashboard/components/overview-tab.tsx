@@ -19,7 +19,7 @@ export function OverviewTabContent() {
         <Info className="h-4 w-4" />
         <AlertTitle>Complete Your Academic Profile</AlertTitle>
         <AlertDescription>
-          <p className="mb-2">To receive tailored university recommendations, please complete your academic profile with your test scores, GPA, and educational background.</p>
+          <p className="mb-2">To receive tailored university recommendations, kindly complete your academic profile with your Wassce scores and educational background.</p>
           <div className="mt-3">
             <Link href="/dashboard/profile">
               <Button size="sm" variant="outline">

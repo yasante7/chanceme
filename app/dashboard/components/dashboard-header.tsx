@@ -21,7 +21,7 @@ import { useSidebarContent } from "./sidebar/dashboard-sidebar"
 
 export function DashboardHeader() {
   const [userName, setUserName] = useState("Loading...");
-  const [avatarUrl, setAvatarUrl] = useState<string>("/avatars/avatar01.jpg");
+  const [avatarUrl, setAvatarUrl] = useState<string>("/avatars/login.jpg");
   const [isLoading, setIsLoading] = useState(true);
   const [open, setOpen] = useState(false);
   const sidebarContent = useSidebarContent(setOpen);
@@ -33,12 +33,12 @@ export function DashboardHeader() {
         if (error) {
           console.error("Error fetching user:", error.message);
           setUserName("Guest User");
-          setAvatarUrl("/avatars/avatar02.jpg");
+          setAvatarUrl("/avatars/login.jpg");
           return;
         }
         if (user) {
           const { first_name, avatarUrl } = user.user_metadata;
-          setAvatarUrl(avatarUrl || "/avatars/avatar03.jpg");
+          setAvatarUrl(avatarUrl || "/avatars/login.jpg");
           if (first_name) {
             setUserName(`${first_name}`);
           } else {
@@ -46,12 +46,12 @@ export function DashboardHeader() {
           }
         } else {
           setUserName("Guest User");
-          setAvatarUrl("/avatars/avatar04.jpg");
+          setAvatarUrl("/avatars/login.jpg");
         }
       } catch (error) {
         console.error("Unexpected error:", error);
         setUserName("Guest User");
-        setAvatarUrl("/avatars/avatar0.jpg");
+        setAvatarUrl("/avatars/login.jpg");
       } finally {
         setIsLoading(false);
       }
