@@ -52,7 +52,7 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
   for (const program of programRequirements) {
     console.log(`\nEVALUATING PROGRAM: ${program.program}`);
   
-    let programQualified = onlyFailedSocialStudies
+    const programQualified = onlyFailedSocialStudies
       ? !socialStudiesRequired.includes(program.program)
       : coreResults.qualifies;
   
@@ -109,11 +109,10 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
       // Handle potential nested tracks structure
       let tracksToProcess = tracks;
       if ('tracks' in tracks && tracks.tracks) {
-        tracksToProcess = tracks.tracks as any;
+        tracksToProcess = tracks.tracks as Record<string, (string | string[])[] | undefined>;
       }
 
-      const { matchedSubjects, allQualifiedSubjects, allValidCombinations } = 
-        handleTracks(remainSubjects, tracksToProcess as Tracks, matches);
+      const { allValidCombinations } = handleTracks(remainSubjects, tracksToProcess as Tracks, matches);
 
       const results = calculateAggregate(program.program, program.campus, program.college, 
         program["cutoff point"] ?? 0, program['special requirements / general information'], allValidCombinations, gradeData);

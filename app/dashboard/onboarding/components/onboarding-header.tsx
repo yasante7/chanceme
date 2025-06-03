@@ -1,11 +1,8 @@
-'use client'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Bell, User, Search, Menu } from "lucide-react"
-import { useUserData } from "@/hooks/fetchUser"
 
-export default function DashboardHeader() {
-  const { firstname } = useUserData()
+export default function OnboardingHeader() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
       <div className="container mx-auto px-4">
@@ -49,7 +46,7 @@ export default function DashboardHeader() {
             <div className="hidden md:block">
               <Button variant="outline" size="sm" className="rounded-full">
                 <User className="h-4 w-4 mr-2" />
-                <span>{firstname}</span>
+                <span>Account</span>
               </Button>
             </div>
           </div>

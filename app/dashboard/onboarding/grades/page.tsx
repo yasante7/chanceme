@@ -14,7 +14,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 console.clear()
 type Grade = string;
 
-export function GradesPage() {
+export default function GradesPage() {
   const router = useRouter()
   const [selectedProgram, setSelectedProgram] = useState<string>('')
   const [selectedElectives, setSelectedElectives] = useState<string[]>(['', '', '', ''])
@@ -182,7 +182,7 @@ export function GradesPage() {
       }
 
       // Navigate to progress page
-      router.push("../dashboard/recommendations/")
+      router.push("/dashboard/recommendations")
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to save grades'
       setError(errorMessage)
@@ -418,5 +418,3 @@ export function GradesPage() {
     </>
   )
 }
-
-export default GradesPage;

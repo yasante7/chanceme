@@ -1,44 +1,27 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
-import { Toaster } from "@/components/ui/sonner";
+import "./globals.css"
+import { Inter } from "next/font/google"
+import type React from "react"
+import type { Metadata } from "next"
+import MouseMoveEffect from "@/app/components/mouse-move-effect"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ChanceMe",
-  description: "Calculate your chances of admission to Ghanaian universities",
-};
+  title: "Amane Soft - Cutting-Edge Software Solutions",
+  description: "Amane Soft delivers innovative, high-performance software solutions for businesses of the future.",
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
-          {children}
-        </ThemeProvider>
-        <Toaster position="top-center" richColors />
+    <html lang="en" className="dark">
+      <body className={`${inter.className} bg-background text-foreground antialiased`}>
+        <MouseMoveEffect />
+        {children}
       </body>
     </html>
-  );
+  )
 }
