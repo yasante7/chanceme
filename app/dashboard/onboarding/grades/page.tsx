@@ -7,7 +7,7 @@ import { ArrowLeft } from "lucide-react"
 import { supabase } from "@/lib/supabase"
 import { useRouter } from 'next/navigation'
 import { GradeData, UserData } from "@/types/user"
-import schoolsData from '@/src/data/schoolsdata/schools_loc_data.json' 
+import schoolsData from '@/src/data/highschoolsdata/schools_loc_data.json' 
 import { PROGRAMS, PROGRAM_SUBJECTS, CORE_SUBJECTS, GRADES } from "@/components/constants/student-grades"
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 

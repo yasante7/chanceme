@@ -2,7 +2,7 @@ export function handleNoMain(studentSubjects: string[]) {
     return { qualifiesMain: true, remainSubjects: studentSubjects, matches: [] };
 }
 
-export function isFlatStringArray(main: any): boolean {
+export function isFlatStringArray(main: unknown): boolean {
     return Array.isArray(main) && main.every(item => typeof item === "string");
   }
   

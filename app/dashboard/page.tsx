@@ -1,5 +1,5 @@
 "use client";
-import DashboardHeader from "./components/dashboard-header";
+import { DashboardHeader } from "./components/dashboard-header";
 import ProgramRecommendations from "./recommendations/page";
 import UserProfile from "./profile/page";
 import NextSteps from "./components/next-steps";

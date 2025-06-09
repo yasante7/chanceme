@@ -3,36 +3,12 @@ import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
 import Image from "next/image";
 
-export default function PopularUniversities() {
-  const universities = [
-    {
-      name: "University of Ghana",
-      location: "Accra",
-      programs: 120,
-      image: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      name: "Kwame Nkrumah University of Science and Technology",
-      location: "Kumasi",
-      programs: 105,
-      image: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      name: "University of Cape Coast",
-      location: "Cape Coast",
-      programs: 85,
-      image: "/placeholder.svg?height=80&width=80",
-    },
-    {
-      name: "Ashesi University",
-      location: "Berekuso",
-      programs: 10,
-      image: "/placeholder.svg?height=80&width=80",
-    },
-  ]
+import  Universities from "../../../../src/data/colleges/allcollegesinfo.json";
 
+export default function PopularUniversities() {
+  const universities = Universities
   return (
-    <Card className="border-none shadow-lg">
+    <Card className="border-null shadow-lg">
       <CardContent className="p-0">
         <div className="border-b border-gray-200 dark:border-gray-700 p-6">
           <h2 className="text-xl font-bold">Popular Universities</h2>
@@ -53,14 +29,14 @@ export default function PopularUniversities() {
                     alt=""
                     width={96}
                     height={96}
-                    src={university.image || "/placeholder.svg"}
+                    src={university.logo_url || "/placeholder.svg"}
                     className="w-16 h-16 rounded-md object-cover"
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-medium">{university.name}</h3>
+                  <h3 className="font-medium">{university.university_name}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">{university.location}</p>
-                  <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">{university.programs} programs</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">{university.acceptance_rate} Acceptance rate</p>
                 </div>
                 <Button variant="ghost" size="icon" className="flex-shrink-0">
                   <ExternalLink className="h-4 w-4" />

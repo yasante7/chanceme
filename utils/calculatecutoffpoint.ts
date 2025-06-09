@@ -6,7 +6,7 @@ const gradePoints: Record<string, number> = {
 }
 
 export function calculateAggregate(
-    programname: string, campus: string, college: string, cutoffPoint: number, specialReq: string | null, combinations: string[][], gradeData: GradeData
+    programname: string, schoolname: string, campus: string, college: string, cutoffPoint: number, specialReq: string | null, combinations: string[][], gradeData: GradeData
 ): ProgramResult[] {
     const electiveSubjects = gradeData.elective_subjects.map(s => s.subject);
     const electiveGrades = gradeData.elective_subjects.map(g => g.grade);
@@ -14,7 +14,6 @@ export function calculateAggregate(
     const coreAggregate = coreGrades.slice(0, 3).map(grade => gradePoints[grade]).reduce((a, b) => a + b, 0);
 
     let bestAggregate = Infinity;
-    let bestCombination = null;
 
     // Find the combination that gives the best aggregate score
     for (const combination of combinations) {
@@ -30,7 +29,6 @@ export function calculateAggregate(
         // Keep track of the best combination
         if (totalAggregate < bestAggregate) {
             bestAggregate = totalAggregate;
-            bestCombination = combination;
         }
     }
 
@@ -43,7 +41,8 @@ export function calculateAggregate(
             college: college,
             campus: campus,
             specialRequirements: specialReq,
-            validCombinations: combinations // Still include all valid combinations
+            validCombinations: combinations, // Still include all valid combinations
+            schoolName: schoolname
         }];
     }
 

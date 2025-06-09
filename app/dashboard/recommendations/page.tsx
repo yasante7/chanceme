@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 // import { ProgramResult } from '../../../utils/program-checker'
 import { useQualifiedPrograms } from "@/hooks/fetchPrograms"
+import { DashboardHeader } from "../components/dashboard-header"
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import {
@@ -29,6 +30,7 @@ export default function ProgramRecommendations() {
   const [selectedUniversity, setSelectedUniversity] = useState("all")
   const [favorites, setFavorites] = useState<number[]>([2, 5])
   const [activeTab, setActiveTab] = useState("all")
+
   const { allPrograms, loading } = useQualifiedPrograms()
 
   // Memoize safePrograms to avoid unnecessary re-renders
@@ -49,9 +51,9 @@ export default function ProgramRecommendations() {
   const filteredPrograms = safePrograms.filter((program, id) => {
     const matchesSearch =
       program.program.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      program.campus.toLowerCase().includes(searchTerm.toLowerCase())
+      program.schoolName.toLowerCase().includes(searchTerm.toLowerCase())
     const matchesCategory = selectedCategory === "all" || program.college === selectedCategory
-    const matchesUniversity = selectedUniversity === "all" || program.campus === selectedUniversity
+    const matchesUniversity = selectedUniversity === "all" || program.schoolName === selectedUniversity
     const matchesFavorites = activeTab === "favorites" ? favorites.includes(id) : true
     const matchesTab = activeTab === "all" || (activeTab === "favorites" && matchesFavorites)
 
@@ -63,10 +65,11 @@ export default function ProgramRecommendations() {
   }
 
   const categories = ["all", ...Array.from(new Set(safePrograms.map((p) => p.college)))]
-  const universities = ["all", ...Array.from(new Set(safePrograms.map((p) => p.campus)))]
+  const universities = ["all", ...Array.from(new Set(safePrograms.map((p) => p.schoolName)))]
 
   return (
     <div className="space-y-6">
+      < DashboardHeader />
       {/* Tabs and Filters */}
       <Card className="border-none shadow-lg overflow-hidden">
         <div className="bg-white dark:bg-gray-800">
@@ -165,7 +168,7 @@ export default function ProgramRecommendations() {
                 <div className="flex justify-between">
                   <div>
                     <h3 className="text-xl font-bold">{program.program}</h3>
-                    <p className="text-gray-600 dark:text-gray-400 mt-1">{program.campus}</p>
+                    <p className="text-gray-600 dark:text-gray-400 mt-1">{program.schoolName}</p>
                   </div>
                   <Button
                     variant="ghost"

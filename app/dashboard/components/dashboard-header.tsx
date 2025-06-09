@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Bell, User, Search, Menu } from "lucide-react"
 import { useUserData } from "@/hooks/fetchUser"
 
-export default function DashboardHeader() {
+export function DashboardHeader() {
   const { firstname } = useUserData()
   return (
     <header className="sticky top-0 z-50 w-full bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">

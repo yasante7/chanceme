@@ -1,4 +1,4 @@
-import DashboardHeader from "../components/dashboard-header"
+import { DashboardHeader } from "../components/dashboard-header"
 import WelcomeSection from "./components/welcome-section"
 import EmptyRecommendations from "./components/empty-recommendations"
 import GettingStartedGuide from "./components/getting-started-guide"

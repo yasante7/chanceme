@@ -23,7 +23,7 @@ export default function UserProfile() {
               <p className="text-sm text-blue-100">WASSCE Graduate</p>
             </div>
           </div>
-          <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
+          <Button variant="ghost" size="icon" className="text-white hover:bg-white/20" onClick={() =>  window.location.href = "/dashboard/onboarding/grades"}>
             <Edit className="h-4 w-4" />
           </Button>
         </div>
