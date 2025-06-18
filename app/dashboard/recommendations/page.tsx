@@ -1,30 +1,17 @@
 "use client"
 
-import { useEffect, useState, useMemo } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { useEffect, useState, useMemo } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-// import { ProgramResult } from '../../../utils/program-checker'
-import { useQualifiedPrograms } from "@/hooks/fetchPrograms"
-import { DashboardHeader } from "../components/dashboard-header"
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useQualifiedPrograms } from "@/hooks/fetchPrograms";
+import { DashboardHeader } from "../components/dashboard-header";
 import  Universities from "@/src/data/colleges/allcollegesinfo.json";
-
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import {
-  Search,
-  MapPin,
-  Clock,
-  Heart,
-  ExternalLink,
-  BookOpen,
-  School,
-  Calendar,
-  DollarSign,
-  Filter,
-} from "lucide-react"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Search, MapPin, Clock, Heart, ExternalLink, BookOpen, School, Calendar, DollarSign, Filter} from "lucide-react";
 
 export default function ProgramRecommendations() {
   const [searchTerm, setSearchTerm] = useState("")

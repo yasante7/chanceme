@@ -11,7 +11,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
-import { Gender, Region, REGIONS, validateEmail } from "../../../components/load-user-data"
+import { REGIONS, validateEmail } from "../../../components/load-user-data"
+import { Gender, Region } from "@/types/user"
+
 // import { CardFooter } from "@/components/ui/card"
 
 export function SignupForm() {
