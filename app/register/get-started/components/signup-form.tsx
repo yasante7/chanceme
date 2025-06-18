@@ -122,7 +122,7 @@ export function SignupForm() {
         email: formData.email,
         password: formData.password,
         options: {
-          emailRedirectTo: "localhost/dashboard",
+          emailRedirectTo: "https://chanceme-olive.vercel.app/register/get-started",
           data: {
             first_name: formData.firstName,
             last_name: formData.lastName,
