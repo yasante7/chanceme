@@ -111,6 +111,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Elective Mathematics"
     },
     {
@@ -222,6 +223,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Elective Mathematics"
     },
     {
@@ -260,6 +262,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -295,6 +298,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Elective Mathematics"
     },
     {
@@ -330,6 +334,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Elective Mathematics"
     },
     {
@@ -343,7 +348,7 @@
       "cutoff point": {
         "firstChoiceSubjectArea": 6,
         "firstChoiceNonSubject": null,
-        "fullFeePaying": "7",
+        "fullFeePaying": 7,
         "secondChoice": null,
         "subjectRequirements": "B3 in Elective Maths"
       },
@@ -365,6 +370,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Elective Mathematics"
     },
     {
@@ -378,7 +384,7 @@
       "cutoff point": {
         "firstChoiceSubjectArea": 7,
         "firstChoiceNonSubject": null,
-        "fullFeePaying": "9",
+        "fullFeePaying": 9,
         "secondChoice": null,
         "subjectRequirements": "B3 in Elective Maths"
       },
@@ -400,6 +406,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Elective Mathematics"
     },
     {
@@ -435,6 +442,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Elective Mathematics"
     },
     {
@@ -476,6 +484,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -525,6 +534,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -566,6 +576,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Bachelor of Science in Agriculture: Animal Science, Crop Science, Soil Science, Agriculture Economics, Agribusiness, Agriculture Extension, Post-Harvest Technology."
     },
     {
@@ -603,6 +614,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -636,6 +648,7 @@
         ],
         "tracks": {}
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Bachelor of Science degree in any one of the following subjects: Animal Biology and Conservation Science, Biochemistry Cell and Molecular Biology, Nutrition, Food Science, Plant and Environmental Biology, Marine Science, Fisheries Science, Psychology, Microbiology."
     },
     {
@@ -648,7 +661,7 @@
       ],
       "cutoff point": {
         "firstChoiceSubjectArea": 8,
-        "firstChoiceNonSubject": "7",
+        "firstChoiceNonSubject": 7,
         "fullFeePaying": 11,
         "secondChoice": null,
         "subjectRequirements": "B2 in Core Maths"
@@ -747,6 +760,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "at least a B3 in Core Mathematics"
     },
     {
@@ -787,6 +801,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Geology, Applied Geology, Applied GeophysicsEntry requirements:Core: Credit passes in English, Core Mathematics, Integrated Science & Social StudiesElectives: Credit passes in Chemistry and any two of Physics, Biology/Geography and Elective Mathematics"
     },
     {
@@ -900,6 +915,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Bachelor of Science degree in any ONE of the following subjects: Mathematics, Statistics, Biomathematics, Physics. Or Bachelor of Science in any TWO of the following subjects: Mathematics, Statistics, Computer Science, Physics. Note I: Applicants who choose the Mathematical Sciences option cannot pursue a single major in Computer Science, but they may combine Computer Science with any of the other three subjects: Mathematics, Statistics, or Physics. Note II: Applicants who choose the Mathematical Sciences option may ONLY pursue a single or combined major in Physics if they have credit passes in both Physics and Chemistry."
     },
     {
@@ -933,6 +949,7 @@
         ],
         "tracks": {}
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Note: Applicants who choose the Physical Sciences Option may ONLY pursue a combined major with a Mathematical Sciences Subject if they have a B3 in Elective Mathematics.Applicants need at B3 in core maths"
     },
     {
@@ -1045,6 +1062,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in Physics and any other two elective subjects"
     },
     {
@@ -1156,6 +1174,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in Chemistry and any other two elective subjects"
     },
     {
@@ -1268,6 +1287,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in Biology and any other two elective subjects"
   
     },
@@ -1379,6 +1399,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in Elective Mathematics and any other two elective subjects"
   
     },
@@ -1494,6 +1515,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives: Credit passes in any three elective subjects"
     },
     {
@@ -1506,8 +1528,14 @@
         "Integrated Science",
         "Social Studies"
       ],
-      "cutoff point": null,
-      "campus": "Main Campus (Legon)",
+       "cutoff point": {
+      "firstChoiceSubjectArea": null,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    },      
+    "campus": "Main Campus (Legon)",
       "college": "College of Education",
       "core subjects": [
         "English Language",
@@ -1602,6 +1630,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in any three elective subjects."
       
     },
@@ -1717,6 +1746,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in any three elective subjects including English Literature."
     },
     {
@@ -1754,6 +1784,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -1823,6 +1854,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -1835,7 +1867,7 @@
       ],
       "cutoff point": {
         "firstChoiceSubjectArea": 9,
-        "firstChoiceNonSubject": "8",
+        "firstChoiceNonSubject": 8,
         "fullFeePaying": null,
         "secondChoice": null,
         "subjectRequirements": "08 for Non Science / 09 for Science Background"
@@ -1894,6 +1926,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -1933,6 +1966,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -1972,6 +2006,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -2011,6 +2046,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -2050,6 +2086,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -2089,6 +2126,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -2128,6 +2166,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -2140,7 +2179,7 @@
       ],
       "cutoff point": {
         "firstChoiceSubjectArea": 9,
-        "firstChoiceNonSubject": "8",
+        "firstChoiceNonSubject": 8,
         "fullFeePaying": null,
         "secondChoice": null,
         "subjectRequirements": "08 for Non Science / 09 for Science Background"
@@ -2199,6 +2238,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Bachelor of Science in Nursing with options in: General Nursing, Public Health Nursing, Paediatric Nursing, Mental Health Nursing. Applicants are expected to select one (1) option"
     },
     {
@@ -2239,6 +2279,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -2276,6 +2317,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": null
     },
     {
@@ -2388,6 +2430,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in any three electives subjects. The programme is open to applicants interested in the Performing Arts with aggregate 24 or better. They will be expected to attend an audition or interview."
     },
     {
@@ -2500,6 +2543,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in any three elective subjects"
     },
     {
@@ -2612,6 +2656,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information":  "Electives:Credit passes in any three elective subjects"
     },
     {
@@ -2724,6 +2769,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Electives: Credit passes in any three elective subjects",
       "concentrations": {
         "economics mathematics or statistics": "Elective Mathematics",
@@ -2842,6 +2888,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Electives: Credit passes in any three elective subjects"
     },
     {
@@ -2953,6 +3000,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Electives: Credit passes in any three elective subjects"
     },
     {
@@ -3066,6 +3114,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Electives: Credit passes in any three elective subjects"
     },
     {
@@ -3178,6 +3227,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Electives: Credit passes in any three elective subjects"
     },
     {
@@ -3326,6 +3376,7 @@
           ]
         }
       },
+      "applicant type": "WASSCE/SSSCE, A-Level, Mature Applicants",
       "special requirements / general information": "Electives: Credit passes in any three elective subjects"
     }
   ]

@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ClipboardList, Search, ArrowRight } from "lucide-react"
@@ -23,7 +25,7 @@ export default function EmptyRecommendations() {
             get personalized recommendations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="flex items-center">
+            <Button size="lg" className="flex items-center" onClick={() => window.location.href = '/dashboard/onboarding/grades'}>
               Enter Your Grades
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

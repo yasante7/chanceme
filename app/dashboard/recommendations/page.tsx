@@ -3,23 +3,25 @@
 import { useEffect, useState, useMemo } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-// import { Badge } from "@/components/ui/badge"
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 // import { ProgramResult } from '../../../utils/program-checker'
 import { useQualifiedPrograms } from "@/hooks/fetchPrograms"
 import { DashboardHeader } from "../components/dashboard-header"
+import  Universities from "@/src/data/colleges/allcollegesinfo.json";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import {
   Search,
-  // MapPin,
-  // Clock,
+  MapPin,
+  Clock,
   Heart,
   ExternalLink,
   BookOpen,
   School,
-  // Calendar,
+  Calendar,
   DollarSign,
   Filter,
 } from "lucide-react"
@@ -30,6 +32,7 @@ export default function ProgramRecommendations() {
   const [selectedUniversity, setSelectedUniversity] = useState("all")
   const [favorites, setFavorites] = useState<number[]>([2, 5])
   const [activeTab, setActiveTab] = useState("all")
+  const schoolsProfile = Universities
 
   const { allPrograms, loading } = useQualifiedPrograms()
 
@@ -66,6 +69,13 @@ export default function ProgramRecommendations() {
 
   const categories = ["all", ...Array.from(new Set(safePrograms.map((p) => p.college)))]
   const universities = ["all", ...Array.from(new Set(safePrograms.map((p) => p.schoolName)))]
+
+
+const getSchoolProfile = (schoolName: string) => {
+  return schoolsProfile.find(
+    (school) => school.university_name.toLowerCase().includes(schoolName.toLowerCase())
+  )
+}
 
   return (
     <div className="space-y-6">
@@ -178,35 +188,44 @@ export default function ProgramRecommendations() {
                   >
                     <Heart className={`h-5 w-5 ${favorites.includes(id) ? "fill-current" : ""}`} />
                   </Button>
+                  <div className="flex-shrink-0 mr-4">
+                    <Image
+                      alt={program.schoolName}
+                      width={96}
+                      height={96}
+                      src={getSchoolProfile(program.schoolName)?.logo_url || "/default-logo.png"} // fallback logo if not found
+                      className="w-16 h-16 rounded-md object-cover"
+                    />
+
+                  </div>
                 </div>
 
-                {/* <div className="flex flex-wrap gap-2 mt-4">
+                <div className="flex flex-wrap gap-2 mt-4">
                   <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                     <MapPin className="h-4 w-4 mr-1" />
-                    {program.location}
+                    {getSchoolProfile(program.schoolName)?.location}
                   </div>
                   <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                     <Clock className="h-4 w-4 mr-1" />
-                    {program.duration}
+                    {4}
                   </div>
                   <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                     <Calendar className="h-4 w-4 mr-1" />
-                    Deadline: {program.applicationDeadline}
+                    Deadline: {getSchoolProfile(program.schoolName)?.deadline}
                   </div>
                 </div>
 
-                <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">{program.description}</p>
+                {/* <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">{program["specialRequirements"]}</p> */}
 
                 <div className="mt-4">
-                  <h4 className="text-sm font-medium mb-2">Requirements:</h4>
+                  <h4 className="text-sm font-medium mb-2">Additional Info</h4>
                   <div className="flex flex-wrap gap-1">
-                    {program.requirements.map((req, index) => (
-                      <Badge key={index} variant="outline" className="text-xs bg-gray-100 dark:bg-gray-800">
-                        {req}
+                  
+                      <Badge variant="outline" className="text-xs bg-gray-100 dark:bg-gray-800">
+                        {program["specialRequirements"]}
                       </Badge>
-                    ))}
                   </div>
-                </div> */}
+                </div>
 
                 <div className="grid grid-cols-2 gap-4 mt-4">
                   <div className="flex items-center text-sm">

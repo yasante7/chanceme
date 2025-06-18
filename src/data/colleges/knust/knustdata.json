@@ -1,6 +1,6 @@
 [
   {
-    "schoolname": "KNUST"
+    "schoolname": "Kwame Nkrumah University of Science and Technology"
   },
   [
     {
@@ -2963,7 +2963,25 @@
         "tracks": {
           "Humanities": [
             "Literature in English",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema",
+            "French",
+            "Igbo",
+            "Wolof",
+            "Yoruba"
+          ],
+          "Group A": [
             [
+              "Literature in English",
               "Fante",
               "Akuapem Twi",
               "Asante Twi",
@@ -2974,29 +2992,7 @@
               "Dagbani",
               "Gonja",
               "Kasem",
-              "Nzema"
-            ],
-            "French",
-            "Igbo",
-            "Wolof",
-            "Yoruba"
-          ],
-          "Group A": [
-            [
-              "Literature in English",
-              [
-                "Fante",
-                "Akuapem Twi",
-                "Asante Twi",
-                "Ga",
-                "Ewe",
-                "Arabic",
-                "Dagaare",
-                "Dagbani",
-                "Gonja",
-                "Kasem",
-                "Nzema"
-              ],
+              "Nzema",
               "French",
               "Igbo",
               "Wolof",
@@ -3021,19 +3017,17 @@
               "Business Management"
             ],
             "Literature in English",
-            [
-              "Fante",
-              "Akuapem Twi",
-              "Asante Twi",
-              "Ga",
-              "Ewe",
-              "Arabic",
-              "Dagaare",
-              "Dagbani",
-              "Gonja",
-              "Kasem",
-              "Nzema"
-            ],
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema",
             "French",
             "Igbo",
             "Wolof",
@@ -3066,14 +3060,77 @@
       "elective subjects": {
         "main": null,
         "tracks": {
+          "Humanities": [
+            "Literature in English",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema",
+            "French",
+            "Igbo",
+            "Wolof",
+            "Yoruba"
+          ],
           "Group A": [
-            "General Arts",
-            "General Science",
-            "Business",
-            "Visual Arts",
-            "Home Economics",
-            "General Agriculture",
-            "Group "
+            [
+              "Literature in English",
+              "Fante",
+              "Akuapem Twi",
+              "Asante Twi",
+              "Ga",
+              "Ewe",
+              "Arabic",
+              "Dagaare",
+              "Dagbani",
+              "Gonja",
+              "Kasem",
+              "Nzema",
+              "French",
+              "Igbo",
+              "Wolof",
+              "Yoruba"
+            ],
+            "History",
+            "Geography",
+            "Economics",
+            "Christian Religious Studies (CRS)",
+            "Islamic Religious Studies (IRS)",
+            "Government",
+            "Business Management"
+          ],
+          "Group B": [
+            [
+              "History",
+              "Geography",
+              "Economics",
+              "Christian Religious Studies (CRS)",
+              "Islamic Religious Studies (IRS)",
+              "Government",
+              "Business Management"
+            ],
+            "Literature in English",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema",
+            "French",
+            "Igbo",
+            "Wolof",
+            "Yoruba"
           ]
         }
       },
