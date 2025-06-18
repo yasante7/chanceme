@@ -19,20 +19,18 @@ export function useQualifiedPrograms () {
         if (user) {
           const { grades } = user.user_metadata || {};
           console.log("User metadata:", user.user_metadata);
-          let { qualifyingPrograms } = user.user_metadata || {};
 
-          // Check if qualifying programs exist in user metadata
-          if (!user.user_metadata || !user.user_metadata.qualifyingPrograms) {
-            qualifyingPrograms = calculateQualifyingPrograms(grades)
-            
-            // Save to Supabase or another backend
-            const { error: updateError } = await supabase.auth.updateUser({
-              data: { qualifyingPrograms: JSON.stringify(qualifyingPrograms) }
-            });    
-            if (updateError) throw updateError
+          // if (!user.user_metadata || !user.user_metadata.qualifyingPrograms) {
+          let qualifyingPrograms = calculateQualifyingPrograms(grades)
           
-            console.log("Calculated qualifying programs:", allPrograms);
-          }
+          // Save to Supabase or another backend
+          const { error: updateError } = await supabase.auth.updateUser({
+            data: { qualifyingPrograms: JSON.stringify(qualifyingPrograms) }
+          });    
+          if (updateError) throw updateError
+
+          console.log("Calculated qualifying programs:", qualifyingPrograms);
+
 
           console.log("Raw qualifyingPrograms from metadata:", qualifyingPrograms);
           if (typeof qualifyingPrograms === "string") {

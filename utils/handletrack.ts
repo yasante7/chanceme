@@ -2,7 +2,7 @@
 import { generateSubjectCombinations } from "./handlecombinations";
 
 // Function to remove duplicates from combinations of subjects
-function removeNestedArrayDups<T>(array: string[][]): string[][] {
+function removeNestedArrayDups(array: string[][]): string[][] {
   const seen = new Set<string>();
   const result: string[][] = [];
 
@@ -48,7 +48,7 @@ export function handleTracks(remainSubjects: string[], tracks: Tracks, matches: 
   // Prepare a collector for qualifiedSubjects and validCombinations
   const allQualifiedSubjects: string[][] = [];
   const allValidCombinations: string[][] = [];
-  let requiredElectives = 3 - matches.length; // Count remaining electives after matching
+  const requiredElectives = 3 - matches.length; // Count remaining electives after matching
   console.log("Required electives to match:", requiredElectives);
 
   for (const trackName in matchedSubjects) {

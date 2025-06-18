@@ -1,21 +1,38 @@
-import { GradeData } from '@/types/user'
-import { ProgramResult } from './program-checker'; // Importing ProgramResult type for type safety
+import { GradeData, Program } from '@/types/user'
+import { ProgramResult } from './program-checker';
 
 const gradePoints: Record<string, number> = {
     'A1': 1, 'B2':2, 'B3':3, 'C4':4, 'C5':4, 'C6':4, 'D7':7, 'E8':8, 'F9':9
 }
 
-export function calculateAggregate(
-    programname: string, schoolname: string, campus: string, college: string, cutoffPoint: number, specialReq: string | null, combinations: string[][], gradeData: GradeData
-): ProgramResult[] {
+export function calculateAggregate(schoolName: string, program: Program, combinations: string[][], gradeData: GradeData): ProgramResult[] {
     const electiveSubjects = gradeData.elective_subjects.map(s => s.subject);
     const electiveGrades = gradeData.elective_subjects.map(g => g.grade);
-    const coreGrades = gradeData.core_subjects.map(g => g.grade);
-    const coreAggregate = coreGrades.slice(0, 3).map(grade => gradePoints[grade]).reduce((a, b) => a + b, 0);
+    
+    const results: ProgramResult[] = []; // <-- Collect results here
+
+    // for (const schoolData of allSchoolsData){
+
+    const cutoffPoint = program["cutoff point"]?.["firstChoiceSubjectArea"] ?? Infinity;
+    const mainCoreGrades = [
+        gradeData.core_subjects.find(s => s.subject === "English Language")?.grade,
+        gradeData.core_subjects.find(s => s.subject === "Mathematics")?.grade,
+    ];
+    const altGrades = program.alternatecore ?
+        (Array.isArray(program.alternatecore) ? program.alternatecore : [program.alternatecore])
+            .map(subject => gradeData.core_subjects.find(s => s.subject === subject)?.grade)
+            .filter(grade => grade !== undefined) : [];
+
+    const bestAltGrade = altGrades.length > 0
+        ? altGrades.reduce((best, current) =>
+            gradePoints[current] < gradePoints[best] ? current : best)
+        : undefined;
+    mainCoreGrades.push(bestAltGrade);
+
+    const coreAggregate =  mainCoreGrades.filter((grade): grade is string => grade !== undefined).map(grade => gradePoints[grade]).reduce((a, b) => a + b, 0);
 
     let bestAggregate = Infinity;
 
-    // Find the combination that gives the best aggregate score
     for (const combination of combinations) {
         const electiveAggregate = combination
             .map(subject => {
@@ -26,25 +43,22 @@ export function calculateAggregate(
 
         const totalAggregate = coreAggregate + electiveAggregate;
 
-        // Keep track of the best combination
         if (totalAggregate < bestAggregate) {
             bestAggregate = totalAggregate;
         }
     }
 
-    // Only create one program result with the best aggregate score
     if (bestAggregate < Infinity && bestAggregate < cutoffPoint) {
-        return [{
-            program: programname,
+        results.push({
+            program: program.program,
             cutoffPoint: cutoffPoint,
             Aggregate: bestAggregate,
-            college: college,
-            campus: campus,
-            specialRequirements: specialReq,
-            validCombinations: combinations, // Still include all valid combinations
-            schoolName: schoolname
-        }];
+            college: program.college,
+            campus: program.campus,
+            specialRequirements: program['special requirements / general information'],
+            validCombinations: combinations,
+            schoolName: schoolName
+        });
     }
-
-    return []; // Return empty array if no qualifying combinations
+    return results; // <-- Return all qualifying programs
 }

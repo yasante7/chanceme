@@ -3,7 +3,6 @@
 export function validGradesCheck(Grades: string[], Subjects: string[]): { qualifies: boolean; invalidSubjects: { [key: string]: string } } {
 
     const validGrades = ['A1', 'B2', 'B3', 'C4', 'C5', 'C6'];
-    const socialStudiesRequired = ["BA. Political Studies", "BA. History"];
     const invalidSubjects: { [key: string]: string } = {};
   
     // Check if all grades are valid

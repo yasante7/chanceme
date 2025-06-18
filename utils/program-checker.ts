@@ -5,12 +5,13 @@ import { validGradesCheck } from './validgrades';
 import { calculateAggregate } from './calculatecutoffpoint';
 
 // Import all schools data
-import knustRequirements from '@/src/data/colleges/knustdata.json'
+import knustRequirements from '@/src/data/colleges/knust/knustdata.json'
+import ugRequirements from '@/src/data/colleges/ug/updated_ug.json'
 
 // Clear console on window load
-if (typeof window !== 'undefined') {
-  window.onload = () => console.clear();
-}
+// if (typeof window !== 'undefined') {
+//   window.onload = () => console.clear();
+// }
 
 export interface ProgramResult {
   program: string;
@@ -27,48 +28,41 @@ type Tracks = Record<string, (string | string[])[] | undefined>;
 
 export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult[] {
   const programResults: ProgramResult[] = [];
-  const allSchoolsData = [knustRequirements];
+  const allSchoolsData = [knustRequirements, ugRequirements];
 
   for (const schoolData of allSchoolsData){
     const schoolDetails = schoolData[0]
     const schoolName = 'schoolname' in schoolDetails ? schoolDetails.schoolname : '';
-    const allPrograms = Array.isArray(schoolData[1]) 
-      ? schoolData[1] 
-      : [];
-
     // Extract subjects and grades from student data
     const electiveSubjects = gradeData.elective_subjects.map(s => s.subject);
     const electiveGrades = gradeData.elective_subjects.map(g => g.grade);
-    const coreSubjects = gradeData.core_subjects.map(s => s.subject);
-    const coreGrades = gradeData.core_subjects.map(g => g.grade);
-
-    // Programs that specifically require Social Studies
-    const socialStudiesRequired = ["BA. Political Studies", "BA. History"];
 
     // Validate grades
+    const coreSubjects = gradeData.core_subjects.map(s => s.subject);
+    const coreGrades = gradeData.core_subjects.map(g => g.grade);
     const coreResults = validGradesCheck(coreGrades, coreSubjects);
+    const failedCoreSubjects = Object.keys(coreResults.invalidSubjects);
+
     const electiveResults = validGradesCheck(electiveGrades, electiveSubjects);
     
     const invalidSubjectsSet = new Set(Object.keys(electiveResults.invalidSubjects));
     const studentElectives = electiveSubjects.filter(subject => !invalidSubjectsSet.has(subject));
-    const failedCoreSubjects = Object.keys(coreResults.invalidSubjects);
     
     console.log(`Student has ${studentElectives.length} valid electives:`, studentElectives);
     
-    const onlyFailedSocialStudies = (failedCoreSubjects.length === 1 && failedCoreSubjects.includes("Social Studies"));
-    
-    if (onlyFailedSocialStudies) {
-    }
-    
+    const allPrograms = Array.isArray(schoolData[1]) 
+      ? schoolData[1] 
+      : [];
     for (const program of allPrograms) {
       console.log(`\nEVALUATING PROGRAM: ${program.program}`);
-    
-      const programQualified = onlyFailedSocialStudies
-        ? !socialStudiesRequired.includes(program.program)
-        : coreResults.qualifies;
-    
-      if (!programQualified) {
-        continue;
+
+      const filteringSubjects = program.filteringsubject ? program.filteringsubject : [];
+
+      const failedOneFiltering = filteringSubjects.some(subject => failedCoreSubjects.includes(subject));
+
+      if (failedOneFiltering || failedCoreSubjects.length > 1) {
+          console.log(`Skipping ${program.program} due to failed core subject(s): ${failedCoreSubjects}`);
+          continue;
       }
 
       // Extract program requirements
@@ -123,10 +117,15 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
           tracksToProcess = tracks.tracks as Record<string, (string | string[])[] | undefined>;
         }
 
+        for (const [trackName, value] of Object.entries(tracksToProcess)) {
+          if (!Array.isArray(value)) {
+            console.warn(`🚨 Program "${program.program}" has invalid track entry for "${trackName}":`, value);
+          }
+        }
+
         const { allValidCombinations } = handleTracks(remainSubjects, tracksToProcess as Tracks, matches);
 
-        const results = calculateAggregate(program.program, schoolName, program.campus, program.college, 
-          program["cutoff point"] ?? 0, program['special requirements / general information'], allValidCombinations, gradeData);
+        const results = calculateAggregate(schoolName, program, allValidCombinations, gradeData);
 
         programResults.push(...results);
       }
@@ -136,4 +135,3 @@ export function calculateQualifyingPrograms(gradeData: GradeData): ProgramResult
   console.log(`\nQualification check complete. Student qualifies for ${programResults.length} programs.`);
   return programResults;
 }
-

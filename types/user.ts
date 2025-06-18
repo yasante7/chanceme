@@ -29,3 +29,45 @@ export interface GradeData {
 export interface UserData extends UserRegistration {
   grades?: GradeData
 }
+
+export interface Program {
+  program: string;
+  "cutoff point": {
+    firstChoiceSubjectArea: number | null;
+    firstChoiceNonSubject: number | null;
+    fullFeePaying: number | null;
+    secondChoice: number | null;
+    subjectRequirements: string[] | null;
+  };
+  college: string;
+  campus: string;
+  filteringsubject: string[] | string | null;
+  alternatecore: string[] | string | null;
+  "core subjects": string[];
+  "elective subjects": ElectiveSubjects;
+  "applicant type": string;
+  "special requirements / general information": string | null;
+}
+
+export interface ElectiveSubjects {
+  main: string[] | string[][] | null;
+
+  /**
+   * A mapping of track names (e.g. "Science", "Business", etc.)
+   * to an array of subject strings or nested alternative groupings.
+   */
+  tracks: TrackMap;
+}
+
+/**
+ * Each track maps to an array where:
+ * - an element can be a single subject (string),
+ * - or an array of subjects indicating interchangeable options.
+ */
+export type TrackMap = Record<string, TrackEntry[]>;
+
+export type TrackEntry = string[] | string[][] | (string | string[])[];
+
+
+// For use in your logic
+export type Tracks = Record<string, (string | string[])[]>;

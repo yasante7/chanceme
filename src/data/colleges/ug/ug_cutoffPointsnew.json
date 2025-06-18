@@ -1,0 +1,629 @@
+[
+  {
+    "program": "BSc. Agricultural Engineering",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "17",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "19/20",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Maths"
+    }
+  },
+  {
+    "program": "BSc. Biomedical Engineering",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "7",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "9",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Maths"
+    }
+  },
+  {
+    "program": "BSc. Computer Engineering",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "6",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "7",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Maths"
+    }
+  },
+  {
+    "program": "BSc. Food Process Engineering",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "12",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "15",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Maths"
+    }
+  },
+  {
+    "program": "BSc. Materials Science & Engineering",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "12",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "14/15",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Maths"
+    }
+  },
+  {
+    "program": "BSc. Biological Sciences",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "14",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "15/17",
+      "secondChoice": "12(13 for Full Fee Paying)",
+      "subjectRequirements": "C6 in Chemistry, C6 Biology, C6 Physics"
+    }
+  },
+  {
+    "program": "BSc. Psychology",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "18",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "20",
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "Doctor of Veterinary Medicine",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "13",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "BSc. Actuarial Science",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "11",
+      "firstChoiceNonSubject": "10",
+      "fullFeePaying": "14",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Mathematics"
+    }
+  },
+  {
+    "program": "BSc. Computer Science",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "9",
+      "firstChoiceNonSubject": "7",
+      "fullFeePaying": "14",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Mathematics"
+    }
+  },
+  {
+    "program": "BSc. Information Technology",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "8",
+      "firstChoiceNonSubject": "7",
+      "fullFeePaying": "11",
+      "secondChoice": null,
+      "subjectRequirements": "B2 in Core Maths"
+    }
+  },
+  {
+    "program": "BSc. Earth Sciences",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "18",
+      "firstChoiceNonSubject": "17",
+      "fullFeePaying": "20",
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Chemistry, C6 in Physics"
+    }
+  },
+  {
+    "program": "BSc. Physical Sciences",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Chemistry, C6 in Physics"
+    }
+  },
+  {
+    "program": "BSc. Mathematical Sciences",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "12",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "16",
+      "secondChoice": null,
+      "subjectRequirements": "B3 in Elective Maths"
+    }
+  },
+  {
+    "program": "BSc. Agriculture",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "20",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Chemistry"
+    }
+  },
+  {
+    "program": "BSc. Family & Child Studies",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "15",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Management in Living"
+    }
+  },
+  {
+    "program": "BSc. Food & Clothing",
+    "college": "College of Basic & Applied Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "15",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Chemistry"
+    }
+  },
+  {
+    "program": "Bachelor of Medicine and Bachelor of Surgery",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "7",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "Bachelor of Dental Surgery",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "8",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "Doctor of Pharmacy",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "8",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "BSc. Nursing",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "9",
+      "firstChoiceNonSubject": "8",
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "08 for Non Science / 09 for Science Background"
+    }
+  },
+  {
+    "program": "BSc. Midwifery",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "9",
+      "firstChoiceNonSubject": "8",
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "08 for Non Science / 09 for Science Background"
+    }
+  },
+  {
+    "program": "BSc. Medical Laboratory Sciences",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "12",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": "11",
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "BSc. Physiotherapy",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "14",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": "12",
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "BSc. Dietetics",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "14",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": "12",
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "BSc. Diagnostic Radiography",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "13",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": "12",
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "BSc. Occupational Therapy",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "15",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": "14",
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "BSc. Respiratory Therapy",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "14",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": "13",
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "Bachelor of Public Health",
+    "college": "College of Health Sciences",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "12",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "Bachelor of Education in Social Studies",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "20",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "Bachelor of Education in English",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "18",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in English Literature"
+    }
+  },
+  {
+    "program": "Bachelor of Education in Mathematics",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Elective Mathematics"
+    }
+  },
+  {
+    "program": "Bachelor of Education in Science (Physics)",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Physics"
+    }
+  },
+  {
+    "program": "Bachelor of Education in Science (Chemistry)",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Chemistry"
+    }
+  },
+  {
+    "program": "Bachelor of Education in Science (Biology)",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Biology"
+    }
+  },
+  {
+    "program": "Bachelor of Education (Early Grade Specialism)",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Education (JHS Specialism)",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "21",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    }
+  },
+  {
+    "program": "Bachelor of Education (Upper Grade Specialism)",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "22",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Arts in Sports and Physical Culture",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "20",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "BSc. Administration - (Kumasi and Takoradi City Campuses)",
+    "college": "College of Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Arts",
+    "college": "Distance Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "30",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "B.Sc Administration",
+    "college": "Distance Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "30",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "B.Sc. Information Technology",
+    "college": "Distance Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Education (Early Grade Specialism)",
+    "college": "Distance Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "30",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Education (Upper Grade Specialism)",
+    "college": "Distance Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "30",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Education (JHS Specialism)",
+    "college": "Distance Education",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "30",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Laws",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "6",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "BSc. Administration",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "7",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "BSc. Administration - (Full-Fee Paying)",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "14",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Arts (General Arts Background)",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "14(15)",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Arts (Full-Fee Paying)",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "17",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Arts (Bouquets with a Business Subject)",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "10",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Arts (Bouquets with a Business Subject)(Full-Fee Paying",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "17",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Arts (Business/Science/ Vocational Background)",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "12",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "Bachelor of Fine Arts",
+    "college": "College of Humanities",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "22",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    } 
+  },
+  {
+    "program": "Bachelor of Arts",
+    "college": "Accra City Campus",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  },
+  {
+    "program": "BSc. Administration",
+    "college": "Accra City Campus",
+    "cutoff point": {
+      "firstChoiceSubjectArea": "24",
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": "",
+      "secondChoice": "",
+      "subjectRequirements": ""
+    }
+  }
+]

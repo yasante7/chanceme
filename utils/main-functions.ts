@@ -14,12 +14,18 @@ export function handleRegularMain(studentSubjects: string[], mains: string[]) {
     } else {
         return { qualifiesMain: false, remainSubjects, matched };
     }
-
 }
 
 export function handleNestedMains(studentSubjects: string[], mainGroups: string[][]) {
-  for (const group of mainGroups) {
-    const matched = group.filter(subject => studentSubjects.includes(subject));
+  if (mainGroups.length > 1) {
+    for (const group of mainGroups) {
+      const result = handleRegularMain(studentSubjects, group);
+      if (result.qualifiesMain) {
+        return result;
+      }
+    }
+  } else if (mainGroups.length === 1) {
+    const matched = mainGroups[0].filter(subject => studentSubjects.includes(subject));
     const remainSubjects = studentSubjects.filter(subject => !matched.includes(subject));
     
     if (matched.length > 0) {
@@ -32,6 +38,46 @@ export function handleNestedMains(studentSubjects: string[], mainGroups: string[
   }
 
   // No match
+  return {
+    qualifiesMain: false,
+    remainSubjects: studentSubjects,
+    matched: []
+  };
+}
+
+export function handleAlternativeMains(studentSubjects: string[], alternativeMainGroups: (string[] | string[][])[]) {
+  for (const group of alternativeMainGroups) {
+    // Case: group is a flat array of strings
+    if (Array.isArray(group) && group.every(item => typeof item === "string")) {
+      const matched = group.filter(subject => studentSubjects.includes(subject));
+      const remainSubjects = studentSubjects.filter(subject => !matched.includes(subject));
+
+      if (matched.length === group.length) {
+        return {
+          qualifiesMain: true,
+          remainSubjects,
+          matched: matched // Not nested
+        };
+      }
+    }
+
+    // Case: group is a nested array (group of groups)
+    if (Array.isArray(group) && Array.isArray(group[0])) {
+      for (const subgroup of group as string[][]) {
+        const matched = subgroup.filter(subject => studentSubjects.includes(subject));
+        const remainSubjects = studentSubjects.filter(subject => !matched.includes(subject));
+
+        if (matched.length === subgroup.length) {
+          return {
+            qualifiesMain: true,
+            remainSubjects,
+            matched: [matched] // Keep as nested
+          };
+        }
+      }
+    }
+  }
+
   return {
     qualifiesMain: false,
     remainSubjects: studentSubjects,

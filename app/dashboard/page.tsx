@@ -5,6 +5,7 @@ import UserProfile from "./profile/page";
 import NextSteps from "./components/next-steps";
 import { useUserGrades } from "@/hooks/fetchGrades";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Dashboard() {
   const { loading, grades } = useUserGrades();
@@ -15,10 +16,16 @@ export default function Dashboard() {
     grades !== null &&
     (grades.core_subjects?.length > 0 || grades.elective_subjects?.length > 0);
 
+  // Move redirect logic into useEffect
+  useEffect(() => {
+    if (!loading && !isValidGrades) {
+      router.push("/dashboard/onboarding");
+    }
+  }, [loading, isValidGrades, router]);
+
   if (loading) return null;
 
   if (!isValidGrades) {
-    router.push("/dashboard/onboarding");
     return null;
   }
 

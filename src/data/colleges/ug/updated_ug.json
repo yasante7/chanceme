@@ -1,0 +1,3332 @@
+[
+  {
+    "schoolname": "University of Ghana"
+  },
+  [
+    {
+      "program": "BSc. Actuarial Science",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 11,
+        "firstChoiceNonSubject": 10,
+        "fullFeePaying": 14,
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Mathematics"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Elective Mathematics"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Elective Mathematics"
+    },
+    {
+      "program": "BSc. Computer Science",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 9,
+        "firstChoiceNonSubject": 7,
+        "fullFeePaying": 14,
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Mathematics"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Elective Mathematics"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Elective Mathematics"
+    },
+    {
+      "program": "Doctor of Veterinary Medicine",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 13,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General": [
+            "Biology",
+            "Chemistry",
+            [
+              "Physics",
+              "Elective Mathematics"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "BSc. Materials Science & Engineering",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 12,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": 14,
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Maths"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General": [
+            "Chemistry",
+            "Physics",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Elective Mathematics"
+    },
+    {
+      "program": "BSc. Food Process Engineering",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 12,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": 15,
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Maths"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General": [
+            "Chemistry",
+            "Physics",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Elective Mathematics"
+    },
+    {
+      "program": "BSc. Computer Engineering",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 6,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": "7",
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Maths"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General": [
+            "Chemistry",
+            "Physics",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Elective Mathematics"
+    },
+    {
+      "program": "BSc. Biomedical Engineering",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 7,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": "9",
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Maths"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General": [
+            "Chemistry",
+            "Physics",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Elective Mathematics"
+    },
+    {
+      "program": "BSc. Agricultural Engineering",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 17,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": 19,
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Maths"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General": [
+            "Chemistry",
+            "Physics",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Elective Mathematics"
+    },
+    {
+      "program": "Bachelor of Science in Family & Consumer Sciences (Family and Child Studies Option)",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+    "cutoff point": {
+      "firstChoiceSubjectArea": 15,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Management in Living"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Management in Living"
+        ],
+        "tracks": {
+          "General": [
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "General Knowledge in Art",
+            [
+              "Biology",
+              "Chemistry"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Family & Consumer Sciences (Food and Clothing Option)",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+    "cutoff point": {
+      "firstChoiceSubjectArea": 15,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Management in Living"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          [
+            "Management in Living",
+            "Chemistry"
+          ],
+          [
+            "Chemistry"
+          ]
+        ],
+        "tracks": {
+          "General": [
+            "Food and Nutrition",
+            "Clothing and Textiles"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Agriculture",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 20,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": "C6 in Chemistry"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Chemistry"
+        ],
+        "tracks": {
+          "General": [
+            "Physics",
+            [
+              "Biology",
+              "Agricultural Science"
+            ],
+            "Geography",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": "Bachelor of Science in Agriculture: Animal Science, Crop Science, Soil Science, Agriculture Economics, Agribusiness, Agriculture Extension, Post-Harvest Technology."
+    },
+    {
+      "program": "Bachelor of Science in Psychology",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 18,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": 20,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Biology",
+          "Elective Mathematics"
+        ],
+        "tracks": {
+          "General": [
+            "Physics",
+            "Chemistry"
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "BSc. Biological Sciences",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": 15,
+        "secondChoice": 12,
+        "subjectRequirements": "C6 in Chemistry, C6 Biology, C6 Physics"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Chemistry",
+          "Physics",
+          "Biology"
+        ],
+        "tracks": {}
+      },
+      "special requirements / general information": "Bachelor of Science degree in any one of the following subjects: Animal Biology and Conservation Science, Biochemistry Cell and Molecular Biology, Nutrition, Food Science, Plant and Environmental Biology, Marine Science, Fisheries Science, Psychology, Microbiology."
+    },
+    {
+      "program": "Bachelor of Science in Information Technology",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 8,
+        "firstChoiceNonSubject": "7",
+        "fullFeePaying": 11,
+        "secondChoice": null,
+        "subjectRequirements": "B2 in Core Maths"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "Distance Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ]
+        }
+      },
+      "special requirements / general information": "at least a B3 in Core Mathematics"
+    },
+    {
+      "program": "Bachelor of Science in Earth Sciences",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 18,
+        "firstChoiceNonSubject": 17,
+        "fullFeePaying": 20,
+        "secondChoice": null,
+        "subjectRequirements": "C6 in Chemistry, C6 in Physics"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Chemistry"
+        ],
+        "tracks": {
+          "General": [
+            "Physics",
+            [
+              "Biology",
+              "Geography"
+            ],
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information":  "Geology, Applied Geology, Applied GeophysicsEntry requirements:Core: Credit passes in English, Core Mathematics, Integrated Science & Social StudiesElectives: Credit passes in Chemistry and any two of Physics, Biology/Geography and Elective Mathematics"
+    },
+    {
+      "program": "Bachelor of Science in Mathematical Sciences",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 12,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": 16,
+        "secondChoice": null,
+        "subjectRequirements": "B3 in Elective Maths"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Elective Mathematics"
+        ],
+        "tracks": {
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ]
+        }
+      },
+      "special requirements / general information": "Bachelor of Science degree in any ONE of the following subjects: Mathematics, Statistics, Biomathematics, Physics. Or Bachelor of Science in any TWO of the following subjects: Mathematics, Statistics, Computer Science, Physics. Note I: Applicants who choose the Mathematical Sciences option cannot pursue a single major in Computer Science, but they may combine Computer Science with any of the other three subjects: Mathematics, Statistics, or Physics. Note II: Applicants who choose the Mathematical Sciences option may ONLY pursue a single or combined major in Physics if they have credit passes in both Physics and Chemistry."
+    },
+    {
+      "program": "Bachelor of Science in Physical Sciences",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 24,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": "C6 in Chemistry, C6 in Physics"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Basic & Applied Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Physics",
+          "Chemistry",
+          "Elective Mathematics"
+        ],
+        "tracks": {}
+      },
+      "special requirements / general information": "Note: Applicants who choose the Physical Sciences Option may ONLY pursue a combined major with a Mathematical Sciences Subject if they have a B3 in Elective Mathematics.Applicants need at B3 in core maths"
+    },
+    {
+      "program": "B.Sc. Education (Physics)",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 24,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Physics"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Physics"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in Physics and any other two elective subjects"
+    },
+    {
+      "program": "B.Sc. Education (Chemistry)",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 24,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Chemistry"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Chemistry"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in Chemistry and any other two elective subjects"
+    },
+    {
+      "program": "B.Sc. Education (Biology)",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 24,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Biology"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Biology"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in Biology and any other two elective subjects"
+  
+    },
+    {
+      "program": "B.Sc. Education (Mathematics)",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 24,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Mathematics"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Elective Mathematics"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in Elective Mathematics and any other two elective subjects"
+  
+    },
+    {
+      "program": "BA Sport and Physical Culture Studies",
+      "filteringsubject": [
+        "Social Studies",
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 20,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in Chemistry"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives: Credit passes in any three elective subjects"
+    },
+    {
+      "program": "BA Education (Non-Teaching)",
+      "filteringsubject": [
+        "Social Studies",
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "cutoff point": null,
+      "campus": "Main Campus (Legon)",
+      "college": "College of Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in any three elective subjects."
+      
+    },
+    {
+      "program": "BA Education (English)",
+      "filteringsubject": [
+        "Social Studies",
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+       "cutoff point": {
+      "firstChoiceSubjectArea": 18,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": "C6 in English Language"
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Education",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Literature in English"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in any three elective subjects including English Literature."
+    },
+    {
+      "program": "Bachelor of Medicine and Bachelor of Surgery",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 7,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": null,
+      "subjectRequirements": null
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Chemistry"
+        ],
+        "tracks": {
+          "General": [
+            "Physics",
+            "Biology",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Public Health",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 12,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema",
+            "Food and Nutrition"
+          ],
+          "General": [
+            "Economics",
+            "Food and Nutrition",
+            "Chemistry",
+            "French"
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Midwifery",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 9,
+        "firstChoiceNonSubject": "8",
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": "08 for Non Science / 09 for Science Background"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema",
+            "Food and Nutrition"
+          ],
+          "General": [
+            "Economics",
+            "Management in Living",
+            "Food and Nutrition",
+            "Chemistry",
+            "General Knowledge in Art",
+            "French"
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Occupational Therapy",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 15,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": 14,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Dietetics",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": 12,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Medical Laboratory",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 12,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": 11,
+      "subjectRequirements": null
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Physiotherapy",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": 12,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Radiography",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+      "firstChoiceSubjectArea": 13,
+      "firstChoiceNonSubject": null,
+      "fullFeePaying": null,
+      "secondChoice": 12,
+      "subjectRequirements": null
+    },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Respiratory Therapy",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": 13,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Science in Nursing",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 9,
+        "firstChoiceNonSubject": "8",
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": "08 for Non Science / 09 for Science Background"
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Physics",
+            [
+              "Biology",
+              "Elective Mathematics",
+              "General Agriculture"
+            ]
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema",
+            "Food and Nutrition"
+          ],
+          "General": [
+            "Economics",
+            "Management in Living",
+            "Food and Nutrition",
+            "Chemistry",
+            "General Knowledge in Art",
+            "French"
+          ]
+        }
+      },
+      "special requirements / general information": "Bachelor of Science in Nursing with options in: General Nursing, Public Health Nursing, Paediatric Nursing, Mental Health Nursing. Applicants are expected to select one (1) option"
+    },
+    {
+      "program": "Doctor of Pharmacy",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 8,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Chemistry, Biology, and either Physics or Elective Mathematics"
+        ],
+        "tracks": {
+          "General Science": [
+            "Chemistry",
+            "Biology",
+            [
+              "Physics",
+              "Elective Mathematics"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Dental Surgery",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 8,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Health Sciences",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Chemistry"
+        ],
+        "tracks": {
+          "General": [
+            "Physics",
+            "Biology",
+            "Elective Mathematics"
+          ]
+        }
+      },
+      "special requirements / general information": null
+    },
+    {
+      "program": "Bachelor of Fine Arts",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 22,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Humanities",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in any three electives subjects. The programme is open to applicants interested in the Performing Arts with aggregate 24 or better. They will be expected to attend an audition or interview."
+    },
+    {
+      "program": "Bachelor of Laws (LLB)",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 6,
+        "firstChoiceNonSubject": null,
+        "fullFeePaying": null,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Humanities",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in any three elective subjects"
+    },
+    {
+      "program": "Bachelor of Science in Business Administration",
+      "filteringsubject": [
+        "Social Studies"
+      ],
+      "alternatecore": [
+        "Integrated Science"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": 12,
+        "fullFeePaying": 17,
+        "secondChoice": null,
+        "subjectRequirements": "(Business/Science/ Vocational students must meet a cutoff of 12 while applying for this program."
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "Accra City Campus",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information":  "Electives:Credit passes in any three elective subjects"
+    },
+    {
+      "program": "Bachelor of Arts",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": 10,
+        "fullFeePaying": 17,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "college": "College of Humanities",
+      "campus": "Main Campus (Legon)",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": null,
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information": "Electives: Credit passes in any three elective subjects",
+      "concentrations": {
+        "economics mathematics or statistics": "Elective Mathematics",
+        "computer science": "Elective Mathematics",
+        "french": "French",
+        "english": "English Literature",
+        "geography": "Geography",
+        "accounting": "Accounting and Elective Mathematics or Accounting and Principles of Costing"
+      }
+    },
+    {
+      "program": "Bachelor of Arts (Economics/Mathematics or Economics/Statistics or Economics/Computer Science)",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": 10,
+        "fullFeePaying": 17,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "college": "College of Humanities",
+      "campus": "Main Campus (Legon)",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Elective Mathematics"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information": "Electives: Credit passes in any three elective subjects"
+    },
+    {
+      "program": "Bachelor of Arts (French)",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": 10,
+        "fullFeePaying": 17,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "college": "College of Humanities",
+      "campus": "Main Campus (Legon)",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "French"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information": "Electives: Credit passes in any three elective subjects"
+    },
+    {
+      "program": "Bachelor of Arts (English)",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": 12,
+        "fullFeePaying": 17,
+        "secondChoice": null,
+        "subjectRequirements": "(Business/Science/ Vocational students must meet a cutoff of 12 while applying for this program."
+      },
+      "campus": "Main Campus (Legon)",
+      "college": "College of Humanities",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Literature in English"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Geography",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT",
+            "Geography"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information": "Electives: Credit passes in any three elective subjects"
+    },
+    {
+      "program": "Bachelor of Arts (Geography)",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": 10,
+        "fullFeePaying": 17,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "college": "College of Humanities",
+      "campus": "Main Campus (Legon)",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Geography"
+        ],
+        "tracks": {
+          "Agric": [
+            "General Agriculture",
+            "Animal Husbandry",
+            "Agricultural Economics",
+            "Elective Mathematics",
+            "Crop Science",
+            "Chemistry",
+            "Physics"
+          ],
+          "GArts": [
+            "Economics",
+            "Government",
+            "History",
+            "Elective Mathematics",
+            "Christian Religious Studies",
+            "Music",
+            "Elective ICT",
+            "Literature in English",
+            "French",
+            "Fante",
+            "Akuapem Twi",
+            "Asante Twi",
+            "Ga",
+            "Ewe",
+            "Arabic",
+            "Dagaare",
+            "Dagbani",
+            "Gonja",
+            "Kasem",
+            "Nzema"
+          ],
+          "Science": [
+            "Elective Mathematics",
+            "Physics",
+            "Chemistry",
+            "Biology",
+            "Elective ICT"
+          ],
+          "Biz": [
+            "Business Management",
+            "Financial Accounting",
+            "Economics",
+            "Cost Accounting",
+            "Elective Mathematics",
+            "Elective ICT",
+            "French",
+            "Clerical Office Duties"
+          ],
+          "Tech": [
+            "Technical Drawing",
+            "Building Construction",
+            "Woodwork",
+            "Metalwork",
+            "Auto Mechanics",
+            "Electronics",
+            "Applied Electricity",
+            "Automobile Engineering",
+            "Electrical Engineering"
+          ],
+          "Visual": [
+            "ICT",
+            "General Knowledge in Art",
+            "Textiles",
+            "Picture Making",
+            "Ceramics and Sculpture",
+            "Ceramics and Basketry",
+            "Graphic Design",
+            "Leather Work",
+            "Basketry",
+            "Sculpture",
+            "French"
+          ],
+          "Home Econs": [
+            "Economics",
+            "Food and Nutrition",
+            "Clothing and Textiles",
+            "Management in Living",
+            "Chemistry",
+            "Biology"
+          ]
+        }
+      },
+      "special requirements / general information": "Electives: Credit passes in any three elective subjects"
+    },
+    {
+      "program": "Bachelor of Arts (Accounting)",
+      "filteringsubject": [
+        "Integrated Science"
+      ],
+      "alternatecore": [
+        "Social Studies"
+      ],
+      "cutoff point": {
+        "firstChoiceSubjectArea": 14,
+        "firstChoiceNonSubject": 10,
+        "fullFeePaying": 17,
+        "secondChoice": null,
+        "subjectRequirements": null
+      },
+      "college": "College of Humanities",
+      "campus": "Main Campus (Legon)",
+      "core subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "elective subjects": {
+        "main": [
+          "Financial Accounting"
+        ],
+        "tracks": {
+          "Agric": [
+            [
+              "Elective Mathematics",
+              "Cost Accounting"
+            ],
+            [
+              "General Agriculture",
+              "Animal Husbandry",
+              "Agricultural Economics",
+              "Crop Science",
+              "Chemistry",
+              "Physics"
+            ]
+          ],
+          "GArts": [
+            [
+              "Elective Mathematics",
+              "Cost Accounting"
+            ],
+            [
+              "Economics",
+              "Government",
+              "History",
+              "Christian Religious Studies",
+              "Music",
+              "Elective ICT",
+              "Literature in English",
+              "French",
+              "Fante",
+              "Akuapem Twi",
+              "Asante Twi",
+              "Ga",
+              "Ewe",
+              "Arabic",
+              "Dagaare",
+              "Dagbani",
+              "Gonja",
+              "Kasem",
+              "Nzema"
+            ]
+          ],
+          "Science": [
+            [
+              "Elective Mathematics",
+              "Cost Accounting"
+            ],
+            [
+              "Physics",
+              "Chemistry",
+              "Biology",
+              "Elective ICT"
+            ]
+          ],
+          "Biz": [
+            [
+              "Elective Mathematics",
+              "Cost Accounting"
+            ],
+            [
+              "Business Management",
+              "Economics",
+              "Elective ICT",
+              "French",
+              "Clerical Office Duties"
+            ]
+          ],
+          "Tech": [
+            [
+              "Elective Mathematics",
+              "Cost Accounting"
+            ],
+            [
+              "Technical Drawing",
+              "Building Construction",
+              "Woodwork",
+              "Metalwork",
+              "Auto Mechanics",
+              "Electronics",
+              "Applied Electricity",
+              "Automobile Engineering",
+              "Electrical Engineering"
+            ]
+          ],
+          "Visual": [
+            [
+              "Elective Mathematics",
+              "Cost Accounting"
+            ],
+            [
+              "ICT",
+              "General Knowledge in Art",
+              "Textiles",
+              "Picture Making",
+              "Ceramics and Sculpture",
+              "Ceramics and Basketry",
+              "Graphic Design",
+              "Leather Work",
+              "Basketry",
+              "Sculpture",
+              "French"
+            ]
+          ],
+          "Home Econs": [
+            [
+              "Elective Mathematics",
+              "Cost Accounting"
+            ],
+            [
+              "Economics",
+              "Food and Nutrition",
+              "Clothing and Textiles",
+              "Management in Living",
+              "Chemistry",
+              "Biology"
+            ]
+          ]
+        }
+      },
+      "special requirements / general information": "Electives: Credit passes in any three elective subjects"
+    }
+  ]
+]

@@ -11,7 +11,7 @@ import schoolsData from '@/src/data/highschoolsdata/schools_loc_data.json'
 import { PROGRAMS, PROGRAM_SUBJECTS, CORE_SUBJECTS, GRADES } from "@/components/constants/student-grades"
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
-console.clear()
+// console.clear()
 type Grade = string;
 
 export default function GradesPage() {
@@ -180,6 +180,10 @@ export default function GradesPage() {
       if (updateError) {
         throw updateError
       }
+
+      // add event to notify other parts of the app
+      window.dispatchEvent(new Event("grades-updated"));
+      console.log("📣 'grades-updated' event dispatched.");
 
       // Navigate to progress page
       router.push("/dashboard/recommendations")
@@ -372,9 +376,8 @@ export default function GradesPage() {
                 </div>
               </div>
             )}
-
             <div className="flex gap-4 pt-6">
-              <Link href="/register" className="flex-1">
+              <Link href="../" className="flex-1">
                 <Button variant="outline" className="w-full">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back

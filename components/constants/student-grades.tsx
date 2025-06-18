@@ -77,6 +77,7 @@ export const PROGRAM_SUBJECTS = {
     'Food and Nutrition',
     'Clothing and Textiles',
     'Management in Living',
+    'General Knowledge in Art',
     'Chemistry',
     'Biology'
   ],
@@ -87,7 +88,8 @@ export const PROGRAM_SUBJECTS = {
     'Elective Mathematics',
     'Crop Science',
     'Chemistry',
-    'Physics'
+    'Physics',
+    'Biology',
   ],
   'Technical': [
     'Technical Drawing',
