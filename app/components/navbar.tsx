@@ -3,20 +3,14 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github } from "lucide-react"
 
-export default function Navbar() {
+export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold">Edu Solutions</span>
+          <span className="font-bold">Chances</span>
         </Link>
         <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
-          {/* <Link href="/solutions" className="transition-colors hover:text-primary">
-            Solutions
-          </Link>
-          <Link href="/industries" className="transition-colors hover:text-primary">
-            Industries
-          </Link> */}
           <Link href="/about" className="transition-colors hover:text-primary">
             About Us
           </Link>
@@ -31,7 +25,7 @@ export default function Navbar() {
           <Button variant="ghost" size="sm">
             Contact
           </Button>
-          <Button size="sm" onClick={()=>window.location.href= "/register/get-started"}>Sign Up</Button>
+          <Button size="sm" onClick={()=>window.location.href= "/register/get-started"}>Sign In</Button>
         </div>
       </div>
     </header>

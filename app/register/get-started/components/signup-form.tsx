@@ -9,10 +9,9 @@ import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
 import { REGIONS, validateEmail } from "../../../components/load-user-data"
 import { Gender, Region } from "@/types/user"
+import { ThirdPartyProviders } from "./sign-in-providers"
 
 // import { CardFooter } from "@/components/ui/card"
 
@@ -31,7 +30,6 @@ export function SignupForm() {
     password: "",
     dateOfBirth: "",
     gender: "" as Gender,
-    phone: "",
     region: "" as Region,
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -56,7 +54,6 @@ export function SignupForm() {
           password: parsed.password || "",
           dateOfBirth: parsed.dateOfBirth || "",
           gender: parsed.gender || "",
-          phone: parsed.phone || "",
           region: parsed.region || "",
         })
         if (parsed.step) setStep(parsed.step)
@@ -104,14 +101,6 @@ export function SignupForm() {
         return
       }
 
-      // Basic phone validation
-      const phonePattern = /^\+?[0-9\s\-\(\)]+$/;
-      if (!phonePattern.test(formData.phone)) {
-        setMessage("Please enter a valid phone number")
-        setIsSubmitting(false)
-        return
-      }
-
       // Store registration data in localStorage
       localStorage.setItem('userData', JSON.stringify(formData))
       localStorage.removeItem('signupFormData')
@@ -126,7 +115,6 @@ export function SignupForm() {
           data: {
             first_name: formData.firstName,
             last_name: formData.lastName,
-            phone_number: formData.phone,
           },
         },
       })
@@ -167,8 +155,6 @@ export function SignupForm() {
 
   return (
     <div>
-      {step === 1 && (
-      <>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="space-y-2">
             <Label htmlFor="first-name">First Name</Label>
@@ -240,22 +226,6 @@ export function SignupForm() {
             </select>
           </div>
         </div>
-        <div className="flex gap-4 pt-6">
-          <Link href="/" className="flex-1">
-            <Button variant="outline" className="w-full" type="button">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back
-            </Button>
-          </Link>
-          <Button type="button" className="flex-1" onClick={() => setStep(2)}>
-            Next
-          </Button>
-        </div>
-      </>
-      )}
-
-      {step === 2 && (
-      <>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
@@ -268,19 +238,6 @@ export function SignupForm() {
               required
             />
           </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="phone">Phone</Label>
-            <Input
-              id="phone"
-              type="tel"
-              value={formData.phone}
-              onChange={handleChange("phone")}
-              placeholder="Kindly enter your phone number"
-              required
-            />
-          </div>
-
           <div className="space-y-2">
             <Label htmlFor="password">Password</Label>
             <div className="relative">
@@ -348,12 +305,9 @@ export function SignupForm() {
           )}
 
           <div className="flex gap-4 pt-6">
-            <Button variant='outline' type="button" className="flex-1" onClick={() => setStep(1)}>
-              Back
+            <Button type="submit" className="flex-1" disabled={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "Sign Up"}
             </Button>
-          <Button type="submit" className="flex-1" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Sign Up"}
-          </Button>
           </div>
 
           {message && <p className="text-sm text-muted-foreground">{message}</p>}
@@ -371,8 +325,10 @@ export function SignupForm() {
               .
             </p>
           </CardFooter> */}
+          <div>
+            <ThirdPartyProviders />
+          </div>
         </form>
-      </>)}
     </div>
   )
 }

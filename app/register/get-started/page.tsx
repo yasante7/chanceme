@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
+import { Navbar } from "../../components/navbar"
 // import { NavBar } from "@/components/nav-bar"
 
 import {
@@ -23,11 +24,11 @@ import { LoginForm } from "./components/login-form"
 
 export default function GetStartedPage() {
   const router = useRouter()
-  const [activeTab, setActiveTab] = useState<string>("signup")
+  const [activeTab, setActiveTab] = useState<string>("login")
 
   return (
-    <div className="flex min-h-screen flex-col pt-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
-      {/* <NavBar /> */}
+    <div>
+      <Navbar />
       <main className="container flex flex-1 items-center justify-center py-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,11 +50,11 @@ export default function GetStartedPage() {
             <CardContent>
               <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                 <TabsList className="grid w-full grid-cols-2 bg-muted rounded-xl mb-4">
-                  <TabsTrigger value="signup" className="rounded-xl text-sm">
-                    Sign Up
-                  </TabsTrigger>
                   <TabsTrigger value="login" className="rounded-xl text-sm">
                     Log In
+                  </TabsTrigger>
+                  <TabsTrigger value="signup" className="rounded-xl text-sm">
+                    Sign Up
                   </TabsTrigger>
                 </TabsList>
 
